@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Font Experiment Viewer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+:root {
+  --bg: #0b0d0f;
+  --panel: #14181d;
+  --panel2: #1b2027;
+  --text: #e7e2d7;
+  --muted: #9ca3af;
+  --line: #2b323c;
+  --accent: #8fd16a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+header {
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--line);
+  background: #090b0d;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 9px 10px;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  min-height: calc(100vh - 96px);
+}
+
+aside {
+  border-right: 1px solid var(--line);
+  background: var(--panel);
+  overflow: auto;
+  padding: 14px;
+}
+
+.viewer {
+  padding: 18px;
+  overflow: auto;
+}
+
+.folder {
+  margin-bottom: 8px;
+}
+
+.folder-title {
+  cursor: pointer;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel2);
+  color: var(--accent);
+}
+
+.folder-content {
+  display: none;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid var(--line);
+}
+
+.folder.open > .folder-content {
+  display: block;
+}
+
+.font-item {
+  cursor: pointer;
+  padding: 6px 8px;
+  margin: 4px 0;
+  border-radius: 6px;
+  color: var(--muted);
+  word-break: break-all;
+}
+
+.font-item:hover,
+.font-item.active {
+  background: #24301f;
+  color: var(--text);
+}
+
+.preview-card {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.preview-title {
+  color: var(--accent);
+  margin-bottom: 12px;
+  word-break: break-all;
+}
+
+.preview-text {
+  font-size: 42px;
+  line-height: 1.35;
+  margin: 16px 0;
+}
+
+.alphabet {
+  font-size: 30px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.small {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.sample {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.sample-name {
+  color: var(--accent);
+  font-size: 12px;
+  margin-bottom: 8px;
+  word-break: break-all;
+}
+
+.sample-text {
+  font-size: 28px;
+  line-height: 1.3;
+}
+
+.sequence-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.sequence-button {
+  width: auto;
+  padding: 7px 10px;
+}
+
+textarea {
+  min-height: 84px;
+  resize: vertical;
+}
+
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    max-height: 40vh;
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Font Experiment Viewer</h1>
+
+  <div class="controls">
+    <select id="rootSelect">
+      <option value="experiments">experiments</option>
+      <option value="experiments-v01">experiments-v01</option>
+    </select>
+
+    <input id="filterInput" placeholder="Filter fonts, e.g. Cheiro wave 007">
+
+    <button id="scanButton">Load manifest</button>
+  </div>
+</header>
+
+<main>
+  <aside>
+    <div class="small">
+      This page needs a generated <code>font-manifest.json</code>. Use the Python script below.
+    </div>
+    <br>
+    <div id="tree"></div>
+  </aside>
+
+  <section class="viewer">
+    <div class="preview-card">
+      <div class="preview-title" id="selectedTitle">No font selected</div>
+
+      <textarea id="previewInput">Reality is not a collection of things. It is what remains reachable.
+
+The quick brown fox jumps over the lazy dog.
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+0123456789</textarea>
+
+      <div class="preview-text" id="mainPreview">
+        Select a font from the left.
+      </div>
+
+      <div class="alphabet" id="alphabetPreview">
+        ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
+        abcdefghijklmnopqrstuvwxyz<br>
+        0123456789
+      </div>
+    </div>
+
+    <div class="preview-card">
+      <div class="preview-title">Sequence scrubber</div>
+      <input type="range" id="seqSlider" min="0" max="0" value="0">
+      <div class="small" id="seqLabel">No sequence selected.</div>
+      <div class="preview-text" id="seqPreview">—</div>
+      <div class="sequence-row" id="sequenceButtons"></div>
+    </div>
+
+    <div class="preview-card">
+      <div class="preview-title">Visible samples</div>
+      <div id="sampleGrid" class="grid"></div>
+    </div>
+  </section>
+</main>
+
+<script>
+let manifest = null;
+let currentRoot = "experiments";
+let allFonts = [];
+let selectedSequence = [];
+let loadedFamilies = new Set();
+
+const tree = document.getElementById("tree");
+const rootSelect = document.getElementById("rootSelect");
+const filterInput = document.getElementById("filterInput");
+const scanButton = document.getElementById("scanButton");
+const selectedTitle = document.getElementById("selectedTitle");
+const previewInput = document.getElementById("previewInput");
+const mainPreview = document.getElementById("mainPreview");
+const alphabetPreview = document.getElementById("alphabetPreview");
+const sampleGrid = document.getElementById("sampleGrid");
+const seqSlider = document.getElementById("seqSlider");
+const seqLabel = document.getElementById("seqLabel");
+const seqPreview = document.getElementById("seqPreview");
+const sequenceButtons = document.getElementById("sequenceButtons");
+
+function safeFamilyName(path) {
+  return "f_" + path.replace(/[^a-zA-Z0-9]/g, "_");
+}
+
+function injectFont(path) {
+  const family = safeFamilyName(path);
+
+  if (loadedFamilies.has(family)) {
+    return family;
+  }
+
+  const style = document.createElement("style");
+  style.textContent = `
+    @font-face {
+      font-family: "${family}";
+      src: url("${path}") format("truetype");
+      font-display: swap;
+    }
+  `;
+  document.head.appendChild(style);
+  loadedFamilies.add(family);
+  return family;
+}
+
+function flattenManifest(node, rootPath) {
+  const out = [];
+
+  function walk(value, parts) {
+    if (Array.isArray(value)) {
+      for (const file of value) {
+        out.push({
+          name: file.split("/").pop(),
+          path: [rootPath, ...parts, file].join("/"),
+          group: parts.join("/")
+        });
+      }
+    } else if (typeof value === "object" && value !== null) {
+      for (const key of Object.keys(value).sort()) {
+        walk(value[key], [...parts, key]);
+      }
+    }
+  }
+
+  walk(node, []);
+  return out;
+}
+
+function makeFolder(title, children) {
+  const wrapper = document.createElement("div");
+  wrapper.className = "folder";
+
+  const head = document.createElement("div");
+  head.className = "folder-title";
+  head.textContent = title;
+
+  const body = document.createElement("div");
+  body.className = "folder-content";
+
+  head.onclick = () => wrapper.classList.toggle("open");
+
+  wrapper.appendChild(head);
+  wrapper.appendChild(body);
+
+  for (const child of children) {
+    body.appendChild(child);
+  }
+
+  return wrapper;
+}
+
+function renderTree() {
+  tree.innerHTML = "";
+
+  if (!manifest) {
+    tree.textContent = "No manifest loaded.";
+    return;
+  }
+
+  const query = filterInput.value.toLowerCase().trim();
+  allFonts = flattenManifest(manifest[currentRoot] || manifest, currentRoot);
+
+  const grouped = {};
+
+  for (const font of allFonts) {
+    const hay = (font.name + " " + font.group).toLowerCase();
+    if (query && !hay.includes(query)) continue;
+
+    const top = font.group.split("/")[0] || "root";
+    if (!grouped[top]) grouped[top] = [];
+    grouped[top].push(font);
+  }
+
+  for (const group of Object.keys(grouped).sort()) {
+    const items = grouped[group].map(font => {
+      const div = document.createElement("div");
+      div.className = "font-item";
+      div.textContent = font.name;
+      div.title = font.path;
+      div.onclick = () => selectFont(font);
+      return div;
+    });
+
+    tree.appendChild(makeFolder(`${group} (${items.length})`, items));
+  }
+
+  renderSamples();
+}
+
+function selectFont(font) {
+  const family = injectFont(font.path);
+  selectedTitle.textContent = font.path;
+
+  mainPreview.style.fontFamily = `"${family}", serif`;
+  alphabetPreview.style.fontFamily = `"${family}", serif`;
+
+  updatePreviewText();
+
+  const seq = findSiblingSequence(font);
+  setSequence(seq, font.path);
+}
+
+function updatePreviewText() {
+  const text = previewInput.value;
+  mainPreview.textContent = text;
+  seqPreview.textContent = text;
+}
+
+previewInput.addEventListener("input", updatePreviewText);
+
+function renderSamples() {
+  sampleGrid.innerHTML = "";
+
+  const visible = allFonts
+    .filter(font => {
+      const query = filterInput.value.toLowerCase().trim();
+      const hay = (font.name + " " + font.group).toLowerCase();
+      return !query || hay.includes(query);
+    })
+    .slice(0, 80);
+
+  for (const font of visible) {
+    const family = injectFont(font.path);
+
+    const card = document.createElement("div");
+    card.className = "sample";
+
+    const name = document.createElement("div");
+    name.className = "sample-name";
+    name.textContent = font.name;
+
+    const text = document.createElement("div");
+    text.className = "sample-text";
+    text.style.fontFamily = `"${family}", serif`;
+    text.textContent = "The quick brown fox jumps over the lazy dog.";
+
+    card.onclick = () => selectFont(font);
+
+    card.appendChild(name);
+    card.appendChild(text);
+    sampleGrid.appendChild(card);
+  }
+}
+
+function findSiblingSequence(font) {
+  const match = font.name.match(/^(.*?)(_[a-zA-Z]+(?:_[a-zA-Z]+)*)_(\d{3})\.ttf$/);
+
+  if (!match) return [font];
+
+  const prefix = match[1] + match[2];
+
+  return allFonts
+    .filter(f => f.name.startsWith(prefix + "_") && f.name.endsWith(".ttf"))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+function setSequence(seq, selectedPath) {
+  selectedSequence = seq || [];
+
+  sequenceButtons.innerHTML = "";
+
+  if (!selectedSequence.length) {
+    seqSlider.max = 0;
+    seqLabel.textContent = "No sequence selected.";
+    seqPreview.textContent = "—";
+    return;
+  }
+
+  seqSlider.min = 0;
+  seqSlider.max = selectedSequence.length - 1;
+
+  const index = Math.max(
+    0,
+    selectedSequence.findIndex(f => f.path === selectedPath)
+  );
+
+  seqSlider.value = index;
+  updateSequencePreview(index);
+
+  selectedSequence.forEach((font, i) => {
+    const button = document.createElement("button");
+    button.className = "sequence-button";
+    button.textContent = String(i).padStart(3, "0");
+    button.onclick = () => {
+      seqSlider.value = i;
+      updateSequencePreview(i);
+    };
+    sequenceButtons.appendChild(button);
+  });
+}
+
+function updateSequencePreview(i) {
+  const font = selectedSequence[i];
+  if (!font) return;
+
+  const family = injectFont(font.path);
+  seqPreview.style.fontFamily = `"${family}", serif`;
+  seqPreview.textContent = previewInput.value;
+  seqLabel.textContent = font.path;
+}
+
+seqSlider.addEventListener("input", () => {
+  updateSequencePreview(Number(seqSlider.value));
+});
+
+async function loadManifest() {
+  currentRoot = rootSelect.value;
+
+  try {
+    const response = await fetch("font-manifest.json", { cache: "no-store" });
+
+    if (!response.ok) {
+      throw new Error("Could not load font-manifest.json");
+    }
+
+    manifest = await response.json();
+    renderTree();
+
+  } catch (err) {
+    tree.innerHTML = `
+      <p style="color:#ffb4a8">Could not load <code>font-manifest.json</code>.</p>
+      <p class="small">Generate it with the Python script shown below.</p>
+    `;
+    console.error(err);
+  }
+}
+
+filterInput.addEventListener("input", renderTree);
+rootSelect.addEventListener("change", loadManifest);
+scanButton.addEventListener("click", loadManifest);
+
+loadManifest();
+</script>
+
+</body>
+</html>

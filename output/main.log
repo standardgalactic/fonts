@@ -1,0 +1,545 @@
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2026.5.3)  12 JUN 2026 22:58
+ restricted system commands enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "/home/flyxion/.texlive2023/texmf-va
+r/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-08-19.lua" from kpse-res
+olved path "/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/fontloader-2023-
+08-19.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.133
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "/home/flyxion/.texlive2023/texmf-va
+r/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'. (/usr/share/texlive/tex
+mf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from /home/flyxion/.texlive2023/tex
+mf-var/luatex-cache/generic/names/luaotfload-names.luc.gz)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen139
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-01-22 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2024-01-04 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count193
+Inserting `l3color' in `luaotfload.parse_color'.
+\l__pdf_internal_box=\box51
+))
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2022/01/15 2.8a Font selection for XeLaTeX and LuaLaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaT
+eX
+\l__fontspec_script_int=\count194
+\l__fontspec_language_int=\count195
+\l__fontspec_strnum_int=\count196
+\l__fontspec_tmp_int=\count197
+\l__fontspec_tmpa_int=\count198
+\l__fontspec_tmpb_int=\count199
+\l__fontspec_tmpc_int=\count266
+\l__fontspec_em_int=\count267
+\l__fontspec_emdef_int=\count268
+\l__fontspec_strong_int=\count269
+\l__fontspec_strongdef_int=\count270
+\l__fontspec_tmpa_dim=\dimen140
+\l__fontspec_tmpb_dim=\dimen141
+\l__fontspec_tmpc_dim=\dimen142
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count271
+\Gm@cntv=\count272
+\c@Gm@tempcnt=\count273
+\Gm@bindingoffset=\dimen143
+\Gm@wd@mp=\dimen144
+\Gm@odd@mp=\dimen145
+\Gm@even@mp=\dimen146
+\Gm@layoutwidth=\dimen147
+\Gm@layoutheight=\dimen148
+\Gm@layouthoffset=\dimen149
+\Gm@layoutvoffset=\dimen150
+\Gm@dimlist=\toks18
+) (./font_decls.tex
+luaotfload | cache : Lookup cache loaded from /home/flyxion/.texlive2023/texmf-v
+ar/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
+luaotfload | db : Reload initiated (formats: otf,ttf,ttc); reason: Font "0" not 
+found.
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+
+! Package fontspec Error: The font "0" cannot be found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.3 \newfontfamily\fontseqX00
+                           0[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+luaotfload | aux : no font with id 0
+luaotfload | aux : no font with id 0
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+
+Package fontspec Info: Could not resolve font "0/BI" (it probably doesn't
+(fontspec)             exist).
+
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+
+Package fontspec Info: Could not resolve font "0/B" (it probably doesn't
+(fontspec)             exist).
+
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+
+Package fontspec Info: Could not resolve font "0/I" (it probably doesn't
+(fontspec)             exist).
+
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+
+! Package fontspec Error: The font "0" cannot be found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.3 \newfontfamily\fontseqX00
+                           0[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+
+! Package fontspec Error: The font "0" cannot be found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.3 \newfontfamily\fontseqX00
+                           0[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+
+Package fontspec Info: Font family '0(0)' created for font '0' with options
+(fontspec)             [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"0:mode=node;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \newfontfamily\fontseqX00
+                           0[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.3 ...0[Path={../experiments/sequences/Sga-Regular_
+                                                  jitter_seq/},Ligatures=TeX...
+? 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+! Extra }, or forgotten $.
+l.3 ...xperiments/sequences/Sga-Regular_jitter_seq/}
+                                                  ,Ligatures=TeX]{Sga-Regula...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+
+! Package fontspec Error: The font "0" cannot be found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.4 \newfontfamily\fontseqX00
+                           1[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+luaotfload | aux : no font with id 0
+luaotfload | aux : no font with id 0
+
+! LaTeX cmd Error: Command '\fontseqX' already defined.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.4 \newfontfamily\fontseqX00
+                           1[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+
+! Package fontspec Error: The font "0" cannot be found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.5 \newfontfamily\fontseqX00
+                           2[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+luaotfload | aux : no font with id 0
+luaotfload | aux : no font with id 0
+
+! LaTeX cmd Error: Command '\fontseqX' already defined.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.5 \newfontfamily\fontseqX00
+                           2[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+
+! Package fontspec Error: The font "0" cannot be found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.6 \newfontfamily\fontseqX00
+                           3[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+luaotfload | aux : no font with id 0
+luaotfload | aux : no font with id 0
+
+! LaTeX cmd Error: Command '\fontseqX' already defined.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.6 \newfontfamily\fontseqX00
+                           3[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+
+! Package fontspec Error: The font "0" cannot be found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.7 \newfontfamily\fontseqX00
+                           4[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+luaotfload | aux : no font with id 0
+luaotfload | aux : no font with id 0
+
+! LaTeX cmd Error: Command '\fontseqX' already defined.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.7 \newfontfamily\fontseqX00
+                           4[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+
+! Package fontspec Error: The font "0" cannot be found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.8 \newfontfamily\fontseqX00
+                           5[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+luaotfload | aux : no font with id 0
+luaotfload | aux : no font with id 0
+
+! LaTeX cmd Error: Command '\fontseqX' already defined.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.8 \newfontfamily\fontseqX00
+                           5[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+
+! Package fontspec Error: The font "0" cannot be found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.9 \newfontfamily\fontseqX00
+                           6[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+luaotfload | aux : no font with id 0
+luaotfload | aux : no font with id 0
+
+! LaTeX cmd Error: Command '\fontseqX' already defined.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.9 \newfontfamily\fontseqX00
+                           6[Path={../experiments/sequences/Sga-Regular_jitt...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+
+! Package fontspec Error: The font "0" cannot be found.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.10 \newfontfamily\fontseqX00
+                            7[Path={../experiments/sequences/Sga-Regular_jit...
+? 
+luaotfload | resolve : sequence of 3 lookups yielded nothing appropriate.
+luaotfload | aux : no font with id 0
+luaotfload | aux : no font with id 0
+
+! LaTeX cmd Error: Command '\fontseqX' already defined.
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.10 \newfontfamily\fontseqX00
+                            7[Path={../experiments/sequences/Sga-Regular_jit...
+? 
+! Missing $ inserted.
+<inserted text> 
+$
+l.11 
+   
+? 
+
+Overfull \hbox (218.21257pt too wide) in paragraph at lines 3--11
+[]\TU/lmr/m/n/12 00[Path=../experiments/sequences/Sga-Regular$[][]\OML/cmm/m/it
+/12 itter[]eq=; Ligatures \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 TeX\OT1/cmr/m/n/12
+ ][]01[\OML/cmm/m/it/12 Path \OT1/cmr/m/n/12 =
+ []
+
+
+Overfull \hbox (172.72038pt too wide) in paragraph at lines 3--11
+[]\OML/cmm/m/it/12 ; Ligatures \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 TeX\OT1/cmr/m
+/n/12 ][]02[\OML/cmm/m/it/12 Path \OT1/cmr/m/n/12 =
+ []
+
+
+Overfull \hbox (172.72038pt too wide) in paragraph at lines 3--11
+[]\OML/cmm/m/it/12 ; Ligatures \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 TeX\OT1/cmr/m
+/n/12 ][]03[\OML/cmm/m/it/12 Path \OT1/cmr/m/n/12 =
+ []
+
+
+Overfull \hbox (172.72038pt too wide) in paragraph at lines 3--11
+[]\OML/cmm/m/it/12 ; Ligatures \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 TeX\OT1/cmr/m
+/n/12 ][]04[\OML/cmm/m/it/12 Path \OT1/cmr/m/n/12 =
+ []
+
+
+Overfull \hbox (172.72038pt too wide) in paragraph at lines 3--11
+[]\OML/cmm/m/it/12 ; Ligatures \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 TeX\OT1/cmr/m
+/n/12 ][]05[\OML/cmm/m/it/12 Path \OT1/cmr/m/n/12 =
+ []
+
+
+Overfull \hbox (172.72038pt too wide) in paragraph at lines 3--11
+[]\OML/cmm/m/it/12 ; Ligatures \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 TeX\OT1/cmr/m
+/n/12 ][]06[\OML/cmm/m/it/12 Path \OT1/cmr/m/n/12 =
+ []
+
+
+Overfull \hbox (172.72038pt too wide) in paragraph at lines 3--11
+[]\OML/cmm/m/it/12 ; Ligatures \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 TeX\OT1/cmr/m
+/n/12 ][]07[\OML/cmm/m/it/12 Path \OT1/cmr/m/n/12 =
+ []
+
+
+Overfull \hbox (118.85426pt too wide) in paragraph at lines 3--11
+[]\OML/cmm/m/it/12 ; Ligatures \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 TeX\OT1/cmr/m
+/n/12 ][]$ 
+ []
+
+)
+luaotfload | aux : font no 28 (nil) defines no feature for script latn
+luaotfload | aux : font no 28 (nil) defines no feature for script dflt
+
+Package fontspec Info: Font family 'Sga-Regular_jitter_000.ttf(0)' created for
+(fontspec)             font 'Sga-Regular_jitter_000.ttf' with options
+(fontspec)             [Ligatures=TeX,Path=../experiments/sequences/Sga-Regular
+_jitter_seq/].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[../experiments/sequences/Sga-Regular_jitter_seq/Sga
+-Regular_jitter_000.ttf]:mode=node;language=dflt;+tlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+No file main.aux.
+
+\openout1 = main.aux
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+1.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./body.tex
+Overfull \vbox (239.71692pt too high) has occurred while \output is active []
+
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+Missing character: There is no _ (U+005F) in font [../experiments/sequences/Sga-
+Regular_jitter_seq/Sga-Regular_jitter_000.ttf]:mode=node;language=dflt;+tlig;!
+]) [2] (./main.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+)
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 3 ({)
+### bottom level
+
+Here is how much of LuaTeX's memory you used:
+ 3398 strings out of 476553
+ 100000,1977958 words of node,token memory allocated
+ 468 words of node memory still in use:
+   4 hlist, 1 vlist, 2 rule, 2 glue, 3 kern, 1 glyph, 5 attribute, 56 glue_spec,
+ 5 attribute_list, 1 write nodes
+   avail lists: 1:1,2:246,3:716,4:5,5:302,6:60,7:10561,8:685,9:290,10:3,11:734
+ 25417 multiletter control sequences out of 65536+600000
+ 29 fonts using 8306207 bytes
+ 79i,5n,89p,506b,540s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</mnt/c/Users/nateg/OneDrive/Documentos/GitHub/fonts/experiments/sequences/Sga-R
+egular_jitter_seq/Sga-Regular_jitter_000.ttf></usr/share/texmf/fonts/opentype/pu
+blic/lm/lmroman12-regular.otf></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (2 pages, 73060 bytes).
+
+PDF statistics: 45 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+

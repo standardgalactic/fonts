@@ -1,0 +1,2614 @@
+.
+├── Amiri-Bold.ttf
+├── Amiri-BoldItalic.ttf
+├── Amiri-Italic.ttf
+├── Amiri-Regular.ttf
+├── Cheiro-Regular.eot
+├── Cheiro-Regular.svg
+├── Cheiro-Regular.ttf
+├── Cheiro-Regular.woff
+├── Cheiro-Regular.woff2
+├── Clypto-Regular.eot
+├── Clypto-Regular.svg
+├── Clypto-Regular.ttf
+├── Clypto-Regular.woff
+├── Clypto-Regular.woff2
+├── CursiveGalactic-Regular.g2n
+├── CursiveGalactic-Regular.ttf
+├── FONTLOG.txt
+├── LICENSE
+├── Lingojam_cipher-Regular.ttf
+├── Logico_philosophicus-Regular.g2n
+├── Logico_philosophicus-Regular.ttf
+├── NovaMonoStandardGalactic.ttf
+├── Sga-Regular.eot
+├── Sga-Regular.g2n
+├── Sga-Regular.svg
+├── Sga-Regular.ttf
+├── Sga-Regular.woff
+├── Sga-Regular.woff2
+├── Systada-Regular.eot
+├── Systada-Regular.svg
+├── Systada-Regular.ttf
+├── Systada-Regular.woff
+├── Systada-Regular.woff2
+├── Systada.g2n
+├── Systada.ttf
+├── alterations
+│   ├── bubble_font.ttf
+│   ├── bubble_font_preview.png
+│   ├── nova_mono_font.ttf
+│   ├── nova_mono_font_preview.png
+│   ├── sans_serif_font.ttf
+│   ├── sans_serif_font_preview.png
+│   ├── serif_font.ttf
+│   ├── serif_font_preview.png
+│   ├── swash_font.ttf
+│   └── swash_font_preview.png
+├── ascii_debug_out
+│   ├── Cheiro-Regular_box_ascii.png
+│   ├── Cheiro-Regular_box_ascii.ttf
+│   ├── Cheiro-Regular_scale_ascii.png
+│   ├── Cheiro-Regular_scale_ascii.ttf
+│   ├── Cheiro-Regular_shift_ascii.png
+│   ├── Cheiro-Regular_shift_ascii.ttf
+│   ├── Clypto-Regular_box_ascii.png
+│   ├── Clypto-Regular_box_ascii.ttf
+│   ├── Clypto-Regular_scale_ascii.png
+│   ├── Clypto-Regular_scale_ascii.ttf
+│   ├── Clypto-Regular_shift_ascii.png
+│   ├── Clypto-Regular_shift_ascii.ttf
+│   ├── Systada-Regular_box_ascii.png
+│   ├── Systada-Regular_box_ascii.ttf
+│   ├── Systada-Regular_scale_ascii.png
+│   ├── Systada-Regular_scale_ascii.ttf
+│   ├── Systada-Regular_shift_ascii.png
+│   ├── Systada-Regular_shift_ascii.ttf
+│   ├── glyph-test.txt
+│   ├── robust_ascii.ttf
+│   └── robust_ascii_preview.png
+├── check-glyphs.py
+├── comparison-tree.txt
+├── dactyl.ttf
+├── debug.py
+├── demo.html
+├── detailed-errors.log
+├── errors.log
+├── experiments
+│   ├── compound
+│   │   ├── Amiri-BoldItalic_dissolution_000.ttf
+│   │   ├── Amiri-BoldItalic_dissolution_001.ttf
+│   │   ├── Amiri-BoldItalic_dissolution_002.ttf
+│   │   ├── Amiri-BoldItalic_dissolution_003.ttf
+│   │   ├── Amiri-BoldItalic_dissolution_004.ttf
+│   │   ├── Amiri-BoldItalic_dissolution_005.ttf
+│   │   ├── Amiri-BoldItalic_dissolution_006.ttf
+│   │   ├── Amiri-BoldItalic_dissolution_007.ttf
+│   │   ├── Amiri-BoldItalic_full_decay_000.ttf
+│   │   ├── Amiri-BoldItalic_full_decay_001.ttf
+│   │   ├── Amiri-BoldItalic_full_decay_002.ttf
+│   │   ├── Amiri-BoldItalic_full_decay_003.ttf
+│   │   ├── Amiri-BoldItalic_full_decay_004.ttf
+│   │   ├── Amiri-BoldItalic_full_decay_005.ttf
+│   │   ├── Amiri-BoldItalic_full_decay_006.ttf
+│   │   ├── Amiri-BoldItalic_full_decay_007.ttf
+│   │   ├── Amiri-BoldItalic_geological_000.ttf
+│   │   ├── Amiri-BoldItalic_geological_001.ttf
+│   │   ├── Amiri-BoldItalic_geological_002.ttf
+│   │   ├── Amiri-BoldItalic_geological_003.ttf
+│   │   ├── Amiri-BoldItalic_geological_004.ttf
+│   │   ├── Amiri-BoldItalic_geological_005.ttf
+│   │   ├── Amiri-BoldItalic_geological_006.ttf
+│   │   ├── Amiri-BoldItalic_geological_007.ttf
+│   │   ├── Amiri-BoldItalic_wave_erosion_000.ttf
+│   │   ├── Amiri-BoldItalic_wave_erosion_001.ttf
+│   │   ├── Amiri-BoldItalic_wave_erosion_002.ttf
+│   │   ├── Amiri-BoldItalic_wave_erosion_003.ttf
+│   │   ├── Amiri-BoldItalic_wave_erosion_004.ttf
+│   │   ├── Amiri-BoldItalic_wave_erosion_005.ttf
+│   │   ├── Amiri-BoldItalic_wave_erosion_006.ttf
+│   │   ├── Amiri-BoldItalic_wave_erosion_007.ttf
+│   │   ├── Amiri-Bold_dissolution_000.ttf
+│   │   ├── Amiri-Bold_dissolution_001.ttf
+│   │   ├── Amiri-Bold_dissolution_002.ttf
+│   │   ├── Amiri-Bold_dissolution_003.ttf
+│   │   ├── Amiri-Bold_dissolution_004.ttf
+│   │   ├── Amiri-Bold_dissolution_005.ttf
+│   │   ├── Amiri-Bold_dissolution_006.ttf
+│   │   ├── Amiri-Bold_dissolution_007.ttf
+│   │   ├── Amiri-Bold_full_decay_000.ttf
+│   │   ├── Amiri-Bold_full_decay_001.ttf
+│   │   ├── Amiri-Bold_full_decay_002.ttf
+│   │   ├── Amiri-Bold_full_decay_003.ttf
+│   │   ├── Amiri-Bold_full_decay_004.ttf
+│   │   ├── Amiri-Bold_full_decay_005.ttf
+│   │   ├── Amiri-Bold_full_decay_006.ttf
+│   │   ├── Amiri-Bold_full_decay_007.ttf
+│   │   ├── Amiri-Bold_geological_000.ttf
+│   │   ├── Amiri-Bold_geological_001.ttf
+│   │   ├── Amiri-Bold_geological_002.ttf
+│   │   ├── Amiri-Bold_geological_003.ttf
+│   │   ├── Amiri-Bold_geological_004.ttf
+│   │   ├── Amiri-Bold_geological_005.ttf
+│   │   ├── Amiri-Bold_geological_006.ttf
+│   │   ├── Amiri-Bold_geological_007.ttf
+│   │   ├── Amiri-Bold_wave_erosion_000.ttf
+│   │   ├── Amiri-Bold_wave_erosion_001.ttf
+│   │   ├── Amiri-Bold_wave_erosion_002.ttf
+│   │   ├── Amiri-Bold_wave_erosion_003.ttf
+│   │   ├── Amiri-Bold_wave_erosion_004.ttf
+│   │   ├── Amiri-Bold_wave_erosion_005.ttf
+│   │   ├── Amiri-Bold_wave_erosion_006.ttf
+│   │   ├── Amiri-Bold_wave_erosion_007.ttf
+│   │   ├── Amiri-Italic_dissolution_000.ttf
+│   │   ├── Amiri-Italic_dissolution_001.ttf
+│   │   ├── Amiri-Italic_dissolution_002.ttf
+│   │   ├── Amiri-Italic_dissolution_003.ttf
+│   │   ├── Amiri-Italic_dissolution_004.ttf
+│   │   ├── Amiri-Italic_dissolution_005.ttf
+│   │   ├── Amiri-Italic_dissolution_006.ttf
+│   │   ├── Amiri-Italic_dissolution_007.ttf
+│   │   ├── Amiri-Italic_full_decay_000.ttf
+│   │   ├── Amiri-Italic_full_decay_001.ttf
+│   │   ├── Amiri-Italic_full_decay_002.ttf
+│   │   ├── Amiri-Italic_full_decay_003.ttf
+│   │   ├── Amiri-Italic_full_decay_004.ttf
+│   │   ├── Amiri-Italic_full_decay_005.ttf
+│   │   ├── Amiri-Italic_full_decay_006.ttf
+│   │   ├── Amiri-Italic_full_decay_007.ttf
+│   │   ├── Amiri-Italic_geological_000.ttf
+│   │   ├── Amiri-Italic_geological_001.ttf
+│   │   ├── Amiri-Italic_geological_002.ttf
+│   │   ├── Amiri-Italic_geological_003.ttf
+│   │   ├── Amiri-Italic_geological_004.ttf
+│   │   ├── Amiri-Italic_geological_005.ttf
+│   │   ├── Amiri-Italic_geological_006.ttf
+│   │   ├── Amiri-Italic_geological_007.ttf
+│   │   ├── Amiri-Italic_wave_erosion_000.ttf
+│   │   ├── Amiri-Italic_wave_erosion_001.ttf
+│   │   ├── Amiri-Italic_wave_erosion_002.ttf
+│   │   ├── Amiri-Italic_wave_erosion_003.ttf
+│   │   ├── Amiri-Italic_wave_erosion_004.ttf
+│   │   ├── Amiri-Italic_wave_erosion_005.ttf
+│   │   ├── Amiri-Italic_wave_erosion_006.ttf
+│   │   ├── Amiri-Italic_wave_erosion_007.ttf
+│   │   ├── Amiri-Regular_dissolution_000.ttf
+│   │   ├── Amiri-Regular_dissolution_001.ttf
+│   │   ├── Amiri-Regular_dissolution_002.ttf
+│   │   ├── Amiri-Regular_dissolution_003.ttf
+│   │   ├── Amiri-Regular_dissolution_004.ttf
+│   │   ├── Amiri-Regular_dissolution_005.ttf
+│   │   ├── Amiri-Regular_dissolution_006.ttf
+│   │   ├── Amiri-Regular_dissolution_007.ttf
+│   │   ├── Amiri-Regular_full_decay_000.ttf
+│   │   ├── Amiri-Regular_full_decay_001.ttf
+│   │   ├── Amiri-Regular_full_decay_002.ttf
+│   │   ├── Amiri-Regular_full_decay_003.ttf
+│   │   ├── Amiri-Regular_full_decay_004.ttf
+│   │   ├── Amiri-Regular_full_decay_005.ttf
+│   │   ├── Amiri-Regular_full_decay_006.ttf
+│   │   ├── Amiri-Regular_full_decay_007.ttf
+│   │   ├── Amiri-Regular_geological_000.ttf
+│   │   ├── Amiri-Regular_geological_001.ttf
+│   │   ├── Amiri-Regular_geological_002.ttf
+│   │   ├── Amiri-Regular_geological_003.ttf
+│   │   ├── Amiri-Regular_geological_004.ttf
+│   │   ├── Amiri-Regular_geological_005.ttf
+│   │   ├── Amiri-Regular_geological_006.ttf
+│   │   ├── Amiri-Regular_geological_007.ttf
+│   │   ├── Amiri-Regular_wave_erosion_000.ttf
+│   │   ├── Amiri-Regular_wave_erosion_001.ttf
+│   │   ├── Amiri-Regular_wave_erosion_002.ttf
+│   │   ├── Amiri-Regular_wave_erosion_003.ttf
+│   │   ├── Amiri-Regular_wave_erosion_004.ttf
+│   │   ├── Amiri-Regular_wave_erosion_005.ttf
+│   │   ├── Amiri-Regular_wave_erosion_006.ttf
+│   │   ├── Amiri-Regular_wave_erosion_007.ttf
+│   │   ├── Cheiro-Regular_dissolution_000.ttf
+│   │   ├── Cheiro-Regular_dissolution_001.ttf
+│   │   ├── Cheiro-Regular_dissolution_002.ttf
+│   │   ├── Cheiro-Regular_dissolution_003.ttf
+│   │   ├── Cheiro-Regular_dissolution_004.ttf
+│   │   ├── Cheiro-Regular_dissolution_005.ttf
+│   │   ├── Cheiro-Regular_dissolution_006.ttf
+│   │   ├── Cheiro-Regular_dissolution_007.ttf
+│   │   ├── Cheiro-Regular_full_decay_000.ttf
+│   │   ├── Cheiro-Regular_full_decay_001.ttf
+│   │   ├── Cheiro-Regular_full_decay_002.ttf
+│   │   ├── Cheiro-Regular_full_decay_003.ttf
+│   │   ├── Cheiro-Regular_full_decay_004.ttf
+│   │   ├── Cheiro-Regular_full_decay_005.ttf
+│   │   ├── Cheiro-Regular_full_decay_006.ttf
+│   │   ├── Cheiro-Regular_full_decay_007.ttf
+│   │   ├── Cheiro-Regular_geological_000.ttf
+│   │   ├── Cheiro-Regular_geological_001.ttf
+│   │   ├── Cheiro-Regular_geological_002.ttf
+│   │   ├── Cheiro-Regular_geological_003.ttf
+│   │   ├── Cheiro-Regular_geological_004.ttf
+│   │   ├── Cheiro-Regular_geological_005.ttf
+│   │   ├── Cheiro-Regular_geological_006.ttf
+│   │   ├── Cheiro-Regular_geological_007.ttf
+│   │   ├── Cheiro-Regular_wave_erosion_000.ttf
+│   │   ├── Cheiro-Regular_wave_erosion_001.ttf
+│   │   ├── Cheiro-Regular_wave_erosion_002.ttf
+│   │   ├── Cheiro-Regular_wave_erosion_003.ttf
+│   │   ├── Cheiro-Regular_wave_erosion_004.ttf
+│   │   ├── Cheiro-Regular_wave_erosion_005.ttf
+│   │   ├── Cheiro-Regular_wave_erosion_006.ttf
+│   │   ├── Cheiro-Regular_wave_erosion_007.ttf
+│   │   ├── Clypto-Regular_dissolution_000.ttf
+│   │   ├── Clypto-Regular_dissolution_001.ttf
+│   │   ├── Clypto-Regular_dissolution_002.ttf
+│   │   ├── Clypto-Regular_dissolution_003.ttf
+│   │   ├── Clypto-Regular_dissolution_004.ttf
+│   │   ├── Clypto-Regular_dissolution_005.ttf
+│   │   ├── Clypto-Regular_dissolution_006.ttf
+│   │   ├── Clypto-Regular_dissolution_007.ttf
+│   │   ├── Clypto-Regular_full_decay_000.ttf
+│   │   ├── Clypto-Regular_full_decay_001.ttf
+│   │   ├── Clypto-Regular_full_decay_002.ttf
+│   │   ├── Clypto-Regular_full_decay_003.ttf
+│   │   ├── Clypto-Regular_full_decay_004.ttf
+│   │   ├── Clypto-Regular_full_decay_005.ttf
+│   │   ├── Clypto-Regular_full_decay_006.ttf
+│   │   ├── Clypto-Regular_full_decay_007.ttf
+│   │   ├── Clypto-Regular_geological_000.ttf
+│   │   ├── Clypto-Regular_geological_001.ttf
+│   │   ├── Clypto-Regular_geological_002.ttf
+│   │   ├── Clypto-Regular_geological_003.ttf
+│   │   ├── Clypto-Regular_geological_004.ttf
+│   │   ├── Clypto-Regular_geological_005.ttf
+│   │   ├── Clypto-Regular_geological_006.ttf
+│   │   ├── Clypto-Regular_geological_007.ttf
+│   │   ├── Clypto-Regular_wave_erosion_000.ttf
+│   │   ├── Clypto-Regular_wave_erosion_001.ttf
+│   │   ├── Clypto-Regular_wave_erosion_002.ttf
+│   │   ├── Clypto-Regular_wave_erosion_003.ttf
+│   │   ├── Clypto-Regular_wave_erosion_004.ttf
+│   │   ├── Clypto-Regular_wave_erosion_005.ttf
+│   │   ├── Clypto-Regular_wave_erosion_006.ttf
+│   │   ├── Clypto-Regular_wave_erosion_007.ttf
+│   │   ├── CursiveGalactic-Regular_dissolution_000.ttf
+│   │   ├── CursiveGalactic-Regular_dissolution_001.ttf
+│   │   ├── CursiveGalactic-Regular_dissolution_002.ttf
+│   │   ├── CursiveGalactic-Regular_dissolution_003.ttf
+│   │   ├── CursiveGalactic-Regular_dissolution_004.ttf
+│   │   ├── CursiveGalactic-Regular_dissolution_005.ttf
+│   │   ├── CursiveGalactic-Regular_dissolution_006.ttf
+│   │   ├── CursiveGalactic-Regular_dissolution_007.ttf
+│   │   ├── CursiveGalactic-Regular_full_decay_000.ttf
+│   │   ├── CursiveGalactic-Regular_full_decay_001.ttf
+│   │   ├── CursiveGalactic-Regular_full_decay_002.ttf
+│   │   ├── CursiveGalactic-Regular_full_decay_003.ttf
+│   │   ├── CursiveGalactic-Regular_full_decay_004.ttf
+│   │   ├── CursiveGalactic-Regular_full_decay_005.ttf
+│   │   ├── CursiveGalactic-Regular_full_decay_006.ttf
+│   │   ├── CursiveGalactic-Regular_full_decay_007.ttf
+│   │   ├── CursiveGalactic-Regular_geological_000.ttf
+│   │   ├── CursiveGalactic-Regular_geological_001.ttf
+│   │   ├── CursiveGalactic-Regular_geological_002.ttf
+│   │   ├── CursiveGalactic-Regular_geological_003.ttf
+│   │   ├── CursiveGalactic-Regular_geological_004.ttf
+│   │   ├── CursiveGalactic-Regular_geological_005.ttf
+│   │   ├── CursiveGalactic-Regular_geological_006.ttf
+│   │   ├── CursiveGalactic-Regular_geological_007.ttf
+│   │   ├── CursiveGalactic-Regular_wave_erosion_000.ttf
+│   │   ├── CursiveGalactic-Regular_wave_erosion_001.ttf
+│   │   ├── CursiveGalactic-Regular_wave_erosion_002.ttf
+│   │   ├── CursiveGalactic-Regular_wave_erosion_003.ttf
+│   │   ├── CursiveGalactic-Regular_wave_erosion_004.ttf
+│   │   ├── CursiveGalactic-Regular_wave_erosion_005.ttf
+│   │   ├── CursiveGalactic-Regular_wave_erosion_006.ttf
+│   │   ├── CursiveGalactic-Regular_wave_erosion_007.ttf
+│   │   ├── Lingojam_cipher-Regular_dissolution_000.ttf
+│   │   ├── Lingojam_cipher-Regular_dissolution_001.ttf
+│   │   ├── Lingojam_cipher-Regular_dissolution_002.ttf
+│   │   ├── Lingojam_cipher-Regular_dissolution_003.ttf
+│   │   ├── Lingojam_cipher-Regular_dissolution_004.ttf
+│   │   ├── Lingojam_cipher-Regular_dissolution_005.ttf
+│   │   ├── Lingojam_cipher-Regular_dissolution_006.ttf
+│   │   ├── Lingojam_cipher-Regular_dissolution_007.ttf
+│   │   ├── Lingojam_cipher-Regular_full_decay_000.ttf
+│   │   ├── Lingojam_cipher-Regular_full_decay_001.ttf
+│   │   ├── Lingojam_cipher-Regular_full_decay_002.ttf
+│   │   ├── Lingojam_cipher-Regular_full_decay_003.ttf
+│   │   ├── Lingojam_cipher-Regular_full_decay_004.ttf
+│   │   ├── Lingojam_cipher-Regular_full_decay_005.ttf
+│   │   ├── Lingojam_cipher-Regular_full_decay_006.ttf
+│   │   ├── Lingojam_cipher-Regular_full_decay_007.ttf
+│   │   ├── Lingojam_cipher-Regular_geological_000.ttf
+│   │   ├── Lingojam_cipher-Regular_geological_001.ttf
+│   │   ├── Lingojam_cipher-Regular_geological_002.ttf
+│   │   ├── Lingojam_cipher-Regular_geological_003.ttf
+│   │   ├── Lingojam_cipher-Regular_geological_004.ttf
+│   │   ├── Lingojam_cipher-Regular_geological_005.ttf
+│   │   ├── Lingojam_cipher-Regular_geological_006.ttf
+│   │   ├── Lingojam_cipher-Regular_geological_007.ttf
+│   │   ├── Lingojam_cipher-Regular_wave_erosion_000.ttf
+│   │   ├── Lingojam_cipher-Regular_wave_erosion_001.ttf
+│   │   ├── Lingojam_cipher-Regular_wave_erosion_002.ttf
+│   │   ├── Lingojam_cipher-Regular_wave_erosion_003.ttf
+│   │   ├── Lingojam_cipher-Regular_wave_erosion_004.ttf
+│   │   ├── Lingojam_cipher-Regular_wave_erosion_005.ttf
+│   │   ├── Lingojam_cipher-Regular_wave_erosion_006.ttf
+│   │   ├── Lingojam_cipher-Regular_wave_erosion_007.ttf
+│   │   ├── Logico_philosophicus-Regular_dissolution_000.ttf
+│   │   ├── Logico_philosophicus-Regular_dissolution_001.ttf
+│   │   ├── Logico_philosophicus-Regular_dissolution_002.ttf
+│   │   ├── Logico_philosophicus-Regular_dissolution_003.ttf
+│   │   ├── Logico_philosophicus-Regular_dissolution_004.ttf
+│   │   ├── Logico_philosophicus-Regular_dissolution_005.ttf
+│   │   ├── Logico_philosophicus-Regular_dissolution_006.ttf
+│   │   ├── Logico_philosophicus-Regular_dissolution_007.ttf
+│   │   ├── Logico_philosophicus-Regular_full_decay_000.ttf
+│   │   ├── Logico_philosophicus-Regular_full_decay_001.ttf
+│   │   ├── Logico_philosophicus-Regular_full_decay_002.ttf
+│   │   ├── Logico_philosophicus-Regular_full_decay_003.ttf
+│   │   ├── Logico_philosophicus-Regular_full_decay_004.ttf
+│   │   ├── Logico_philosophicus-Regular_full_decay_005.ttf
+│   │   ├── Logico_philosophicus-Regular_full_decay_006.ttf
+│   │   ├── Logico_philosophicus-Regular_full_decay_007.ttf
+│   │   ├── Logico_philosophicus-Regular_geological_000.ttf
+│   │   ├── Logico_philosophicus-Regular_geological_001.ttf
+│   │   ├── Logico_philosophicus-Regular_geological_002.ttf
+│   │   ├── Logico_philosophicus-Regular_geological_003.ttf
+│   │   ├── Logico_philosophicus-Regular_geological_004.ttf
+│   │   ├── Logico_philosophicus-Regular_geological_005.ttf
+│   │   ├── Logico_philosophicus-Regular_geological_006.ttf
+│   │   ├── Logico_philosophicus-Regular_geological_007.ttf
+│   │   ├── Logico_philosophicus-Regular_wave_erosion_000.ttf
+│   │   ├── Logico_philosophicus-Regular_wave_erosion_001.ttf
+│   │   ├── Logico_philosophicus-Regular_wave_erosion_002.ttf
+│   │   ├── Logico_philosophicus-Regular_wave_erosion_003.ttf
+│   │   ├── Logico_philosophicus-Regular_wave_erosion_004.ttf
+│   │   ├── Logico_philosophicus-Regular_wave_erosion_005.ttf
+│   │   ├── Logico_philosophicus-Regular_wave_erosion_006.ttf
+│   │   ├── Logico_philosophicus-Regular_wave_erosion_007.ttf
+│   │   ├── NovaMonoStandardGalactic_dissolution_000.ttf
+│   │   ├── NovaMonoStandardGalactic_dissolution_001.ttf
+│   │   ├── NovaMonoStandardGalactic_dissolution_002.ttf
+│   │   ├── NovaMonoStandardGalactic_dissolution_003.ttf
+│   │   ├── NovaMonoStandardGalactic_dissolution_004.ttf
+│   │   ├── NovaMonoStandardGalactic_dissolution_005.ttf
+│   │   ├── NovaMonoStandardGalactic_dissolution_006.ttf
+│   │   ├── NovaMonoStandardGalactic_dissolution_007.ttf
+│   │   ├── NovaMonoStandardGalactic_full_decay_000.ttf
+│   │   ├── NovaMonoStandardGalactic_full_decay_001.ttf
+│   │   ├── NovaMonoStandardGalactic_full_decay_002.ttf
+│   │   ├── NovaMonoStandardGalactic_full_decay_003.ttf
+│   │   ├── NovaMonoStandardGalactic_full_decay_004.ttf
+│   │   ├── NovaMonoStandardGalactic_full_decay_005.ttf
+│   │   ├── NovaMonoStandardGalactic_full_decay_006.ttf
+│   │   ├── NovaMonoStandardGalactic_full_decay_007.ttf
+│   │   ├── NovaMonoStandardGalactic_geological_000.ttf
+│   │   ├── NovaMonoStandardGalactic_geological_001.ttf
+│   │   ├── NovaMonoStandardGalactic_geological_002.ttf
+│   │   ├── NovaMonoStandardGalactic_geological_003.ttf
+│   │   ├── NovaMonoStandardGalactic_geological_004.ttf
+│   │   ├── NovaMonoStandardGalactic_geological_005.ttf
+│   │   ├── NovaMonoStandardGalactic_geological_006.ttf
+│   │   ├── NovaMonoStandardGalactic_geological_007.ttf
+│   │   ├── NovaMonoStandardGalactic_wave_erosion_000.ttf
+│   │   ├── NovaMonoStandardGalactic_wave_erosion_001.ttf
+│   │   ├── NovaMonoStandardGalactic_wave_erosion_002.ttf
+│   │   ├── NovaMonoStandardGalactic_wave_erosion_003.ttf
+│   │   ├── NovaMonoStandardGalactic_wave_erosion_004.ttf
+│   │   ├── NovaMonoStandardGalactic_wave_erosion_005.ttf
+│   │   ├── NovaMonoStandardGalactic_wave_erosion_006.ttf
+│   │   ├── NovaMonoStandardGalactic_wave_erosion_007.ttf
+│   │   ├── Sga-Regular_dissolution_000.ttf
+│   │   ├── Sga-Regular_dissolution_001.ttf
+│   │   ├── Sga-Regular_dissolution_002.ttf
+│   │   ├── Sga-Regular_dissolution_003.ttf
+│   │   ├── Sga-Regular_dissolution_004.ttf
+│   │   ├── Sga-Regular_dissolution_005.ttf
+│   │   ├── Sga-Regular_dissolution_006.ttf
+│   │   ├── Sga-Regular_dissolution_007.ttf
+│   │   ├── Sga-Regular_full_decay_000.ttf
+│   │   ├── Sga-Regular_full_decay_001.ttf
+│   │   ├── Sga-Regular_full_decay_002.ttf
+│   │   ├── Sga-Regular_full_decay_003.ttf
+│   │   ├── Sga-Regular_full_decay_004.ttf
+│   │   ├── Sga-Regular_full_decay_005.ttf
+│   │   ├── Sga-Regular_full_decay_006.ttf
+│   │   ├── Sga-Regular_full_decay_007.ttf
+│   │   ├── Sga-Regular_geological_000.ttf
+│   │   ├── Sga-Regular_geological_001.ttf
+│   │   ├── Sga-Regular_geological_002.ttf
+│   │   ├── Sga-Regular_geological_003.ttf
+│   │   ├── Sga-Regular_geological_004.ttf
+│   │   ├── Sga-Regular_geological_005.ttf
+│   │   ├── Sga-Regular_geological_006.ttf
+│   │   ├── Sga-Regular_geological_007.ttf
+│   │   ├── Sga-Regular_wave_erosion_000.ttf
+│   │   ├── Sga-Regular_wave_erosion_001.ttf
+│   │   ├── Sga-Regular_wave_erosion_002.ttf
+│   │   ├── Sga-Regular_wave_erosion_003.ttf
+│   │   ├── Sga-Regular_wave_erosion_004.ttf
+│   │   ├── Sga-Regular_wave_erosion_005.ttf
+│   │   ├── Sga-Regular_wave_erosion_006.ttf
+│   │   ├── Sga-Regular_wave_erosion_007.ttf
+│   │   ├── Systada-Regular_dissolution_000.ttf
+│   │   ├── Systada-Regular_dissolution_001.ttf
+│   │   ├── Systada-Regular_dissolution_002.ttf
+│   │   ├── Systada-Regular_dissolution_003.ttf
+│   │   ├── Systada-Regular_dissolution_004.ttf
+│   │   ├── Systada-Regular_dissolution_005.ttf
+│   │   ├── Systada-Regular_dissolution_006.ttf
+│   │   ├── Systada-Regular_dissolution_007.ttf
+│   │   ├── Systada-Regular_full_decay_000.ttf
+│   │   ├── Systada-Regular_full_decay_001.ttf
+│   │   ├── Systada-Regular_full_decay_002.ttf
+│   │   ├── Systada-Regular_full_decay_003.ttf
+│   │   ├── Systada-Regular_full_decay_004.ttf
+│   │   ├── Systada-Regular_full_decay_005.ttf
+│   │   ├── Systada-Regular_full_decay_006.ttf
+│   │   ├── Systada-Regular_full_decay_007.ttf
+│   │   ├── Systada-Regular_geological_000.ttf
+│   │   ├── Systada-Regular_geological_001.ttf
+│   │   ├── Systada-Regular_geological_002.ttf
+│   │   ├── Systada-Regular_geological_003.ttf
+│   │   ├── Systada-Regular_geological_004.ttf
+│   │   ├── Systada-Regular_geological_005.ttf
+│   │   ├── Systada-Regular_geological_006.ttf
+│   │   ├── Systada-Regular_geological_007.ttf
+│   │   ├── Systada-Regular_wave_erosion_000.ttf
+│   │   ├── Systada-Regular_wave_erosion_001.ttf
+│   │   ├── Systada-Regular_wave_erosion_002.ttf
+│   │   ├── Systada-Regular_wave_erosion_003.ttf
+│   │   ├── Systada-Regular_wave_erosion_004.ttf
+│   │   ├── Systada-Regular_wave_erosion_005.ttf
+│   │   ├── Systada-Regular_wave_erosion_006.ttf
+│   │   ├── Systada-Regular_wave_erosion_007.ttf
+│   │   ├── Systada_dissolution_000.ttf
+│   │   ├── Systada_dissolution_001.ttf
+│   │   ├── Systada_dissolution_002.ttf
+│   │   ├── Systada_dissolution_003.ttf
+│   │   ├── Systada_dissolution_004.ttf
+│   │   ├── Systada_dissolution_005.ttf
+│   │   ├── Systada_dissolution_006.ttf
+│   │   ├── Systada_dissolution_007.ttf
+│   │   ├── Systada_full_decay_000.ttf
+│   │   ├── Systada_full_decay_001.ttf
+│   │   ├── Systada_full_decay_002.ttf
+│   │   ├── Systada_full_decay_003.ttf
+│   │   ├── Systada_full_decay_004.ttf
+│   │   ├── Systada_full_decay_005.ttf
+│   │   ├── Systada_full_decay_006.ttf
+│   │   ├── Systada_full_decay_007.ttf
+│   │   ├── Systada_geological_000.ttf
+│   │   ├── Systada_geological_001.ttf
+│   │   ├── Systada_geological_002.ttf
+│   │   ├── Systada_geological_003.ttf
+│   │   ├── Systada_geological_004.ttf
+│   │   ├── Systada_geological_005.ttf
+│   │   ├── Systada_geological_006.ttf
+│   │   ├── Systada_geological_007.ttf
+│   │   ├── Systada_wave_erosion_000.ttf
+│   │   ├── Systada_wave_erosion_001.ttf
+│   │   ├── Systada_wave_erosion_002.ttf
+│   │   ├── Systada_wave_erosion_003.ttf
+│   │   ├── Systada_wave_erosion_004.ttf
+│   │   ├── Systada_wave_erosion_005.ttf
+│   │   ├── Systada_wave_erosion_006.ttf
+│   │   ├── Systada_wave_erosion_007.ttf
+│   │   ├── dactyl_dissolution_000.ttf
+│   │   ├── dactyl_dissolution_001.ttf
+│   │   ├── dactyl_dissolution_002.ttf
+│   │   ├── dactyl_dissolution_003.ttf
+│   │   ├── dactyl_dissolution_004.ttf
+│   │   ├── dactyl_dissolution_005.ttf
+│   │   ├── dactyl_dissolution_006.ttf
+│   │   ├── dactyl_dissolution_007.ttf
+│   │   ├── dactyl_full_decay_000.ttf
+│   │   ├── dactyl_full_decay_001.ttf
+│   │   ├── dactyl_full_decay_002.ttf
+│   │   ├── dactyl_full_decay_003.ttf
+│   │   ├── dactyl_full_decay_004.ttf
+│   │   ├── dactyl_full_decay_005.ttf
+│   │   ├── dactyl_full_decay_006.ttf
+│   │   ├── dactyl_full_decay_007.ttf
+│   │   ├── dactyl_geological_000.ttf
+│   │   ├── dactyl_geological_001.ttf
+│   │   ├── dactyl_geological_002.ttf
+│   │   ├── dactyl_geological_003.ttf
+│   │   ├── dactyl_geological_004.ttf
+│   │   ├── dactyl_geological_005.ttf
+│   │   ├── dactyl_geological_006.ttf
+│   │   ├── dactyl_geological_007.ttf
+│   │   ├── dactyl_wave_erosion_000.ttf
+│   │   ├── dactyl_wave_erosion_001.ttf
+│   │   ├── dactyl_wave_erosion_002.ttf
+│   │   ├── dactyl_wave_erosion_003.ttf
+│   │   ├── dactyl_wave_erosion_004.ttf
+│   │   ├── dactyl_wave_erosion_005.ttf
+│   │   ├── dactyl_wave_erosion_006.ttf
+│   │   ├── dactyl_wave_erosion_007.ttf
+│   │   ├── shapeform_dissolution_000.ttf
+│   │   ├── shapeform_dissolution_001.ttf
+│   │   ├── shapeform_dissolution_002.ttf
+│   │   ├── shapeform_dissolution_003.ttf
+│   │   ├── shapeform_dissolution_004.ttf
+│   │   ├── shapeform_dissolution_005.ttf
+│   │   ├── shapeform_dissolution_006.ttf
+│   │   ├── shapeform_dissolution_007.ttf
+│   │   ├── shapeform_full_decay_000.ttf
+│   │   ├── shapeform_full_decay_001.ttf
+│   │   ├── shapeform_full_decay_002.ttf
+│   │   ├── shapeform_full_decay_003.ttf
+│   │   ├── shapeform_full_decay_004.ttf
+│   │   ├── shapeform_full_decay_005.ttf
+│   │   ├── shapeform_full_decay_006.ttf
+│   │   ├── shapeform_full_decay_007.ttf
+│   │   ├── shapeform_geological_000.ttf
+│   │   ├── shapeform_geological_001.ttf
+│   │   ├── shapeform_geological_002.ttf
+│   │   ├── shapeform_geological_003.ttf
+│   │   ├── shapeform_geological_004.ttf
+│   │   ├── shapeform_geological_005.ttf
+│   │   ├── shapeform_geological_006.ttf
+│   │   ├── shapeform_geological_007.ttf
+│   │   ├── shapeform_wave_erosion_000.ttf
+│   │   ├── shapeform_wave_erosion_001.ttf
+│   │   ├── shapeform_wave_erosion_002.ttf
+│   │   ├── shapeform_wave_erosion_003.ttf
+│   │   ├── shapeform_wave_erosion_004.ttf
+│   │   ├── shapeform_wave_erosion_005.ttf
+│   │   ├── shapeform_wave_erosion_006.ttf
+│   │   └── shapeform_wave_erosion_007.ttf
+│   ├── sequences
+│   │   ├── Amiri-BoldItalic_asc_evap_seq
+│   │   │   ├── Amiri-BoldItalic_asc_evap_000.ttf
+│   │   │   ├── Amiri-BoldItalic_asc_evap_001.ttf
+│   │   │   ├── Amiri-BoldItalic_asc_evap_002.ttf
+│   │   │   ├── Amiri-BoldItalic_asc_evap_003.ttf
+│   │   │   ├── Amiri-BoldItalic_asc_evap_004.ttf
+│   │   │   ├── Amiri-BoldItalic_asc_evap_005.ttf
+│   │   │   ├── Amiri-BoldItalic_asc_evap_006.ttf
+│   │   │   └── Amiri-BoldItalic_asc_evap_007.ttf
+│   │   ├── Amiri-BoldItalic_collapse_seq
+│   │   │   ├── Amiri-BoldItalic_collapse_000.ttf
+│   │   │   ├── Amiri-BoldItalic_collapse_001.ttf
+│   │   │   ├── Amiri-BoldItalic_collapse_002.ttf
+│   │   │   ├── Amiri-BoldItalic_collapse_003.ttf
+│   │   │   ├── Amiri-BoldItalic_collapse_004.ttf
+│   │   │   ├── Amiri-BoldItalic_collapse_005.ttf
+│   │   │   ├── Amiri-BoldItalic_collapse_006.ttf
+│   │   │   └── Amiri-BoldItalic_collapse_007.ttf
+│   │   ├── Amiri-BoldItalic_condense_seq
+│   │   │   ├── Amiri-BoldItalic_condense_000.ttf
+│   │   │   ├── Amiri-BoldItalic_condense_001.ttf
+│   │   │   ├── Amiri-BoldItalic_condense_002.ttf
+│   │   │   ├── Amiri-BoldItalic_condense_003.ttf
+│   │   │   ├── Amiri-BoldItalic_condense_004.ttf
+│   │   │   ├── Amiri-BoldItalic_condense_005.ttf
+│   │   │   ├── Amiri-BoldItalic_condense_006.ttf
+│   │   │   └── Amiri-BoldItalic_condense_007.ttf
+│   │   ├── Amiri-BoldItalic_droop_seq
+│   │   │   ├── Amiri-BoldItalic_droop_000.ttf
+│   │   │   ├── Amiri-BoldItalic_droop_001.ttf
+│   │   │   ├── Amiri-BoldItalic_droop_002.ttf
+│   │   │   ├── Amiri-BoldItalic_droop_003.ttf
+│   │   │   ├── Amiri-BoldItalic_droop_004.ttf
+│   │   │   ├── Amiri-BoldItalic_droop_005.ttf
+│   │   │   ├── Amiri-BoldItalic_droop_006.ttf
+│   │   │   └── Amiri-BoldItalic_droop_007.ttf
+│   │   ├── Amiri-BoldItalic_dropout_seq
+│   │   │   ├── Amiri-BoldItalic_dropout_000.ttf
+│   │   │   ├── Amiri-BoldItalic_dropout_001.ttf
+│   │   │   ├── Amiri-BoldItalic_dropout_002.ttf
+│   │   │   ├── Amiri-BoldItalic_dropout_003.ttf
+│   │   │   ├── Amiri-BoldItalic_dropout_004.ttf
+│   │   │   ├── Amiri-BoldItalic_dropout_005.ttf
+│   │   │   ├── Amiri-BoldItalic_dropout_006.ttf
+│   │   │   └── Amiri-BoldItalic_dropout_007.ttf
+│   │   ├── Amiri-BoldItalic_jitter_seq
+│   │   │   ├── Amiri-BoldItalic_jitter_000.ttf
+│   │   │   ├── Amiri-BoldItalic_jitter_001.ttf
+│   │   │   ├── Amiri-BoldItalic_jitter_002.ttf
+│   │   │   ├── Amiri-BoldItalic_jitter_003.ttf
+│   │   │   ├── Amiri-BoldItalic_jitter_004.ttf
+│   │   │   ├── Amiri-BoldItalic_jitter_005.ttf
+│   │   │   ├── Amiri-BoldItalic_jitter_006.ttf
+│   │   │   └── Amiri-BoldItalic_jitter_007.ttf
+│   │   ├── Amiri-BoldItalic_quantize_seq
+│   │   │   ├── Amiri-BoldItalic_quantize_000.ttf
+│   │   │   ├── Amiri-BoldItalic_quantize_001.ttf
+│   │   │   ├── Amiri-BoldItalic_quantize_002.ttf
+│   │   │   ├── Amiri-BoldItalic_quantize_003.ttf
+│   │   │   ├── Amiri-BoldItalic_quantize_004.ttf
+│   │   │   ├── Amiri-BoldItalic_quantize_005.ttf
+│   │   │   ├── Amiri-BoldItalic_quantize_006.ttf
+│   │   │   └── Amiri-BoldItalic_quantize_007.ttf
+│   │   ├── Amiri-BoldItalic_radial_seq
+│   │   │   ├── Amiri-BoldItalic_radial_000.ttf
+│   │   │   ├── Amiri-BoldItalic_radial_001_FAILED.ttx
+│   │   │   ├── Amiri-BoldItalic_radial_002_FAILED.ttx
+│   │   │   ├── Amiri-BoldItalic_radial_003_FAILED.ttx
+│   │   │   ├── Amiri-BoldItalic_radial_004_FAILED.ttx
+│   │   │   ├── Amiri-BoldItalic_radial_005_FAILED.ttx
+│   │   │   ├── Amiri-BoldItalic_radial_006_FAILED.ttx
+│   │   │   └── Amiri-BoldItalic_radial_007_FAILED.ttx
+│   │   ├── Amiri-BoldItalic_shear_seq
+│   │   │   ├── Amiri-BoldItalic_shear_000.ttf
+│   │   │   ├── Amiri-BoldItalic_shear_001.ttf
+│   │   │   ├── Amiri-BoldItalic_shear_002.ttf
+│   │   │   ├── Amiri-BoldItalic_shear_003.ttf
+│   │   │   ├── Amiri-BoldItalic_shear_004.ttf
+│   │   │   ├── Amiri-BoldItalic_shear_005.ttf
+│   │   │   ├── Amiri-BoldItalic_shear_006.ttf
+│   │   │   └── Amiri-BoldItalic_shear_007.ttf
+│   │   ├── Amiri-BoldItalic_wave_seq
+│   │   │   ├── Amiri-BoldItalic_wave_000.ttf
+│   │   │   ├── Amiri-BoldItalic_wave_001.ttf
+│   │   │   ├── Amiri-BoldItalic_wave_002.ttf
+│   │   │   ├── Amiri-BoldItalic_wave_003.ttf
+│   │   │   ├── Amiri-BoldItalic_wave_004.ttf
+│   │   │   ├── Amiri-BoldItalic_wave_005.ttf
+│   │   │   ├── Amiri-BoldItalic_wave_006.ttf
+│   │   │   └── Amiri-BoldItalic_wave_007.ttf
+│   │   ├── Amiri-Bold_asc_evap_seq
+│   │   │   ├── Amiri-Bold_asc_evap_000.ttf
+│   │   │   ├── Amiri-Bold_asc_evap_001.ttf
+│   │   │   ├── Amiri-Bold_asc_evap_002.ttf
+│   │   │   ├── Amiri-Bold_asc_evap_003.ttf
+│   │   │   ├── Amiri-Bold_asc_evap_004.ttf
+│   │   │   ├── Amiri-Bold_asc_evap_005.ttf
+│   │   │   ├── Amiri-Bold_asc_evap_006.ttf
+│   │   │   └── Amiri-Bold_asc_evap_007.ttf
+│   │   ├── Amiri-Bold_collapse_seq
+│   │   │   ├── Amiri-Bold_collapse_000.ttf
+│   │   │   ├── Amiri-Bold_collapse_001.ttf
+│   │   │   ├── Amiri-Bold_collapse_002.ttf
+│   │   │   ├── Amiri-Bold_collapse_003.ttf
+│   │   │   ├── Amiri-Bold_collapse_004.ttf
+│   │   │   ├── Amiri-Bold_collapse_005.ttf
+│   │   │   ├── Amiri-Bold_collapse_006.ttf
+│   │   │   └── Amiri-Bold_collapse_007.ttf
+│   │   ├── Amiri-Bold_condense_seq
+│   │   │   ├── Amiri-Bold_condense_000.ttf
+│   │   │   ├── Amiri-Bold_condense_001.ttf
+│   │   │   ├── Amiri-Bold_condense_002.ttf
+│   │   │   ├── Amiri-Bold_condense_003.ttf
+│   │   │   ├── Amiri-Bold_condense_004.ttf
+│   │   │   ├── Amiri-Bold_condense_005.ttf
+│   │   │   ├── Amiri-Bold_condense_006.ttf
+│   │   │   └── Amiri-Bold_condense_007.ttf
+│   │   ├── Amiri-Bold_droop_seq
+│   │   │   ├── Amiri-Bold_droop_000.ttf
+│   │   │   ├── Amiri-Bold_droop_001.ttf
+│   │   │   ├── Amiri-Bold_droop_002.ttf
+│   │   │   ├── Amiri-Bold_droop_003.ttf
+│   │   │   ├── Amiri-Bold_droop_004.ttf
+│   │   │   ├── Amiri-Bold_droop_005.ttf
+│   │   │   ├── Amiri-Bold_droop_006.ttf
+│   │   │   └── Amiri-Bold_droop_007.ttf
+│   │   ├── Amiri-Bold_dropout_seq
+│   │   │   ├── Amiri-Bold_dropout_000.ttf
+│   │   │   ├── Amiri-Bold_dropout_001.ttf
+│   │   │   ├── Amiri-Bold_dropout_002.ttf
+│   │   │   ├── Amiri-Bold_dropout_003.ttf
+│   │   │   ├── Amiri-Bold_dropout_004.ttf
+│   │   │   ├── Amiri-Bold_dropout_005.ttf
+│   │   │   ├── Amiri-Bold_dropout_006.ttf
+│   │   │   └── Amiri-Bold_dropout_007.ttf
+│   │   ├── Amiri-Bold_jitter_seq
+│   │   │   ├── Amiri-Bold_jitter_000.ttf
+│   │   │   ├── Amiri-Bold_jitter_001.ttf
+│   │   │   ├── Amiri-Bold_jitter_002.ttf
+│   │   │   ├── Amiri-Bold_jitter_003.ttf
+│   │   │   ├── Amiri-Bold_jitter_004.ttf
+│   │   │   ├── Amiri-Bold_jitter_005.ttf
+│   │   │   ├── Amiri-Bold_jitter_006.ttf
+│   │   │   └── Amiri-Bold_jitter_007.ttf
+│   │   ├── Amiri-Bold_quantize_seq
+│   │   │   ├── Amiri-Bold_quantize_000.ttf
+│   │   │   ├── Amiri-Bold_quantize_001.ttf
+│   │   │   ├── Amiri-Bold_quantize_002.ttf
+│   │   │   ├── Amiri-Bold_quantize_003.ttf
+│   │   │   ├── Amiri-Bold_quantize_004.ttf
+│   │   │   ├── Amiri-Bold_quantize_005.ttf
+│   │   │   ├── Amiri-Bold_quantize_006.ttf
+│   │   │   └── Amiri-Bold_quantize_007.ttf
+│   │   ├── Amiri-Bold_radial_seq
+│   │   │   ├── Amiri-Bold_radial_000.ttf
+│   │   │   ├── Amiri-Bold_radial_001_FAILED.ttx
+│   │   │   ├── Amiri-Bold_radial_002_FAILED.ttx
+│   │   │   ├── Amiri-Bold_radial_003_FAILED.ttx
+│   │   │   ├── Amiri-Bold_radial_004_FAILED.ttx
+│   │   │   ├── Amiri-Bold_radial_005_FAILED.ttx
+│   │   │   ├── Amiri-Bold_radial_006_FAILED.ttx
+│   │   │   └── Amiri-Bold_radial_007_FAILED.ttx
+│   │   ├── Amiri-Bold_shear_seq
+│   │   │   ├── Amiri-Bold_shear_000.ttf
+│   │   │   ├── Amiri-Bold_shear_001.ttf
+│   │   │   ├── Amiri-Bold_shear_002.ttf
+│   │   │   ├── Amiri-Bold_shear_003.ttf
+│   │   │   ├── Amiri-Bold_shear_004.ttf
+│   │   │   ├── Amiri-Bold_shear_005.ttf
+│   │   │   ├── Amiri-Bold_shear_006.ttf
+│   │   │   └── Amiri-Bold_shear_007.ttf
+│   │   ├── Amiri-Bold_wave_seq
+│   │   │   ├── Amiri-Bold_wave_000.ttf
+│   │   │   ├── Amiri-Bold_wave_001.ttf
+│   │   │   ├── Amiri-Bold_wave_002.ttf
+│   │   │   ├── Amiri-Bold_wave_003.ttf
+│   │   │   ├── Amiri-Bold_wave_004.ttf
+│   │   │   ├── Amiri-Bold_wave_005.ttf
+│   │   │   ├── Amiri-Bold_wave_006.ttf
+│   │   │   └── Amiri-Bold_wave_007.ttf
+│   │   ├── Amiri-Italic_asc_evap_seq
+│   │   │   ├── Amiri-Italic_asc_evap_000.ttf
+│   │   │   ├── Amiri-Italic_asc_evap_001.ttf
+│   │   │   ├── Amiri-Italic_asc_evap_002.ttf
+│   │   │   ├── Amiri-Italic_asc_evap_003.ttf
+│   │   │   ├── Amiri-Italic_asc_evap_004.ttf
+│   │   │   ├── Amiri-Italic_asc_evap_005.ttf
+│   │   │   ├── Amiri-Italic_asc_evap_006.ttf
+│   │   │   └── Amiri-Italic_asc_evap_007.ttf
+│   │   ├── Amiri-Italic_collapse_seq
+│   │   │   ├── Amiri-Italic_collapse_000.ttf
+│   │   │   ├── Amiri-Italic_collapse_001.ttf
+│   │   │   ├── Amiri-Italic_collapse_002.ttf
+│   │   │   ├── Amiri-Italic_collapse_003.ttf
+│   │   │   ├── Amiri-Italic_collapse_004.ttf
+│   │   │   ├── Amiri-Italic_collapse_005.ttf
+│   │   │   ├── Amiri-Italic_collapse_006.ttf
+│   │   │   └── Amiri-Italic_collapse_007.ttf
+│   │   ├── Amiri-Italic_condense_seq
+│   │   │   ├── Amiri-Italic_condense_000.ttf
+│   │   │   ├── Amiri-Italic_condense_001.ttf
+│   │   │   ├── Amiri-Italic_condense_002.ttf
+│   │   │   ├── Amiri-Italic_condense_003.ttf
+│   │   │   ├── Amiri-Italic_condense_004.ttf
+│   │   │   ├── Amiri-Italic_condense_005.ttf
+│   │   │   ├── Amiri-Italic_condense_006.ttf
+│   │   │   └── Amiri-Italic_condense_007.ttf
+│   │   ├── Amiri-Italic_droop_seq
+│   │   │   ├── Amiri-Italic_droop_000.ttf
+│   │   │   ├── Amiri-Italic_droop_001.ttf
+│   │   │   ├── Amiri-Italic_droop_002.ttf
+│   │   │   ├── Amiri-Italic_droop_003.ttf
+│   │   │   ├── Amiri-Italic_droop_004.ttf
+│   │   │   ├── Amiri-Italic_droop_005.ttf
+│   │   │   ├── Amiri-Italic_droop_006.ttf
+│   │   │   └── Amiri-Italic_droop_007.ttf
+│   │   ├── Amiri-Italic_dropout_seq
+│   │   │   ├── Amiri-Italic_dropout_000.ttf
+│   │   │   ├── Amiri-Italic_dropout_001.ttf
+│   │   │   ├── Amiri-Italic_dropout_002.ttf
+│   │   │   ├── Amiri-Italic_dropout_003.ttf
+│   │   │   ├── Amiri-Italic_dropout_004.ttf
+│   │   │   ├── Amiri-Italic_dropout_005.ttf
+│   │   │   ├── Amiri-Italic_dropout_006.ttf
+│   │   │   └── Amiri-Italic_dropout_007.ttf
+│   │   ├── Amiri-Italic_jitter_seq
+│   │   │   ├── Amiri-Italic_jitter_000.ttf
+│   │   │   ├── Amiri-Italic_jitter_001.ttf
+│   │   │   ├── Amiri-Italic_jitter_002.ttf
+│   │   │   ├── Amiri-Italic_jitter_003.ttf
+│   │   │   ├── Amiri-Italic_jitter_004.ttf
+│   │   │   ├── Amiri-Italic_jitter_005.ttf
+│   │   │   ├── Amiri-Italic_jitter_006.ttf
+│   │   │   └── Amiri-Italic_jitter_007.ttf
+│   │   ├── Amiri-Italic_quantize_seq
+│   │   │   ├── Amiri-Italic_quantize_000.ttf
+│   │   │   ├── Amiri-Italic_quantize_001.ttf
+│   │   │   ├── Amiri-Italic_quantize_002.ttf
+│   │   │   ├── Amiri-Italic_quantize_003.ttf
+│   │   │   ├── Amiri-Italic_quantize_004.ttf
+│   │   │   ├── Amiri-Italic_quantize_005.ttf
+│   │   │   ├── Amiri-Italic_quantize_006.ttf
+│   │   │   └── Amiri-Italic_quantize_007.ttf
+│   │   ├── Amiri-Italic_radial_seq
+│   │   │   ├── Amiri-Italic_radial_000.ttf
+│   │   │   ├── Amiri-Italic_radial_001_FAILED.ttx
+│   │   │   ├── Amiri-Italic_radial_002_FAILED.ttx
+│   │   │   ├── Amiri-Italic_radial_003_FAILED.ttx
+│   │   │   ├── Amiri-Italic_radial_004_FAILED.ttx
+│   │   │   ├── Amiri-Italic_radial_005_FAILED.ttx
+│   │   │   ├── Amiri-Italic_radial_006_FAILED.ttx
+│   │   │   └── Amiri-Italic_radial_007_FAILED.ttx
+│   │   ├── Amiri-Italic_shear_seq
+│   │   │   ├── Amiri-Italic_shear_000.ttf
+│   │   │   ├── Amiri-Italic_shear_001.ttf
+│   │   │   ├── Amiri-Italic_shear_002.ttf
+│   │   │   ├── Amiri-Italic_shear_003.ttf
+│   │   │   ├── Amiri-Italic_shear_004.ttf
+│   │   │   ├── Amiri-Italic_shear_005.ttf
+│   │   │   ├── Amiri-Italic_shear_006.ttf
+│   │   │   └── Amiri-Italic_shear_007.ttf
+│   │   ├── Amiri-Italic_wave_seq
+│   │   │   ├── Amiri-Italic_wave_000.ttf
+│   │   │   ├── Amiri-Italic_wave_001.ttf
+│   │   │   ├── Amiri-Italic_wave_002.ttf
+│   │   │   ├── Amiri-Italic_wave_003.ttf
+│   │   │   ├── Amiri-Italic_wave_004.ttf
+│   │   │   ├── Amiri-Italic_wave_005.ttf
+│   │   │   ├── Amiri-Italic_wave_006.ttf
+│   │   │   └── Amiri-Italic_wave_007.ttf
+│   │   ├── Amiri-Regular_asc_evap_seq
+│   │   │   ├── Amiri-Regular_asc_evap_000.ttf
+│   │   │   ├── Amiri-Regular_asc_evap_001.ttf
+│   │   │   ├── Amiri-Regular_asc_evap_002.ttf
+│   │   │   ├── Amiri-Regular_asc_evap_003.ttf
+│   │   │   ├── Amiri-Regular_asc_evap_004.ttf
+│   │   │   ├── Amiri-Regular_asc_evap_005.ttf
+│   │   │   ├── Amiri-Regular_asc_evap_006.ttf
+│   │   │   └── Amiri-Regular_asc_evap_007.ttf
+│   │   ├── Amiri-Regular_collapse_seq
+│   │   │   ├── Amiri-Regular_collapse_000.ttf
+│   │   │   ├── Amiri-Regular_collapse_001.ttf
+│   │   │   ├── Amiri-Regular_collapse_002.ttf
+│   │   │   ├── Amiri-Regular_collapse_003.ttf
+│   │   │   ├── Amiri-Regular_collapse_004.ttf
+│   │   │   ├── Amiri-Regular_collapse_005.ttf
+│   │   │   ├── Amiri-Regular_collapse_006.ttf
+│   │   │   └── Amiri-Regular_collapse_007.ttf
+│   │   ├── Amiri-Regular_condense_seq
+│   │   │   ├── Amiri-Regular_condense_000.ttf
+│   │   │   ├── Amiri-Regular_condense_001.ttf
+│   │   │   ├── Amiri-Regular_condense_002.ttf
+│   │   │   ├── Amiri-Regular_condense_003.ttf
+│   │   │   ├── Amiri-Regular_condense_004.ttf
+│   │   │   ├── Amiri-Regular_condense_005.ttf
+│   │   │   ├── Amiri-Regular_condense_006.ttf
+│   │   │   └── Amiri-Regular_condense_007.ttf
+│   │   ├── Amiri-Regular_droop_seq
+│   │   │   ├── Amiri-Regular_droop_000.ttf
+│   │   │   ├── Amiri-Regular_droop_001.ttf
+│   │   │   ├── Amiri-Regular_droop_002.ttf
+│   │   │   ├── Amiri-Regular_droop_003.ttf
+│   │   │   ├── Amiri-Regular_droop_004.ttf
+│   │   │   ├── Amiri-Regular_droop_005.ttf
+│   │   │   ├── Amiri-Regular_droop_006.ttf
+│   │   │   └── Amiri-Regular_droop_007.ttf
+│   │   ├── Amiri-Regular_dropout_seq
+│   │   │   ├── Amiri-Regular_dropout_000.ttf
+│   │   │   ├── Amiri-Regular_dropout_001.ttf
+│   │   │   ├── Amiri-Regular_dropout_002.ttf
+│   │   │   ├── Amiri-Regular_dropout_003.ttf
+│   │   │   ├── Amiri-Regular_dropout_004.ttf
+│   │   │   ├── Amiri-Regular_dropout_005.ttf
+│   │   │   ├── Amiri-Regular_dropout_006.ttf
+│   │   │   └── Amiri-Regular_dropout_007.ttf
+│   │   ├── Amiri-Regular_jitter_seq
+│   │   │   ├── Amiri-Regular_jitter_000.ttf
+│   │   │   ├── Amiri-Regular_jitter_001.ttf
+│   │   │   ├── Amiri-Regular_jitter_002.ttf
+│   │   │   ├── Amiri-Regular_jitter_003.ttf
+│   │   │   ├── Amiri-Regular_jitter_004.ttf
+│   │   │   ├── Amiri-Regular_jitter_005.ttf
+│   │   │   ├── Amiri-Regular_jitter_006.ttf
+│   │   │   └── Amiri-Regular_jitter_007.ttf
+│   │   ├── Amiri-Regular_quantize_seq
+│   │   │   ├── Amiri-Regular_quantize_000.ttf
+│   │   │   ├── Amiri-Regular_quantize_001.ttf
+│   │   │   ├── Amiri-Regular_quantize_002.ttf
+│   │   │   ├── Amiri-Regular_quantize_003.ttf
+│   │   │   ├── Amiri-Regular_quantize_004.ttf
+│   │   │   ├── Amiri-Regular_quantize_005.ttf
+│   │   │   ├── Amiri-Regular_quantize_006.ttf
+│   │   │   └── Amiri-Regular_quantize_007.ttf
+│   │   ├── Amiri-Regular_radial_seq
+│   │   │   ├── Amiri-Regular_radial_000.ttf
+│   │   │   ├── Amiri-Regular_radial_001_FAILED.ttx
+│   │   │   ├── Amiri-Regular_radial_002_FAILED.ttx
+│   │   │   ├── Amiri-Regular_radial_003_FAILED.ttx
+│   │   │   ├── Amiri-Regular_radial_004_FAILED.ttx
+│   │   │   ├── Amiri-Regular_radial_005_FAILED.ttx
+│   │   │   ├── Amiri-Regular_radial_006_FAILED.ttx
+│   │   │   └── Amiri-Regular_radial_007_FAILED.ttx
+│   │   ├── Amiri-Regular_shear_seq
+│   │   │   ├── Amiri-Regular_shear_000.ttf
+│   │   │   ├── Amiri-Regular_shear_001.ttf
+│   │   │   ├── Amiri-Regular_shear_002.ttf
+│   │   │   ├── Amiri-Regular_shear_003.ttf
+│   │   │   ├── Amiri-Regular_shear_004.ttf
+│   │   │   ├── Amiri-Regular_shear_005.ttf
+│   │   │   ├── Amiri-Regular_shear_006.ttf
+│   │   │   └── Amiri-Regular_shear_007.ttf
+│   │   ├── Amiri-Regular_wave_seq
+│   │   │   ├── Amiri-Regular_wave_000.ttf
+│   │   │   ├── Amiri-Regular_wave_001.ttf
+│   │   │   ├── Amiri-Regular_wave_002.ttf
+│   │   │   ├── Amiri-Regular_wave_003.ttf
+│   │   │   ├── Amiri-Regular_wave_004.ttf
+│   │   │   ├── Amiri-Regular_wave_005.ttf
+│   │   │   ├── Amiri-Regular_wave_006.ttf
+│   │   │   └── Amiri-Regular_wave_007.ttf
+│   │   ├── Cheiro-Regular_asc_evap_seq
+│   │   │   ├── Cheiro-Regular_asc_evap_000.ttf
+│   │   │   ├── Cheiro-Regular_asc_evap_001.ttf
+│   │   │   ├── Cheiro-Regular_asc_evap_002.ttf
+│   │   │   ├── Cheiro-Regular_asc_evap_003.ttf
+│   │   │   ├── Cheiro-Regular_asc_evap_004.ttf
+│   │   │   ├── Cheiro-Regular_asc_evap_005.ttf
+│   │   │   ├── Cheiro-Regular_asc_evap_006.ttf
+│   │   │   └── Cheiro-Regular_asc_evap_007.ttf
+│   │   ├── Cheiro-Regular_collapse_seq
+│   │   │   ├── Cheiro-Regular_collapse_000.ttf
+│   │   │   ├── Cheiro-Regular_collapse_001.ttf
+│   │   │   ├── Cheiro-Regular_collapse_002.ttf
+│   │   │   ├── Cheiro-Regular_collapse_003.ttf
+│   │   │   ├── Cheiro-Regular_collapse_004.ttf
+│   │   │   ├── Cheiro-Regular_collapse_005.ttf
+│   │   │   ├── Cheiro-Regular_collapse_006.ttf
+│   │   │   └── Cheiro-Regular_collapse_007.ttf
+│   │   ├── Cheiro-Regular_condense_seq
+│   │   │   ├── Cheiro-Regular_condense_000.ttf
+│   │   │   ├── Cheiro-Regular_condense_001.ttf
+│   │   │   ├── Cheiro-Regular_condense_002.ttf
+│   │   │   ├── Cheiro-Regular_condense_003.ttf
+│   │   │   ├── Cheiro-Regular_condense_004.ttf
+│   │   │   ├── Cheiro-Regular_condense_005.ttf
+│   │   │   ├── Cheiro-Regular_condense_006.ttf
+│   │   │   └── Cheiro-Regular_condense_007.ttf
+│   │   ├── Cheiro-Regular_droop_seq
+│   │   │   ├── Cheiro-Regular_droop_000.ttf
+│   │   │   ├── Cheiro-Regular_droop_001.ttf
+│   │   │   ├── Cheiro-Regular_droop_002.ttf
+│   │   │   ├── Cheiro-Regular_droop_003.ttf
+│   │   │   ├── Cheiro-Regular_droop_004.ttf
+│   │   │   ├── Cheiro-Regular_droop_005.ttf
+│   │   │   ├── Cheiro-Regular_droop_006.ttf
+│   │   │   └── Cheiro-Regular_droop_007.ttf
+│   │   ├── Cheiro-Regular_dropout_seq
+│   │   │   ├── Cheiro-Regular_dropout_000.ttf
+│   │   │   ├── Cheiro-Regular_dropout_001.ttf
+│   │   │   ├── Cheiro-Regular_dropout_002.ttf
+│   │   │   ├── Cheiro-Regular_dropout_003.ttf
+│   │   │   ├── Cheiro-Regular_dropout_004.ttf
+│   │   │   ├── Cheiro-Regular_dropout_005.ttf
+│   │   │   ├── Cheiro-Regular_dropout_006.ttf
+│   │   │   └── Cheiro-Regular_dropout_007.ttf
+│   │   ├── Cheiro-Regular_jitter_seq
+│   │   │   ├── Cheiro-Regular_jitter_000.ttf
+│   │   │   ├── Cheiro-Regular_jitter_001.ttf
+│   │   │   ├── Cheiro-Regular_jitter_002.ttf
+│   │   │   ├── Cheiro-Regular_jitter_003.ttf
+│   │   │   ├── Cheiro-Regular_jitter_004.ttf
+│   │   │   ├── Cheiro-Regular_jitter_005.ttf
+│   │   │   ├── Cheiro-Regular_jitter_006.ttf
+│   │   │   └── Cheiro-Regular_jitter_007.ttf
+│   │   ├── Cheiro-Regular_quantize_seq
+│   │   │   ├── Cheiro-Regular_quantize_000.ttf
+│   │   │   ├── Cheiro-Regular_quantize_001.ttf
+│   │   │   ├── Cheiro-Regular_quantize_002.ttf
+│   │   │   ├── Cheiro-Regular_quantize_003.ttf
+│   │   │   ├── Cheiro-Regular_quantize_004.ttf
+│   │   │   ├── Cheiro-Regular_quantize_005.ttf
+│   │   │   ├── Cheiro-Regular_quantize_006.ttf
+│   │   │   └── Cheiro-Regular_quantize_007.ttf
+│   │   ├── Cheiro-Regular_radial_seq
+│   │   │   ├── Cheiro-Regular_radial_000.ttf
+│   │   │   ├── Cheiro-Regular_radial_001.ttf
+│   │   │   ├── Cheiro-Regular_radial_002.ttf
+│   │   │   ├── Cheiro-Regular_radial_003.ttf
+│   │   │   ├── Cheiro-Regular_radial_004.ttf
+│   │   │   ├── Cheiro-Regular_radial_005.ttf
+│   │   │   ├── Cheiro-Regular_radial_006.ttf
+│   │   │   └── Cheiro-Regular_radial_007.ttf
+│   │   ├── Cheiro-Regular_shear_seq
+│   │   │   ├── Cheiro-Regular_shear_000.ttf
+│   │   │   ├── Cheiro-Regular_shear_001.ttf
+│   │   │   ├── Cheiro-Regular_shear_002.ttf
+│   │   │   ├── Cheiro-Regular_shear_003.ttf
+│   │   │   ├── Cheiro-Regular_shear_004.ttf
+│   │   │   ├── Cheiro-Regular_shear_005.ttf
+│   │   │   ├── Cheiro-Regular_shear_006.ttf
+│   │   │   └── Cheiro-Regular_shear_007.ttf
+│   │   ├── Cheiro-Regular_wave_seq
+│   │   │   ├── Cheiro-Regular_wave_000.ttf
+│   │   │   ├── Cheiro-Regular_wave_001.ttf
+│   │   │   ├── Cheiro-Regular_wave_002.ttf
+│   │   │   ├── Cheiro-Regular_wave_003.ttf
+│   │   │   ├── Cheiro-Regular_wave_004.ttf
+│   │   │   ├── Cheiro-Regular_wave_005.ttf
+│   │   │   ├── Cheiro-Regular_wave_006.ttf
+│   │   │   └── Cheiro-Regular_wave_007.ttf
+│   │   ├── Clypto-Regular_asc_evap_seq
+│   │   │   ├── Clypto-Regular_asc_evap_000.ttf
+│   │   │   ├── Clypto-Regular_asc_evap_001.ttf
+│   │   │   ├── Clypto-Regular_asc_evap_002.ttf
+│   │   │   ├── Clypto-Regular_asc_evap_003.ttf
+│   │   │   ├── Clypto-Regular_asc_evap_004.ttf
+│   │   │   ├── Clypto-Regular_asc_evap_005.ttf
+│   │   │   ├── Clypto-Regular_asc_evap_006.ttf
+│   │   │   └── Clypto-Regular_asc_evap_007.ttf
+│   │   ├── Clypto-Regular_collapse_seq
+│   │   │   ├── Clypto-Regular_collapse_000.ttf
+│   │   │   ├── Clypto-Regular_collapse_001.ttf
+│   │   │   ├── Clypto-Regular_collapse_002.ttf
+│   │   │   ├── Clypto-Regular_collapse_003.ttf
+│   │   │   ├── Clypto-Regular_collapse_004.ttf
+│   │   │   ├── Clypto-Regular_collapse_005.ttf
+│   │   │   ├── Clypto-Regular_collapse_006.ttf
+│   │   │   └── Clypto-Regular_collapse_007.ttf
+│   │   ├── Clypto-Regular_condense_seq
+│   │   │   ├── Clypto-Regular_condense_000.ttf
+│   │   │   ├── Clypto-Regular_condense_001.ttf
+│   │   │   ├── Clypto-Regular_condense_002.ttf
+│   │   │   ├── Clypto-Regular_condense_003.ttf
+│   │   │   ├── Clypto-Regular_condense_004.ttf
+│   │   │   ├── Clypto-Regular_condense_005.ttf
+│   │   │   ├── Clypto-Regular_condense_006.ttf
+│   │   │   └── Clypto-Regular_condense_007.ttf
+│   │   ├── Clypto-Regular_droop_seq
+│   │   │   ├── Clypto-Regular_droop_000.ttf
+│   │   │   ├── Clypto-Regular_droop_001.ttf
+│   │   │   ├── Clypto-Regular_droop_002.ttf
+│   │   │   ├── Clypto-Regular_droop_003.ttf
+│   │   │   ├── Clypto-Regular_droop_004.ttf
+│   │   │   ├── Clypto-Regular_droop_005.ttf
+│   │   │   ├── Clypto-Regular_droop_006.ttf
+│   │   │   └── Clypto-Regular_droop_007.ttf
+│   │   ├── Clypto-Regular_dropout_seq
+│   │   │   ├── Clypto-Regular_dropout_000.ttf
+│   │   │   ├── Clypto-Regular_dropout_001.ttf
+│   │   │   ├── Clypto-Regular_dropout_002.ttf
+│   │   │   ├── Clypto-Regular_dropout_003.ttf
+│   │   │   ├── Clypto-Regular_dropout_004.ttf
+│   │   │   ├── Clypto-Regular_dropout_005.ttf
+│   │   │   ├── Clypto-Regular_dropout_006.ttf
+│   │   │   └── Clypto-Regular_dropout_007.ttf
+│   │   ├── Clypto-Regular_jitter_seq
+│   │   │   ├── Clypto-Regular_jitter_000.ttf
+│   │   │   ├── Clypto-Regular_jitter_001.ttf
+│   │   │   ├── Clypto-Regular_jitter_002.ttf
+│   │   │   ├── Clypto-Regular_jitter_003.ttf
+│   │   │   ├── Clypto-Regular_jitter_004.ttf
+│   │   │   ├── Clypto-Regular_jitter_005.ttf
+│   │   │   ├── Clypto-Regular_jitter_006.ttf
+│   │   │   └── Clypto-Regular_jitter_007.ttf
+│   │   ├── Clypto-Regular_quantize_seq
+│   │   │   ├── Clypto-Regular_quantize_000.ttf
+│   │   │   ├── Clypto-Regular_quantize_001.ttf
+│   │   │   ├── Clypto-Regular_quantize_002.ttf
+│   │   │   ├── Clypto-Regular_quantize_003.ttf
+│   │   │   ├── Clypto-Regular_quantize_004.ttf
+│   │   │   ├── Clypto-Regular_quantize_005.ttf
+│   │   │   ├── Clypto-Regular_quantize_006.ttf
+│   │   │   └── Clypto-Regular_quantize_007.ttf
+│   │   ├── Clypto-Regular_radial_seq
+│   │   │   ├── Clypto-Regular_radial_000.ttf
+│   │   │   ├── Clypto-Regular_radial_001.ttf
+│   │   │   ├── Clypto-Regular_radial_002.ttf
+│   │   │   ├── Clypto-Regular_radial_003.ttf
+│   │   │   ├── Clypto-Regular_radial_004.ttf
+│   │   │   ├── Clypto-Regular_radial_005.ttf
+│   │   │   ├── Clypto-Regular_radial_006.ttf
+│   │   │   └── Clypto-Regular_radial_007.ttf
+│   │   ├── Clypto-Regular_shear_seq
+│   │   │   ├── Clypto-Regular_shear_000.ttf
+│   │   │   ├── Clypto-Regular_shear_001.ttf
+│   │   │   ├── Clypto-Regular_shear_002.ttf
+│   │   │   ├── Clypto-Regular_shear_003.ttf
+│   │   │   ├── Clypto-Regular_shear_004.ttf
+│   │   │   ├── Clypto-Regular_shear_005.ttf
+│   │   │   ├── Clypto-Regular_shear_006.ttf
+│   │   │   └── Clypto-Regular_shear_007.ttf
+│   │   ├── Clypto-Regular_wave_seq
+│   │   │   ├── Clypto-Regular_wave_000.ttf
+│   │   │   ├── Clypto-Regular_wave_001.ttf
+│   │   │   ├── Clypto-Regular_wave_002.ttf
+│   │   │   ├── Clypto-Regular_wave_003.ttf
+│   │   │   ├── Clypto-Regular_wave_004.ttf
+│   │   │   ├── Clypto-Regular_wave_005.ttf
+│   │   │   ├── Clypto-Regular_wave_006.ttf
+│   │   │   └── Clypto-Regular_wave_007.ttf
+│   │   ├── CursiveGalactic-Regular_asc_evap_seq
+│   │   │   ├── CursiveGalactic-Regular_asc_evap_000.ttf
+│   │   │   ├── CursiveGalactic-Regular_asc_evap_001.ttf
+│   │   │   ├── CursiveGalactic-Regular_asc_evap_002.ttf
+│   │   │   ├── CursiveGalactic-Regular_asc_evap_003.ttf
+│   │   │   ├── CursiveGalactic-Regular_asc_evap_004.ttf
+│   │   │   ├── CursiveGalactic-Regular_asc_evap_005.ttf
+│   │   │   ├── CursiveGalactic-Regular_asc_evap_006.ttf
+│   │   │   └── CursiveGalactic-Regular_asc_evap_007.ttf
+│   │   ├── CursiveGalactic-Regular_collapse_seq
+│   │   │   ├── CursiveGalactic-Regular_collapse_000.ttf
+│   │   │   ├── CursiveGalactic-Regular_collapse_001.ttf
+│   │   │   ├── CursiveGalactic-Regular_collapse_002.ttf
+│   │   │   ├── CursiveGalactic-Regular_collapse_003.ttf
+│   │   │   ├── CursiveGalactic-Regular_collapse_004.ttf
+│   │   │   ├── CursiveGalactic-Regular_collapse_005.ttf
+│   │   │   ├── CursiveGalactic-Regular_collapse_006.ttf
+│   │   │   └── CursiveGalactic-Regular_collapse_007.ttf
+│   │   ├── CursiveGalactic-Regular_condense_seq
+│   │   │   ├── CursiveGalactic-Regular_condense_000.ttf
+│   │   │   ├── CursiveGalactic-Regular_condense_001.ttf
+│   │   │   ├── CursiveGalactic-Regular_condense_002.ttf
+│   │   │   ├── CursiveGalactic-Regular_condense_003.ttf
+│   │   │   ├── CursiveGalactic-Regular_condense_004.ttf
+│   │   │   ├── CursiveGalactic-Regular_condense_005.ttf
+│   │   │   ├── CursiveGalactic-Regular_condense_006.ttf
+│   │   │   └── CursiveGalactic-Regular_condense_007.ttf
+│   │   ├── CursiveGalactic-Regular_droop_seq
+│   │   │   ├── CursiveGalactic-Regular_droop_000.ttf
+│   │   │   ├── CursiveGalactic-Regular_droop_001.ttf
+│   │   │   ├── CursiveGalactic-Regular_droop_002.ttf
+│   │   │   ├── CursiveGalactic-Regular_droop_003.ttf
+│   │   │   ├── CursiveGalactic-Regular_droop_004.ttf
+│   │   │   ├── CursiveGalactic-Regular_droop_005.ttf
+│   │   │   ├── CursiveGalactic-Regular_droop_006.ttf
+│   │   │   └── CursiveGalactic-Regular_droop_007.ttf
+│   │   ├── CursiveGalactic-Regular_dropout_seq
+│   │   │   ├── CursiveGalactic-Regular_dropout_000.ttf
+│   │   │   ├── CursiveGalactic-Regular_dropout_001.ttf
+│   │   │   ├── CursiveGalactic-Regular_dropout_002.ttf
+│   │   │   ├── CursiveGalactic-Regular_dropout_003.ttf
+│   │   │   ├── CursiveGalactic-Regular_dropout_004.ttf
+│   │   │   ├── CursiveGalactic-Regular_dropout_005.ttf
+│   │   │   ├── CursiveGalactic-Regular_dropout_006.ttf
+│   │   │   └── CursiveGalactic-Regular_dropout_007.ttf
+│   │   ├── CursiveGalactic-Regular_jitter_seq
+│   │   │   ├── CursiveGalactic-Regular_jitter_000.ttf
+│   │   │   ├── CursiveGalactic-Regular_jitter_001.ttf
+│   │   │   ├── CursiveGalactic-Regular_jitter_002.ttf
+│   │   │   ├── CursiveGalactic-Regular_jitter_003.ttf
+│   │   │   ├── CursiveGalactic-Regular_jitter_004.ttf
+│   │   │   ├── CursiveGalactic-Regular_jitter_005.ttf
+│   │   │   ├── CursiveGalactic-Regular_jitter_006.ttf
+│   │   │   └── CursiveGalactic-Regular_jitter_007.ttf
+│   │   ├── CursiveGalactic-Regular_quantize_seq
+│   │   │   ├── CursiveGalactic-Regular_quantize_000.ttf
+│   │   │   ├── CursiveGalactic-Regular_quantize_001.ttf
+│   │   │   ├── CursiveGalactic-Regular_quantize_002.ttf
+│   │   │   ├── CursiveGalactic-Regular_quantize_003.ttf
+│   │   │   ├── CursiveGalactic-Regular_quantize_004.ttf
+│   │   │   ├── CursiveGalactic-Regular_quantize_005.ttf
+│   │   │   ├── CursiveGalactic-Regular_quantize_006.ttf
+│   │   │   └── CursiveGalactic-Regular_quantize_007.ttf
+│   │   ├── CursiveGalactic-Regular_radial_seq
+│   │   │   ├── CursiveGalactic-Regular_radial_000.ttf
+│   │   │   ├── CursiveGalactic-Regular_radial_001.ttf
+│   │   │   ├── CursiveGalactic-Regular_radial_002.ttf
+│   │   │   ├── CursiveGalactic-Regular_radial_003.ttf
+│   │   │   ├── CursiveGalactic-Regular_radial_004.ttf
+│   │   │   ├── CursiveGalactic-Regular_radial_005.ttf
+│   │   │   ├── CursiveGalactic-Regular_radial_006.ttf
+│   │   │   └── CursiveGalactic-Regular_radial_007.ttf
+│   │   ├── CursiveGalactic-Regular_shear_seq
+│   │   │   ├── CursiveGalactic-Regular_shear_000.ttf
+│   │   │   ├── CursiveGalactic-Regular_shear_001.ttf
+│   │   │   ├── CursiveGalactic-Regular_shear_002.ttf
+│   │   │   ├── CursiveGalactic-Regular_shear_003.ttf
+│   │   │   ├── CursiveGalactic-Regular_shear_004.ttf
+│   │   │   ├── CursiveGalactic-Regular_shear_005.ttf
+│   │   │   ├── CursiveGalactic-Regular_shear_006.ttf
+│   │   │   └── CursiveGalactic-Regular_shear_007.ttf
+│   │   ├── CursiveGalactic-Regular_wave_seq
+│   │   │   ├── CursiveGalactic-Regular_wave_000.ttf
+│   │   │   ├── CursiveGalactic-Regular_wave_001.ttf
+│   │   │   ├── CursiveGalactic-Regular_wave_002.ttf
+│   │   │   ├── CursiveGalactic-Regular_wave_003.ttf
+│   │   │   ├── CursiveGalactic-Regular_wave_004.ttf
+│   │   │   ├── CursiveGalactic-Regular_wave_005.ttf
+│   │   │   ├── CursiveGalactic-Regular_wave_006.ttf
+│   │   │   └── CursiveGalactic-Regular_wave_007.ttf
+│   │   ├── Lingojam_cipher-Regular_asc_evap_seq
+│   │   │   ├── Lingojam_cipher-Regular_asc_evap_000.ttf
+│   │   │   ├── Lingojam_cipher-Regular_asc_evap_001.ttf
+│   │   │   ├── Lingojam_cipher-Regular_asc_evap_002.ttf
+│   │   │   ├── Lingojam_cipher-Regular_asc_evap_003.ttf
+│   │   │   ├── Lingojam_cipher-Regular_asc_evap_004.ttf
+│   │   │   ├── Lingojam_cipher-Regular_asc_evap_005.ttf
+│   │   │   ├── Lingojam_cipher-Regular_asc_evap_006.ttf
+│   │   │   └── Lingojam_cipher-Regular_asc_evap_007.ttf
+│   │   ├── Lingojam_cipher-Regular_collapse_seq
+│   │   │   ├── Lingojam_cipher-Regular_collapse_000.ttf
+│   │   │   ├── Lingojam_cipher-Regular_collapse_001.ttf
+│   │   │   ├── Lingojam_cipher-Regular_collapse_002.ttf
+│   │   │   ├── Lingojam_cipher-Regular_collapse_003.ttf
+│   │   │   ├── Lingojam_cipher-Regular_collapse_004.ttf
+│   │   │   ├── Lingojam_cipher-Regular_collapse_005.ttf
+│   │   │   ├── Lingojam_cipher-Regular_collapse_006.ttf
+│   │   │   └── Lingojam_cipher-Regular_collapse_007.ttf
+│   │   ├── Lingojam_cipher-Regular_condense_seq
+│   │   │   ├── Lingojam_cipher-Regular_condense_000.ttf
+│   │   │   ├── Lingojam_cipher-Regular_condense_001.ttf
+│   │   │   ├── Lingojam_cipher-Regular_condense_002.ttf
+│   │   │   ├── Lingojam_cipher-Regular_condense_003.ttf
+│   │   │   ├── Lingojam_cipher-Regular_condense_004.ttf
+│   │   │   ├── Lingojam_cipher-Regular_condense_005.ttf
+│   │   │   ├── Lingojam_cipher-Regular_condense_006.ttf
+│   │   │   └── Lingojam_cipher-Regular_condense_007.ttf
+│   │   ├── Lingojam_cipher-Regular_droop_seq
+│   │   │   ├── Lingojam_cipher-Regular_droop_000.ttf
+│   │   │   ├── Lingojam_cipher-Regular_droop_001.ttf
+│   │   │   ├── Lingojam_cipher-Regular_droop_002.ttf
+│   │   │   ├── Lingojam_cipher-Regular_droop_003.ttf
+│   │   │   ├── Lingojam_cipher-Regular_droop_004.ttf
+│   │   │   ├── Lingojam_cipher-Regular_droop_005.ttf
+│   │   │   ├── Lingojam_cipher-Regular_droop_006.ttf
+│   │   │   └── Lingojam_cipher-Regular_droop_007.ttf
+│   │   ├── Lingojam_cipher-Regular_dropout_seq
+│   │   │   ├── Lingojam_cipher-Regular_dropout_000.ttf
+│   │   │   ├── Lingojam_cipher-Regular_dropout_001.ttf
+│   │   │   ├── Lingojam_cipher-Regular_dropout_002.ttf
+│   │   │   ├── Lingojam_cipher-Regular_dropout_003.ttf
+│   │   │   ├── Lingojam_cipher-Regular_dropout_004.ttf
+│   │   │   ├── Lingojam_cipher-Regular_dropout_005.ttf
+│   │   │   ├── Lingojam_cipher-Regular_dropout_006.ttf
+│   │   │   └── Lingojam_cipher-Regular_dropout_007.ttf
+│   │   ├── Lingojam_cipher-Regular_jitter_seq
+│   │   │   ├── Lingojam_cipher-Regular_jitter_000.ttf
+│   │   │   ├── Lingojam_cipher-Regular_jitter_001.ttf
+│   │   │   ├── Lingojam_cipher-Regular_jitter_002.ttf
+│   │   │   ├── Lingojam_cipher-Regular_jitter_003.ttf
+│   │   │   ├── Lingojam_cipher-Regular_jitter_004.ttf
+│   │   │   ├── Lingojam_cipher-Regular_jitter_005.ttf
+│   │   │   ├── Lingojam_cipher-Regular_jitter_006.ttf
+│   │   │   └── Lingojam_cipher-Regular_jitter_007.ttf
+│   │   ├── Lingojam_cipher-Regular_quantize_seq
+│   │   │   ├── Lingojam_cipher-Regular_quantize_000.ttf
+│   │   │   ├── Lingojam_cipher-Regular_quantize_001.ttf
+│   │   │   ├── Lingojam_cipher-Regular_quantize_002.ttf
+│   │   │   ├── Lingojam_cipher-Regular_quantize_003.ttf
+│   │   │   ├── Lingojam_cipher-Regular_quantize_004.ttf
+│   │   │   ├── Lingojam_cipher-Regular_quantize_005.ttf
+│   │   │   ├── Lingojam_cipher-Regular_quantize_006.ttf
+│   │   │   └── Lingojam_cipher-Regular_quantize_007.ttf
+│   │   ├── Lingojam_cipher-Regular_radial_seq
+│   │   │   ├── Lingojam_cipher-Regular_radial_000.ttf
+│   │   │   ├── Lingojam_cipher-Regular_radial_001.ttf
+│   │   │   ├── Lingojam_cipher-Regular_radial_002.ttf
+│   │   │   ├── Lingojam_cipher-Regular_radial_003.ttf
+│   │   │   ├── Lingojam_cipher-Regular_radial_004.ttf
+│   │   │   ├── Lingojam_cipher-Regular_radial_005.ttf
+│   │   │   ├── Lingojam_cipher-Regular_radial_006.ttf
+│   │   │   └── Lingojam_cipher-Regular_radial_007.ttf
+│   │   ├── Lingojam_cipher-Regular_shear_seq
+│   │   │   ├── Lingojam_cipher-Regular_shear_000.ttf
+│   │   │   ├── Lingojam_cipher-Regular_shear_001.ttf
+│   │   │   ├── Lingojam_cipher-Regular_shear_002.ttf
+│   │   │   ├── Lingojam_cipher-Regular_shear_003.ttf
+│   │   │   ├── Lingojam_cipher-Regular_shear_004.ttf
+│   │   │   ├── Lingojam_cipher-Regular_shear_005.ttf
+│   │   │   ├── Lingojam_cipher-Regular_shear_006.ttf
+│   │   │   └── Lingojam_cipher-Regular_shear_007.ttf
+│   │   ├── Lingojam_cipher-Regular_wave_seq
+│   │   │   ├── Lingojam_cipher-Regular_wave_000.ttf
+│   │   │   ├── Lingojam_cipher-Regular_wave_001.ttf
+│   │   │   ├── Lingojam_cipher-Regular_wave_002.ttf
+│   │   │   ├── Lingojam_cipher-Regular_wave_003.ttf
+│   │   │   ├── Lingojam_cipher-Regular_wave_004.ttf
+│   │   │   ├── Lingojam_cipher-Regular_wave_005.ttf
+│   │   │   ├── Lingojam_cipher-Regular_wave_006.ttf
+│   │   │   └── Lingojam_cipher-Regular_wave_007.ttf
+│   │   ├── Logico_philosophicus-Regular_asc_evap_seq
+│   │   │   ├── Logico_philosophicus-Regular_asc_evap_000.ttf
+│   │   │   ├── Logico_philosophicus-Regular_asc_evap_001.ttf
+│   │   │   ├── Logico_philosophicus-Regular_asc_evap_002.ttf
+│   │   │   ├── Logico_philosophicus-Regular_asc_evap_003.ttf
+│   │   │   ├── Logico_philosophicus-Regular_asc_evap_004.ttf
+│   │   │   ├── Logico_philosophicus-Regular_asc_evap_005.ttf
+│   │   │   ├── Logico_philosophicus-Regular_asc_evap_006.ttf
+│   │   │   └── Logico_philosophicus-Regular_asc_evap_007.ttf
+│   │   ├── Logico_philosophicus-Regular_collapse_seq
+│   │   │   ├── Logico_philosophicus-Regular_collapse_000.ttf
+│   │   │   ├── Logico_philosophicus-Regular_collapse_001.ttf
+│   │   │   ├── Logico_philosophicus-Regular_collapse_002.ttf
+│   │   │   ├── Logico_philosophicus-Regular_collapse_003.ttf
+│   │   │   ├── Logico_philosophicus-Regular_collapse_004.ttf
+│   │   │   ├── Logico_philosophicus-Regular_collapse_005.ttf
+│   │   │   ├── Logico_philosophicus-Regular_collapse_006.ttf
+│   │   │   └── Logico_philosophicus-Regular_collapse_007.ttf
+│   │   ├── Logico_philosophicus-Regular_condense_seq
+│   │   │   ├── Logico_philosophicus-Regular_condense_000.ttf
+│   │   │   ├── Logico_philosophicus-Regular_condense_001.ttf
+│   │   │   ├── Logico_philosophicus-Regular_condense_002.ttf
+│   │   │   ├── Logico_philosophicus-Regular_condense_003.ttf
+│   │   │   ├── Logico_philosophicus-Regular_condense_004.ttf
+│   │   │   ├── Logico_philosophicus-Regular_condense_005.ttf
+│   │   │   ├── Logico_philosophicus-Regular_condense_006.ttf
+│   │   │   └── Logico_philosophicus-Regular_condense_007.ttf
+│   │   ├── Logico_philosophicus-Regular_droop_seq
+│   │   │   ├── Logico_philosophicus-Regular_droop_000.ttf
+│   │   │   ├── Logico_philosophicus-Regular_droop_001.ttf
+│   │   │   ├── Logico_philosophicus-Regular_droop_002.ttf
+│   │   │   ├── Logico_philosophicus-Regular_droop_003.ttf
+│   │   │   ├── Logico_philosophicus-Regular_droop_004.ttf
+│   │   │   ├── Logico_philosophicus-Regular_droop_005.ttf
+│   │   │   ├── Logico_philosophicus-Regular_droop_006.ttf
+│   │   │   └── Logico_philosophicus-Regular_droop_007.ttf
+│   │   ├── Logico_philosophicus-Regular_dropout_seq
+│   │   │   ├── Logico_philosophicus-Regular_dropout_000.ttf
+│   │   │   ├── Logico_philosophicus-Regular_dropout_001.ttf
+│   │   │   ├── Logico_philosophicus-Regular_dropout_002.ttf
+│   │   │   ├── Logico_philosophicus-Regular_dropout_003.ttf
+│   │   │   ├── Logico_philosophicus-Regular_dropout_004.ttf
+│   │   │   ├── Logico_philosophicus-Regular_dropout_005.ttf
+│   │   │   ├── Logico_philosophicus-Regular_dropout_006.ttf
+│   │   │   └── Logico_philosophicus-Regular_dropout_007.ttf
+│   │   ├── Logico_philosophicus-Regular_jitter_seq
+│   │   │   ├── Logico_philosophicus-Regular_jitter_000.ttf
+│   │   │   ├── Logico_philosophicus-Regular_jitter_001.ttf
+│   │   │   ├── Logico_philosophicus-Regular_jitter_002.ttf
+│   │   │   ├── Logico_philosophicus-Regular_jitter_003.ttf
+│   │   │   ├── Logico_philosophicus-Regular_jitter_004.ttf
+│   │   │   ├── Logico_philosophicus-Regular_jitter_005.ttf
+│   │   │   ├── Logico_philosophicus-Regular_jitter_006.ttf
+│   │   │   └── Logico_philosophicus-Regular_jitter_007.ttf
+│   │   ├── Logico_philosophicus-Regular_quantize_seq
+│   │   │   ├── Logico_philosophicus-Regular_quantize_000.ttf
+│   │   │   ├── Logico_philosophicus-Regular_quantize_001.ttf
+│   │   │   ├── Logico_philosophicus-Regular_quantize_002.ttf
+│   │   │   ├── Logico_philosophicus-Regular_quantize_003.ttf
+│   │   │   ├── Logico_philosophicus-Regular_quantize_004.ttf
+│   │   │   ├── Logico_philosophicus-Regular_quantize_005.ttf
+│   │   │   ├── Logico_philosophicus-Regular_quantize_006.ttf
+│   │   │   └── Logico_philosophicus-Regular_quantize_007.ttf
+│   │   ├── Logico_philosophicus-Regular_radial_seq
+│   │   │   ├── Logico_philosophicus-Regular_radial_000.ttf
+│   │   │   ├── Logico_philosophicus-Regular_radial_001.ttf
+│   │   │   ├── Logico_philosophicus-Regular_radial_002.ttf
+│   │   │   ├── Logico_philosophicus-Regular_radial_003.ttf
+│   │   │   ├── Logico_philosophicus-Regular_radial_004.ttf
+│   │   │   ├── Logico_philosophicus-Regular_radial_005.ttf
+│   │   │   ├── Logico_philosophicus-Regular_radial_006.ttf
+│   │   │   └── Logico_philosophicus-Regular_radial_007.ttf
+│   │   ├── Logico_philosophicus-Regular_shear_seq
+│   │   │   ├── Logico_philosophicus-Regular_shear_000.ttf
+│   │   │   ├── Logico_philosophicus-Regular_shear_001.ttf
+│   │   │   ├── Logico_philosophicus-Regular_shear_002.ttf
+│   │   │   ├── Logico_philosophicus-Regular_shear_003.ttf
+│   │   │   ├── Logico_philosophicus-Regular_shear_004.ttf
+│   │   │   ├── Logico_philosophicus-Regular_shear_005.ttf
+│   │   │   ├── Logico_philosophicus-Regular_shear_006.ttf
+│   │   │   └── Logico_philosophicus-Regular_shear_007.ttf
+│   │   ├── Logico_philosophicus-Regular_wave_seq
+│   │   │   ├── Logico_philosophicus-Regular_wave_000.ttf
+│   │   │   ├── Logico_philosophicus-Regular_wave_001.ttf
+│   │   │   ├── Logico_philosophicus-Regular_wave_002.ttf
+│   │   │   ├── Logico_philosophicus-Regular_wave_003.ttf
+│   │   │   ├── Logico_philosophicus-Regular_wave_004.ttf
+│   │   │   ├── Logico_philosophicus-Regular_wave_005.ttf
+│   │   │   ├── Logico_philosophicus-Regular_wave_006.ttf
+│   │   │   └── Logico_philosophicus-Regular_wave_007.ttf
+│   │   ├── NovaMonoStandardGalactic_asc_evap_seq
+│   │   │   ├── NovaMonoStandardGalactic_asc_evap_000.ttf
+│   │   │   ├── NovaMonoStandardGalactic_asc_evap_001.ttf
+│   │   │   ├── NovaMonoStandardGalactic_asc_evap_002.ttf
+│   │   │   ├── NovaMonoStandardGalactic_asc_evap_003.ttf
+│   │   │   ├── NovaMonoStandardGalactic_asc_evap_004.ttf
+│   │   │   ├── NovaMonoStandardGalactic_asc_evap_005.ttf
+│   │   │   ├── NovaMonoStandardGalactic_asc_evap_006.ttf
+│   │   │   └── NovaMonoStandardGalactic_asc_evap_007.ttf
+│   │   ├── NovaMonoStandardGalactic_collapse_seq
+│   │   │   ├── NovaMonoStandardGalactic_collapse_000.ttf
+│   │   │   ├── NovaMonoStandardGalactic_collapse_001.ttf
+│   │   │   ├── NovaMonoStandardGalactic_collapse_002.ttf
+│   │   │   ├── NovaMonoStandardGalactic_collapse_003.ttf
+│   │   │   ├── NovaMonoStandardGalactic_collapse_004.ttf
+│   │   │   ├── NovaMonoStandardGalactic_collapse_005.ttf
+│   │   │   ├── NovaMonoStandardGalactic_collapse_006.ttf
+│   │   │   └── NovaMonoStandardGalactic_collapse_007.ttf
+│   │   ├── NovaMonoStandardGalactic_condense_seq
+│   │   │   ├── NovaMonoStandardGalactic_condense_000.ttf
+│   │   │   ├── NovaMonoStandardGalactic_condense_001.ttf
+│   │   │   ├── NovaMonoStandardGalactic_condense_002.ttf
+│   │   │   ├── NovaMonoStandardGalactic_condense_003.ttf
+│   │   │   ├── NovaMonoStandardGalactic_condense_004.ttf
+│   │   │   ├── NovaMonoStandardGalactic_condense_005.ttf
+│   │   │   ├── NovaMonoStandardGalactic_condense_006.ttf
+│   │   │   └── NovaMonoStandardGalactic_condense_007.ttf
+│   │   ├── NovaMonoStandardGalactic_droop_seq
+│   │   │   ├── NovaMonoStandardGalactic_droop_000.ttf
+│   │   │   ├── NovaMonoStandardGalactic_droop_001.ttf
+│   │   │   ├── NovaMonoStandardGalactic_droop_002.ttf
+│   │   │   ├── NovaMonoStandardGalactic_droop_003.ttf
+│   │   │   ├── NovaMonoStandardGalactic_droop_004.ttf
+│   │   │   ├── NovaMonoStandardGalactic_droop_005.ttf
+│   │   │   ├── NovaMonoStandardGalactic_droop_006.ttf
+│   │   │   └── NovaMonoStandardGalactic_droop_007.ttf
+│   │   ├── NovaMonoStandardGalactic_dropout_seq
+│   │   │   ├── NovaMonoStandardGalactic_dropout_000.ttf
+│   │   │   ├── NovaMonoStandardGalactic_dropout_001.ttf
+│   │   │   ├── NovaMonoStandardGalactic_dropout_002.ttf
+│   │   │   ├── NovaMonoStandardGalactic_dropout_003.ttf
+│   │   │   ├── NovaMonoStandardGalactic_dropout_004.ttf
+│   │   │   ├── NovaMonoStandardGalactic_dropout_005.ttf
+│   │   │   ├── NovaMonoStandardGalactic_dropout_006.ttf
+│   │   │   └── NovaMonoStandardGalactic_dropout_007.ttf
+│   │   ├── NovaMonoStandardGalactic_jitter_seq
+│   │   │   ├── NovaMonoStandardGalactic_jitter_000.ttf
+│   │   │   ├── NovaMonoStandardGalactic_jitter_001.ttf
+│   │   │   ├── NovaMonoStandardGalactic_jitter_002.ttf
+│   │   │   ├── NovaMonoStandardGalactic_jitter_003.ttf
+│   │   │   ├── NovaMonoStandardGalactic_jitter_004.ttf
+│   │   │   ├── NovaMonoStandardGalactic_jitter_005.ttf
+│   │   │   ├── NovaMonoStandardGalactic_jitter_006.ttf
+│   │   │   └── NovaMonoStandardGalactic_jitter_007.ttf
+│   │   ├── NovaMonoStandardGalactic_quantize_seq
+│   │   │   ├── NovaMonoStandardGalactic_quantize_000.ttf
+│   │   │   ├── NovaMonoStandardGalactic_quantize_001.ttf
+│   │   │   ├── NovaMonoStandardGalactic_quantize_002.ttf
+│   │   │   ├── NovaMonoStandardGalactic_quantize_003.ttf
+│   │   │   ├── NovaMonoStandardGalactic_quantize_004.ttf
+│   │   │   ├── NovaMonoStandardGalactic_quantize_005.ttf
+│   │   │   ├── NovaMonoStandardGalactic_quantize_006.ttf
+│   │   │   └── NovaMonoStandardGalactic_quantize_007.ttf
+│   │   ├── NovaMonoStandardGalactic_radial_seq
+│   │   │   ├── NovaMonoStandardGalactic_radial_000.ttf
+│   │   │   ├── NovaMonoStandardGalactic_radial_001.ttf
+│   │   │   ├── NovaMonoStandardGalactic_radial_002.ttf
+│   │   │   ├── NovaMonoStandardGalactic_radial_003.ttf
+│   │   │   ├── NovaMonoStandardGalactic_radial_004.ttf
+│   │   │   ├── NovaMonoStandardGalactic_radial_005.ttf
+│   │   │   ├── NovaMonoStandardGalactic_radial_006.ttf
+│   │   │   └── NovaMonoStandardGalactic_radial_007.ttf
+│   │   ├── NovaMonoStandardGalactic_shear_seq
+│   │   │   ├── NovaMonoStandardGalactic_shear_000.ttf
+│   │   │   ├── NovaMonoStandardGalactic_shear_001.ttf
+│   │   │   ├── NovaMonoStandardGalactic_shear_002.ttf
+│   │   │   ├── NovaMonoStandardGalactic_shear_003.ttf
+│   │   │   ├── NovaMonoStandardGalactic_shear_004.ttf
+│   │   │   ├── NovaMonoStandardGalactic_shear_005.ttf
+│   │   │   ├── NovaMonoStandardGalactic_shear_006.ttf
+│   │   │   └── NovaMonoStandardGalactic_shear_007.ttf
+│   │   ├── NovaMonoStandardGalactic_wave_seq
+│   │   │   ├── NovaMonoStandardGalactic_wave_000.ttf
+│   │   │   ├── NovaMonoStandardGalactic_wave_001.ttf
+│   │   │   ├── NovaMonoStandardGalactic_wave_002.ttf
+│   │   │   ├── NovaMonoStandardGalactic_wave_003.ttf
+│   │   │   ├── NovaMonoStandardGalactic_wave_004.ttf
+│   │   │   ├── NovaMonoStandardGalactic_wave_005.ttf
+│   │   │   ├── NovaMonoStandardGalactic_wave_006.ttf
+│   │   │   └── NovaMonoStandardGalactic_wave_007.ttf
+│   │   ├── Sga-Regular_asc_evap_seq
+│   │   │   ├── Sga-Regular_asc_evap_000.ttf
+│   │   │   ├── Sga-Regular_asc_evap_001.ttf
+│   │   │   ├── Sga-Regular_asc_evap_002.ttf
+│   │   │   ├── Sga-Regular_asc_evap_003.ttf
+│   │   │   ├── Sga-Regular_asc_evap_004.ttf
+│   │   │   ├── Sga-Regular_asc_evap_005.ttf
+│   │   │   ├── Sga-Regular_asc_evap_006.ttf
+│   │   │   └── Sga-Regular_asc_evap_007.ttf
+│   │   ├── Sga-Regular_collapse_seq
+│   │   │   ├── Sga-Regular_collapse_000.ttf
+│   │   │   ├── Sga-Regular_collapse_001.ttf
+│   │   │   ├── Sga-Regular_collapse_002.ttf
+│   │   │   ├── Sga-Regular_collapse_003.ttf
+│   │   │   ├── Sga-Regular_collapse_004.ttf
+│   │   │   ├── Sga-Regular_collapse_005.ttf
+│   │   │   ├── Sga-Regular_collapse_006.ttf
+│   │   │   └── Sga-Regular_collapse_007.ttf
+│   │   ├── Sga-Regular_condense_seq
+│   │   │   ├── Sga-Regular_condense_000.ttf
+│   │   │   ├── Sga-Regular_condense_001.ttf
+│   │   │   ├── Sga-Regular_condense_002.ttf
+│   │   │   ├── Sga-Regular_condense_003.ttf
+│   │   │   ├── Sga-Regular_condense_004.ttf
+│   │   │   ├── Sga-Regular_condense_005.ttf
+│   │   │   ├── Sga-Regular_condense_006.ttf
+│   │   │   └── Sga-Regular_condense_007.ttf
+│   │   ├── Sga-Regular_droop_seq
+│   │   │   ├── Sga-Regular_droop_000.ttf
+│   │   │   ├── Sga-Regular_droop_001.ttf
+│   │   │   ├── Sga-Regular_droop_002.ttf
+│   │   │   ├── Sga-Regular_droop_003.ttf
+│   │   │   ├── Sga-Regular_droop_004.ttf
+│   │   │   ├── Sga-Regular_droop_005.ttf
+│   │   │   ├── Sga-Regular_droop_006.ttf
+│   │   │   └── Sga-Regular_droop_007.ttf
+│   │   ├── Sga-Regular_dropout_seq
+│   │   │   ├── Sga-Regular_dropout_000.ttf
+│   │   │   ├── Sga-Regular_dropout_001.ttf
+│   │   │   ├── Sga-Regular_dropout_002.ttf
+│   │   │   ├── Sga-Regular_dropout_003.ttf
+│   │   │   ├── Sga-Regular_dropout_004.ttf
+│   │   │   ├── Sga-Regular_dropout_005.ttf
+│   │   │   ├── Sga-Regular_dropout_006.ttf
+│   │   │   └── Sga-Regular_dropout_007.ttf
+│   │   ├── Sga-Regular_jitter_seq
+│   │   │   ├── Sga-Regular_jitter_000.ttf
+│   │   │   ├── Sga-Regular_jitter_001.ttf
+│   │   │   ├── Sga-Regular_jitter_002.ttf
+│   │   │   ├── Sga-Regular_jitter_003.ttf
+│   │   │   ├── Sga-Regular_jitter_004.ttf
+│   │   │   ├── Sga-Regular_jitter_005.ttf
+│   │   │   ├── Sga-Regular_jitter_006.ttf
+│   │   │   └── Sga-Regular_jitter_007.ttf
+│   │   ├── Sga-Regular_quantize_seq
+│   │   │   ├── Sga-Regular_quantize_000.ttf
+│   │   │   ├── Sga-Regular_quantize_001.ttf
+│   │   │   ├── Sga-Regular_quantize_002.ttf
+│   │   │   ├── Sga-Regular_quantize_003.ttf
+│   │   │   ├── Sga-Regular_quantize_004.ttf
+│   │   │   ├── Sga-Regular_quantize_005.ttf
+│   │   │   ├── Sga-Regular_quantize_006.ttf
+│   │   │   └── Sga-Regular_quantize_007.ttf
+│   │   ├── Sga-Regular_radial_seq
+│   │   │   ├── Sga-Regular_radial_000.ttf
+│   │   │   ├── Sga-Regular_radial_001.ttf
+│   │   │   ├── Sga-Regular_radial_002.ttf
+│   │   │   ├── Sga-Regular_radial_003.ttf
+│   │   │   ├── Sga-Regular_radial_004.ttf
+│   │   │   ├── Sga-Regular_radial_005.ttf
+│   │   │   ├── Sga-Regular_radial_006.ttf
+│   │   │   └── Sga-Regular_radial_007.ttf
+│   │   ├── Sga-Regular_shear_seq
+│   │   │   ├── Sga-Regular_shear_000.ttf
+│   │   │   ├── Sga-Regular_shear_001.ttf
+│   │   │   ├── Sga-Regular_shear_002.ttf
+│   │   │   ├── Sga-Regular_shear_003.ttf
+│   │   │   ├── Sga-Regular_shear_004.ttf
+│   │   │   ├── Sga-Regular_shear_005.ttf
+│   │   │   ├── Sga-Regular_shear_006.ttf
+│   │   │   └── Sga-Regular_shear_007.ttf
+│   │   ├── Sga-Regular_wave_seq
+│   │   │   ├── Sga-Regular_wave_000.ttf
+│   │   │   ├── Sga-Regular_wave_001.ttf
+│   │   │   ├── Sga-Regular_wave_002.ttf
+│   │   │   ├── Sga-Regular_wave_003.ttf
+│   │   │   ├── Sga-Regular_wave_004.ttf
+│   │   │   ├── Sga-Regular_wave_005.ttf
+│   │   │   ├── Sga-Regular_wave_006.ttf
+│   │   │   └── Sga-Regular_wave_007.ttf
+│   │   ├── Systada-Regular_asc_evap_seq
+│   │   │   ├── Systada-Regular_asc_evap_000.ttf
+│   │   │   ├── Systada-Regular_asc_evap_001.ttf
+│   │   │   ├── Systada-Regular_asc_evap_002.ttf
+│   │   │   ├── Systada-Regular_asc_evap_003.ttf
+│   │   │   ├── Systada-Regular_asc_evap_004.ttf
+│   │   │   ├── Systada-Regular_asc_evap_005.ttf
+│   │   │   ├── Systada-Regular_asc_evap_006.ttf
+│   │   │   └── Systada-Regular_asc_evap_007.ttf
+│   │   ├── Systada-Regular_collapse_seq
+│   │   │   ├── Systada-Regular_collapse_000.ttf
+│   │   │   ├── Systada-Regular_collapse_001.ttf
+│   │   │   ├── Systada-Regular_collapse_002.ttf
+│   │   │   ├── Systada-Regular_collapse_003.ttf
+│   │   │   ├── Systada-Regular_collapse_004.ttf
+│   │   │   ├── Systada-Regular_collapse_005.ttf
+│   │   │   ├── Systada-Regular_collapse_006.ttf
+│   │   │   └── Systada-Regular_collapse_007.ttf
+│   │   ├── Systada-Regular_condense_seq
+│   │   │   ├── Systada-Regular_condense_000.ttf
+│   │   │   ├── Systada-Regular_condense_001.ttf
+│   │   │   ├── Systada-Regular_condense_002.ttf
+│   │   │   ├── Systada-Regular_condense_003.ttf
+│   │   │   ├── Systada-Regular_condense_004.ttf
+│   │   │   ├── Systada-Regular_condense_005.ttf
+│   │   │   ├── Systada-Regular_condense_006.ttf
+│   │   │   └── Systada-Regular_condense_007.ttf
+│   │   ├── Systada-Regular_droop_seq
+│   │   │   ├── Systada-Regular_droop_000.ttf
+│   │   │   ├── Systada-Regular_droop_001.ttf
+│   │   │   ├── Systada-Regular_droop_002.ttf
+│   │   │   ├── Systada-Regular_droop_003.ttf
+│   │   │   ├── Systada-Regular_droop_004.ttf
+│   │   │   ├── Systada-Regular_droop_005.ttf
+│   │   │   ├── Systada-Regular_droop_006.ttf
+│   │   │   └── Systada-Regular_droop_007.ttf
+│   │   ├── Systada-Regular_dropout_seq
+│   │   │   ├── Systada-Regular_dropout_000.ttf
+│   │   │   ├── Systada-Regular_dropout_001.ttf
+│   │   │   ├── Systada-Regular_dropout_002.ttf
+│   │   │   ├── Systada-Regular_dropout_003.ttf
+│   │   │   ├── Systada-Regular_dropout_004.ttf
+│   │   │   ├── Systada-Regular_dropout_005.ttf
+│   │   │   ├── Systada-Regular_dropout_006.ttf
+│   │   │   └── Systada-Regular_dropout_007.ttf
+│   │   ├── Systada-Regular_jitter_seq
+│   │   │   ├── Systada-Regular_jitter_000.ttf
+│   │   │   ├── Systada-Regular_jitter_001.ttf
+│   │   │   ├── Systada-Regular_jitter_002.ttf
+│   │   │   ├── Systada-Regular_jitter_003.ttf
+│   │   │   ├── Systada-Regular_jitter_004.ttf
+│   │   │   ├── Systada-Regular_jitter_005.ttf
+│   │   │   ├── Systada-Regular_jitter_006.ttf
+│   │   │   └── Systada-Regular_jitter_007.ttf
+│   │   ├── Systada-Regular_quantize_seq
+│   │   │   ├── Systada-Regular_quantize_000.ttf
+│   │   │   ├── Systada-Regular_quantize_001.ttf
+│   │   │   ├── Systada-Regular_quantize_002.ttf
+│   │   │   ├── Systada-Regular_quantize_003.ttf
+│   │   │   ├── Systada-Regular_quantize_004.ttf
+│   │   │   ├── Systada-Regular_quantize_005.ttf
+│   │   │   ├── Systada-Regular_quantize_006.ttf
+│   │   │   └── Systada-Regular_quantize_007.ttf
+│   │   ├── Systada-Regular_radial_seq
+│   │   │   ├── Systada-Regular_radial_000.ttf
+│   │   │   ├── Systada-Regular_radial_001.ttf
+│   │   │   ├── Systada-Regular_radial_002.ttf
+│   │   │   ├── Systada-Regular_radial_003.ttf
+│   │   │   ├── Systada-Regular_radial_004.ttf
+│   │   │   ├── Systada-Regular_radial_005.ttf
+│   │   │   ├── Systada-Regular_radial_006.ttf
+│   │   │   └── Systada-Regular_radial_007.ttf
+│   │   ├── Systada-Regular_shear_seq
+│   │   │   ├── Systada-Regular_shear_000.ttf
+│   │   │   ├── Systada-Regular_shear_001.ttf
+│   │   │   ├── Systada-Regular_shear_002.ttf
+│   │   │   ├── Systada-Regular_shear_003.ttf
+│   │   │   ├── Systada-Regular_shear_004.ttf
+│   │   │   ├── Systada-Regular_shear_005.ttf
+│   │   │   ├── Systada-Regular_shear_006.ttf
+│   │   │   └── Systada-Regular_shear_007.ttf
+│   │   ├── Systada-Regular_wave_seq
+│   │   │   ├── Systada-Regular_wave_000.ttf
+│   │   │   ├── Systada-Regular_wave_001.ttf
+│   │   │   ├── Systada-Regular_wave_002.ttf
+│   │   │   ├── Systada-Regular_wave_003.ttf
+│   │   │   ├── Systada-Regular_wave_004.ttf
+│   │   │   ├── Systada-Regular_wave_005.ttf
+│   │   │   ├── Systada-Regular_wave_006.ttf
+│   │   │   └── Systada-Regular_wave_007.ttf
+│   │   ├── Systada_asc_evap_seq
+│   │   │   ├── Systada_asc_evap_000.ttf
+│   │   │   ├── Systada_asc_evap_001.ttf
+│   │   │   ├── Systada_asc_evap_002.ttf
+│   │   │   ├── Systada_asc_evap_003.ttf
+│   │   │   ├── Systada_asc_evap_004.ttf
+│   │   │   ├── Systada_asc_evap_005.ttf
+│   │   │   ├── Systada_asc_evap_006.ttf
+│   │   │   └── Systada_asc_evap_007.ttf
+│   │   ├── Systada_collapse_seq
+│   │   │   ├── Systada_collapse_000.ttf
+│   │   │   ├── Systada_collapse_001.ttf
+│   │   │   ├── Systada_collapse_002.ttf
+│   │   │   ├── Systada_collapse_003.ttf
+│   │   │   ├── Systada_collapse_004.ttf
+│   │   │   ├── Systada_collapse_005.ttf
+│   │   │   ├── Systada_collapse_006.ttf
+│   │   │   └── Systada_collapse_007.ttf
+│   │   ├── Systada_condense_seq
+│   │   │   ├── Systada_condense_000.ttf
+│   │   │   ├── Systada_condense_001.ttf
+│   │   │   ├── Systada_condense_002.ttf
+│   │   │   ├── Systada_condense_003.ttf
+│   │   │   ├── Systada_condense_004.ttf
+│   │   │   ├── Systada_condense_005.ttf
+│   │   │   ├── Systada_condense_006.ttf
+│   │   │   └── Systada_condense_007.ttf
+│   │   ├── Systada_droop_seq
+│   │   │   ├── Systada_droop_000.ttf
+│   │   │   ├── Systada_droop_001.ttf
+│   │   │   ├── Systada_droop_002.ttf
+│   │   │   ├── Systada_droop_003.ttf
+│   │   │   ├── Systada_droop_004.ttf
+│   │   │   ├── Systada_droop_005.ttf
+│   │   │   ├── Systada_droop_006.ttf
+│   │   │   └── Systada_droop_007.ttf
+│   │   ├── Systada_dropout_seq
+│   │   │   ├── Systada_dropout_000.ttf
+│   │   │   ├── Systada_dropout_001.ttf
+│   │   │   ├── Systada_dropout_002.ttf
+│   │   │   ├── Systada_dropout_003.ttf
+│   │   │   ├── Systada_dropout_004.ttf
+│   │   │   ├── Systada_dropout_005.ttf
+│   │   │   ├── Systada_dropout_006.ttf
+│   │   │   └── Systada_dropout_007.ttf
+│   │   ├── Systada_jitter_seq
+│   │   │   ├── Systada_jitter_000.ttf
+│   │   │   ├── Systada_jitter_001.ttf
+│   │   │   ├── Systada_jitter_002.ttf
+│   │   │   ├── Systada_jitter_003.ttf
+│   │   │   ├── Systada_jitter_004.ttf
+│   │   │   ├── Systada_jitter_005.ttf
+│   │   │   ├── Systada_jitter_006.ttf
+│   │   │   └── Systada_jitter_007.ttf
+│   │   ├── Systada_quantize_seq
+│   │   │   ├── Systada_quantize_000.ttf
+│   │   │   ├── Systada_quantize_001.ttf
+│   │   │   ├── Systada_quantize_002.ttf
+│   │   │   ├── Systada_quantize_003.ttf
+│   │   │   ├── Systada_quantize_004.ttf
+│   │   │   ├── Systada_quantize_005.ttf
+│   │   │   ├── Systada_quantize_006.ttf
+│   │   │   └── Systada_quantize_007.ttf
+│   │   ├── Systada_radial_seq
+│   │   │   ├── Systada_radial_000.ttf
+│   │   │   ├── Systada_radial_001.ttf
+│   │   │   ├── Systada_radial_002.ttf
+│   │   │   ├── Systada_radial_003.ttf
+│   │   │   ├── Systada_radial_004.ttf
+│   │   │   ├── Systada_radial_005.ttf
+│   │   │   ├── Systada_radial_006.ttf
+│   │   │   └── Systada_radial_007.ttf
+│   │   ├── Systada_shear_seq
+│   │   │   ├── Systada_shear_000.ttf
+│   │   │   ├── Systada_shear_001.ttf
+│   │   │   ├── Systada_shear_002.ttf
+│   │   │   ├── Systada_shear_003.ttf
+│   │   │   ├── Systada_shear_004.ttf
+│   │   │   ├── Systada_shear_005.ttf
+│   │   │   ├── Systada_shear_006.ttf
+│   │   │   └── Systada_shear_007.ttf
+│   │   ├── Systada_wave_seq
+│   │   │   ├── Systada_wave_000.ttf
+│   │   │   ├── Systada_wave_001.ttf
+│   │   │   ├── Systada_wave_002.ttf
+│   │   │   ├── Systada_wave_003.ttf
+│   │   │   ├── Systada_wave_004.ttf
+│   │   │   ├── Systada_wave_005.ttf
+│   │   │   ├── Systada_wave_006.ttf
+│   │   │   └── Systada_wave_007.ttf
+│   │   ├── dactyl_asc_evap_seq
+│   │   │   ├── dactyl_asc_evap_000.ttf
+│   │   │   ├── dactyl_asc_evap_001.ttf
+│   │   │   ├── dactyl_asc_evap_002.ttf
+│   │   │   ├── dactyl_asc_evap_003.ttf
+│   │   │   ├── dactyl_asc_evap_004.ttf
+│   │   │   ├── dactyl_asc_evap_005.ttf
+│   │   │   ├── dactyl_asc_evap_006.ttf
+│   │   │   └── dactyl_asc_evap_007.ttf
+│   │   ├── dactyl_collapse_seq
+│   │   │   ├── dactyl_collapse_000.ttf
+│   │   │   ├── dactyl_collapse_001.ttf
+│   │   │   ├── dactyl_collapse_002.ttf
+│   │   │   ├── dactyl_collapse_003.ttf
+│   │   │   ├── dactyl_collapse_004.ttf
+│   │   │   ├── dactyl_collapse_005.ttf
+│   │   │   ├── dactyl_collapse_006.ttf
+│   │   │   └── dactyl_collapse_007.ttf
+│   │   ├── dactyl_condense_seq
+│   │   │   ├── dactyl_condense_000.ttf
+│   │   │   ├── dactyl_condense_001.ttf
+│   │   │   ├── dactyl_condense_002.ttf
+│   │   │   ├── dactyl_condense_003.ttf
+│   │   │   ├── dactyl_condense_004.ttf
+│   │   │   ├── dactyl_condense_005.ttf
+│   │   │   ├── dactyl_condense_006.ttf
+│   │   │   └── dactyl_condense_007.ttf
+│   │   ├── dactyl_droop_seq
+│   │   │   ├── dactyl_droop_000.ttf
+│   │   │   ├── dactyl_droop_001.ttf
+│   │   │   ├── dactyl_droop_002.ttf
+│   │   │   ├── dactyl_droop_003.ttf
+│   │   │   ├── dactyl_droop_004.ttf
+│   │   │   ├── dactyl_droop_005.ttf
+│   │   │   ├── dactyl_droop_006.ttf
+│   │   │   └── dactyl_droop_007.ttf
+│   │   ├── dactyl_dropout_seq
+│   │   │   ├── dactyl_dropout_000.ttf
+│   │   │   ├── dactyl_dropout_001.ttf
+│   │   │   ├── dactyl_dropout_002.ttf
+│   │   │   ├── dactyl_dropout_003.ttf
+│   │   │   ├── dactyl_dropout_004.ttf
+│   │   │   ├── dactyl_dropout_005.ttf
+│   │   │   ├── dactyl_dropout_006.ttf
+│   │   │   └── dactyl_dropout_007.ttf
+│   │   ├── dactyl_jitter_seq
+│   │   │   ├── dactyl_jitter_000.ttf
+│   │   │   ├── dactyl_jitter_001.ttf
+│   │   │   ├── dactyl_jitter_002.ttf
+│   │   │   ├── dactyl_jitter_003.ttf
+│   │   │   ├── dactyl_jitter_004.ttf
+│   │   │   ├── dactyl_jitter_005.ttf
+│   │   │   ├── dactyl_jitter_006.ttf
+│   │   │   └── dactyl_jitter_007.ttf
+│   │   ├── dactyl_quantize_seq
+│   │   │   ├── dactyl_quantize_000.ttf
+│   │   │   ├── dactyl_quantize_001.ttf
+│   │   │   ├── dactyl_quantize_002.ttf
+│   │   │   ├── dactyl_quantize_003.ttf
+│   │   │   ├── dactyl_quantize_004.ttf
+│   │   │   ├── dactyl_quantize_005.ttf
+│   │   │   ├── dactyl_quantize_006.ttf
+│   │   │   └── dactyl_quantize_007.ttf
+│   │   ├── dactyl_radial_seq
+│   │   │   ├── dactyl_radial_000.ttf
+│   │   │   ├── dactyl_radial_001.ttf
+│   │   │   ├── dactyl_radial_002.ttf
+│   │   │   ├── dactyl_radial_003.ttf
+│   │   │   ├── dactyl_radial_004.ttf
+│   │   │   ├── dactyl_radial_005.ttf
+│   │   │   ├── dactyl_radial_006.ttf
+│   │   │   └── dactyl_radial_007.ttf
+│   │   ├── dactyl_shear_seq
+│   │   │   ├── dactyl_shear_000.ttf
+│   │   │   ├── dactyl_shear_001.ttf
+│   │   │   ├── dactyl_shear_002.ttf
+│   │   │   ├── dactyl_shear_003.ttf
+│   │   │   ├── dactyl_shear_004.ttf
+│   │   │   ├── dactyl_shear_005.ttf
+│   │   │   ├── dactyl_shear_006.ttf
+│   │   │   └── dactyl_shear_007.ttf
+│   │   ├── dactyl_wave_seq
+│   │   │   ├── dactyl_wave_000.ttf
+│   │   │   ├── dactyl_wave_001.ttf
+│   │   │   ├── dactyl_wave_002.ttf
+│   │   │   ├── dactyl_wave_003.ttf
+│   │   │   ├── dactyl_wave_004.ttf
+│   │   │   ├── dactyl_wave_005.ttf
+│   │   │   ├── dactyl_wave_006.ttf
+│   │   │   └── dactyl_wave_007.ttf
+│   │   ├── shapeform_asc_evap_seq
+│   │   │   ├── shapeform_asc_evap_000.ttf
+│   │   │   ├── shapeform_asc_evap_001.ttf
+│   │   │   ├── shapeform_asc_evap_002.ttf
+│   │   │   ├── shapeform_asc_evap_003.ttf
+│   │   │   ├── shapeform_asc_evap_004.ttf
+│   │   │   ├── shapeform_asc_evap_005.ttf
+│   │   │   ├── shapeform_asc_evap_006.ttf
+│   │   │   └── shapeform_asc_evap_007.ttf
+│   │   ├── shapeform_collapse_seq
+│   │   │   ├── shapeform_collapse_000.ttf
+│   │   │   ├── shapeform_collapse_001.ttf
+│   │   │   ├── shapeform_collapse_002.ttf
+│   │   │   ├── shapeform_collapse_003.ttf
+│   │   │   ├── shapeform_collapse_004.ttf
+│   │   │   ├── shapeform_collapse_005.ttf
+│   │   │   ├── shapeform_collapse_006.ttf
+│   │   │   └── shapeform_collapse_007.ttf
+│   │   ├── shapeform_condense_seq
+│   │   │   ├── shapeform_condense_000.ttf
+│   │   │   ├── shapeform_condense_001.ttf
+│   │   │   ├── shapeform_condense_002.ttf
+│   │   │   ├── shapeform_condense_003.ttf
+│   │   │   ├── shapeform_condense_004.ttf
+│   │   │   ├── shapeform_condense_005.ttf
+│   │   │   ├── shapeform_condense_006.ttf
+│   │   │   └── shapeform_condense_007.ttf
+│   │   ├── shapeform_droop_seq
+│   │   │   ├── shapeform_droop_000.ttf
+│   │   │   ├── shapeform_droop_001.ttf
+│   │   │   ├── shapeform_droop_002.ttf
+│   │   │   ├── shapeform_droop_003.ttf
+│   │   │   ├── shapeform_droop_004.ttf
+│   │   │   ├── shapeform_droop_005.ttf
+│   │   │   ├── shapeform_droop_006.ttf
+│   │   │   └── shapeform_droop_007.ttf
+│   │   ├── shapeform_dropout_seq
+│   │   │   ├── shapeform_dropout_000.ttf
+│   │   │   ├── shapeform_dropout_001.ttf
+│   │   │   ├── shapeform_dropout_002.ttf
+│   │   │   ├── shapeform_dropout_003.ttf
+│   │   │   ├── shapeform_dropout_004.ttf
+│   │   │   ├── shapeform_dropout_005.ttf
+│   │   │   ├── shapeform_dropout_006.ttf
+│   │   │   └── shapeform_dropout_007.ttf
+│   │   ├── shapeform_jitter_seq
+│   │   │   ├── shapeform_jitter_000.ttf
+│   │   │   ├── shapeform_jitter_001.ttf
+│   │   │   ├── shapeform_jitter_002.ttf
+│   │   │   ├── shapeform_jitter_003.ttf
+│   │   │   ├── shapeform_jitter_004.ttf
+│   │   │   ├── shapeform_jitter_005.ttf
+│   │   │   ├── shapeform_jitter_006.ttf
+│   │   │   └── shapeform_jitter_007.ttf
+│   │   ├── shapeform_quantize_seq
+│   │   │   ├── shapeform_quantize_000.ttf
+│   │   │   ├── shapeform_quantize_001.ttf
+│   │   │   ├── shapeform_quantize_002.ttf
+│   │   │   ├── shapeform_quantize_003.ttf
+│   │   │   ├── shapeform_quantize_004.ttf
+│   │   │   ├── shapeform_quantize_005.ttf
+│   │   │   ├── shapeform_quantize_006.ttf
+│   │   │   └── shapeform_quantize_007.ttf
+│   │   ├── shapeform_radial_seq
+│   │   │   ├── shapeform_radial_000.ttf
+│   │   │   ├── shapeform_radial_001.ttf
+│   │   │   ├── shapeform_radial_002.ttf
+│   │   │   ├── shapeform_radial_003.ttf
+│   │   │   ├── shapeform_radial_004.ttf
+│   │   │   ├── shapeform_radial_005.ttf
+│   │   │   ├── shapeform_radial_006.ttf
+│   │   │   └── shapeform_radial_007.ttf
+│   │   ├── shapeform_shear_seq
+│   │   │   ├── shapeform_shear_000.ttf
+│   │   │   ├── shapeform_shear_001.ttf
+│   │   │   ├── shapeform_shear_002.ttf
+│   │   │   ├── shapeform_shear_003.ttf
+│   │   │   ├── shapeform_shear_004.ttf
+│   │   │   ├── shapeform_shear_005.ttf
+│   │   │   ├── shapeform_shear_006.ttf
+│   │   │   └── shapeform_shear_007.ttf
+│   │   └── shapeform_wave_seq
+│   │       ├── shapeform_wave_000.ttf
+│   │       ├── shapeform_wave_001.ttf
+│   │       ├── shapeform_wave_002.ttf
+│   │       ├── shapeform_wave_003.ttf
+│   │       ├── shapeform_wave_004.ttf
+│   │       ├── shapeform_wave_005.ttf
+│   │       ├── shapeform_wave_006.ttf
+│   │       └── shapeform_wave_007.ttf
+│   └── static
+│       ├── Amiri-BoldItalic_asc_evap_30.ttf
+│       ├── Amiri-BoldItalic_asc_evap_70.ttf
+│       ├── Amiri-BoldItalic_condense_60.ttf
+│       ├── Amiri-BoldItalic_condense_80.ttf
+│       ├── Amiri-BoldItalic_desc_erode_50.ttf
+│       ├── Amiri-BoldItalic_droop_heavy.ttf
+│       ├── Amiri-BoldItalic_droop_mild.ttf
+│       ├── Amiri-BoldItalic_dropout_20pct.ttf
+│       ├── Amiri-BoldItalic_dropout_40pct.ttf
+│       ├── Amiri-BoldItalic_dropout_5pct.ttf
+│       ├── Amiri-BoldItalic_echo_right.ttf
+│       ├── Amiri-BoldItalic_echo_shadow.ttf
+│       ├── Amiri-BoldItalic_expand_120.ttf
+│       ├── Amiri-BoldItalic_expand_150.ttf
+│       ├── Amiri-BoldItalic_gaussian_heavy.ttf
+│       ├── Amiri-BoldItalic_gaussian_mild.ttf
+│       ├── Amiri-BoldItalic_jitter_heavy.ttf
+│       ├── Amiri-BoldItalic_jitter_mild.ttf
+│       ├── Amiri-BoldItalic_quantize_16.ttf
+│       ├── Amiri-BoldItalic_quantize_32.ttf
+│       ├── Amiri-BoldItalic_quantize_8.ttf
+│       ├── Amiri-BoldItalic_radial_heavy_FAILED.ttx
+│       ├── Amiri-BoldItalic_radial_mild_FAILED.ttx
+│       ├── Amiri-BoldItalic_rotate_5.ttf
+│       ├── Amiri-BoldItalic_rotate_neg5.ttf
+│       ├── Amiri-BoldItalic_shear_back_10.ttf
+│       ├── Amiri-BoldItalic_shear_fwd_10.ttf
+│       ├── Amiri-BoldItalic_shear_fwd_25.ttf
+│       ├── Amiri-BoldItalic_stroke_collapse_30.ttf
+│       ├── Amiri-BoldItalic_stroke_collapse_70.ttf
+│       ├── Amiri-BoldItalic_vshear_10.ttf
+│       ├── Amiri-BoldItalic_vshear_neg10.ttf
+│       ├── Amiri-BoldItalic_vsquash_70.ttf
+│       ├── Amiri-BoldItalic_vstretch_130.ttf
+│       ├── Amiri-BoldItalic_wave_heavy.ttf
+│       ├── Amiri-BoldItalic_wave_mild.ttf
+│       ├── Amiri-Bold_asc_evap_30.ttf
+│       ├── Amiri-Bold_asc_evap_70.ttf
+│       ├── Amiri-Bold_condense_60.ttf
+│       ├── Amiri-Bold_condense_80.ttf
+│       ├── Amiri-Bold_desc_erode_50.ttf
+│       ├── Amiri-Bold_droop_heavy.ttf
+│       ├── Amiri-Bold_droop_mild.ttf
+│       ├── Amiri-Bold_dropout_20pct.ttf
+│       ├── Amiri-Bold_dropout_40pct.ttf
+│       ├── Amiri-Bold_dropout_5pct.ttf
+│       ├── Amiri-Bold_echo_right.ttf
+│       ├── Amiri-Bold_echo_shadow.ttf
+│       ├── Amiri-Bold_expand_120.ttf
+│       ├── Amiri-Bold_expand_150.ttf
+│       ├── Amiri-Bold_gaussian_heavy.ttf
+│       ├── Amiri-Bold_gaussian_mild.ttf
+│       ├── Amiri-Bold_jitter_heavy.ttf
+│       ├── Amiri-Bold_jitter_mild.ttf
+│       ├── Amiri-Bold_quantize_16.ttf
+│       ├── Amiri-Bold_quantize_32.ttf
+│       ├── Amiri-Bold_quantize_8.ttf
+│       ├── Amiri-Bold_radial_heavy_FAILED.ttx
+│       ├── Amiri-Bold_radial_mild_FAILED.ttx
+│       ├── Amiri-Bold_rotate_5.ttf
+│       ├── Amiri-Bold_rotate_neg5.ttf
+│       ├── Amiri-Bold_shear_back_10.ttf
+│       ├── Amiri-Bold_shear_fwd_10.ttf
+│       ├── Amiri-Bold_shear_fwd_25.ttf
+│       ├── Amiri-Bold_stroke_collapse_30.ttf
+│       ├── Amiri-Bold_stroke_collapse_70.ttf
+│       ├── Amiri-Bold_vshear_10.ttf
+│       ├── Amiri-Bold_vshear_neg10.ttf
+│       ├── Amiri-Bold_vsquash_70.ttf
+│       ├── Amiri-Bold_vstretch_130.ttf
+│       ├── Amiri-Bold_wave_heavy.ttf
+│       ├── Amiri-Bold_wave_mild.ttf
+│       ├── Amiri-Italic_asc_evap_30.ttf
+│       ├── Amiri-Italic_asc_evap_70.ttf
+│       ├── Amiri-Italic_condense_60.ttf
+│       ├── Amiri-Italic_condense_80.ttf
+│       ├── Amiri-Italic_desc_erode_50.ttf
+│       ├── Amiri-Italic_droop_heavy.ttf
+│       ├── Amiri-Italic_droop_mild.ttf
+│       ├── Amiri-Italic_dropout_20pct.ttf
+│       ├── Amiri-Italic_dropout_40pct.ttf
+│       ├── Amiri-Italic_dropout_5pct.ttf
+│       ├── Amiri-Italic_echo_right.ttf
+│       ├── Amiri-Italic_echo_shadow.ttf
+│       ├── Amiri-Italic_expand_120.ttf
+│       ├── Amiri-Italic_expand_150.ttf
+│       ├── Amiri-Italic_gaussian_heavy.ttf
+│       ├── Amiri-Italic_gaussian_mild.ttf
+│       ├── Amiri-Italic_jitter_heavy.ttf
+│       ├── Amiri-Italic_jitter_mild.ttf
+│       ├── Amiri-Italic_quantize_16.ttf
+│       ├── Amiri-Italic_quantize_32.ttf
+│       ├── Amiri-Italic_quantize_8.ttf
+│       ├── Amiri-Italic_radial_heavy_FAILED.ttx
+│       ├── Amiri-Italic_radial_mild_FAILED.ttx
+│       ├── Amiri-Italic_rotate_5.ttf
+│       ├── Amiri-Italic_rotate_neg5.ttf
+│       ├── Amiri-Italic_shear_back_10.ttf
+│       ├── Amiri-Italic_shear_fwd_10.ttf
+│       ├── Amiri-Italic_shear_fwd_25.ttf
+│       ├── Amiri-Italic_stroke_collapse_30.ttf
+│       ├── Amiri-Italic_stroke_collapse_70.ttf
+│       ├── Amiri-Italic_vshear_10.ttf
+│       ├── Amiri-Italic_vshear_neg10.ttf
+│       ├── Amiri-Italic_vsquash_70.ttf
+│       ├── Amiri-Italic_vstretch_130.ttf
+│       ├── Amiri-Italic_wave_heavy.ttf
+│       ├── Amiri-Italic_wave_mild.ttf
+│       ├── Amiri-Regular_asc_evap_30.ttf
+│       ├── Amiri-Regular_asc_evap_70.ttf
+│       ├── Amiri-Regular_condense_60.ttf
+│       ├── Amiri-Regular_condense_80.ttf
+│       ├── Amiri-Regular_desc_erode_50.ttf
+│       ├── Amiri-Regular_droop_heavy.ttf
+│       ├── Amiri-Regular_droop_mild.ttf
+│       ├── Amiri-Regular_dropout_20pct.ttf
+│       ├── Amiri-Regular_dropout_40pct.ttf
+│       ├── Amiri-Regular_dropout_5pct.ttf
+│       ├── Amiri-Regular_echo_right.ttf
+│       ├── Amiri-Regular_echo_shadow.ttf
+│       ├── Amiri-Regular_expand_120.ttf
+│       ├── Amiri-Regular_expand_150.ttf
+│       ├── Amiri-Regular_gaussian_heavy.ttf
+│       ├── Amiri-Regular_gaussian_mild.ttf
+│       ├── Amiri-Regular_jitter_heavy.ttf
+│       ├── Amiri-Regular_jitter_mild.ttf
+│       ├── Amiri-Regular_quantize_16.ttf
+│       ├── Amiri-Regular_quantize_32.ttf
+│       ├── Amiri-Regular_quantize_8.ttf
+│       ├── Amiri-Regular_radial_heavy_FAILED.ttx
+│       ├── Amiri-Regular_radial_mild_FAILED.ttx
+│       ├── Amiri-Regular_rotate_5.ttf
+│       ├── Amiri-Regular_rotate_neg5.ttf
+│       ├── Amiri-Regular_shear_back_10.ttf
+│       ├── Amiri-Regular_shear_fwd_10.ttf
+│       ├── Amiri-Regular_shear_fwd_25.ttf
+│       ├── Amiri-Regular_stroke_collapse_30.ttf
+│       ├── Amiri-Regular_stroke_collapse_70.ttf
+│       ├── Amiri-Regular_vshear_10.ttf
+│       ├── Amiri-Regular_vshear_neg10.ttf
+│       ├── Amiri-Regular_vsquash_70.ttf
+│       ├── Amiri-Regular_vstretch_130.ttf
+│       ├── Amiri-Regular_wave_heavy.ttf
+│       ├── Amiri-Regular_wave_mild.ttf
+│       ├── Cheiro-Regular_asc_evap_30.ttf
+│       ├── Cheiro-Regular_asc_evap_70.ttf
+│       ├── Cheiro-Regular_condense_60.ttf
+│       ├── Cheiro-Regular_condense_80.ttf
+│       ├── Cheiro-Regular_desc_erode_50.ttf
+│       ├── Cheiro-Regular_droop_heavy.ttf
+│       ├── Cheiro-Regular_droop_mild.ttf
+│       ├── Cheiro-Regular_dropout_20pct.ttf
+│       ├── Cheiro-Regular_dropout_40pct.ttf
+│       ├── Cheiro-Regular_dropout_5pct.ttf
+│       ├── Cheiro-Regular_echo_right.ttf
+│       ├── Cheiro-Regular_echo_shadow.ttf
+│       ├── Cheiro-Regular_expand_120.ttf
+│       ├── Cheiro-Regular_expand_150.ttf
+│       ├── Cheiro-Regular_gaussian_heavy.ttf
+│       ├── Cheiro-Regular_gaussian_mild.ttf
+│       ├── Cheiro-Regular_jitter_heavy.ttf
+│       ├── Cheiro-Regular_jitter_mild.ttf
+│       ├── Cheiro-Regular_quantize_16.ttf
+│       ├── Cheiro-Regular_quantize_32.ttf
+│       ├── Cheiro-Regular_quantize_8.ttf
+│       ├── Cheiro-Regular_radial_heavy.ttf
+│       ├── Cheiro-Regular_radial_mild.ttf
+│       ├── Cheiro-Regular_rotate_5.ttf
+│       ├── Cheiro-Regular_rotate_neg5.ttf
+│       ├── Cheiro-Regular_shear_back_10.ttf
+│       ├── Cheiro-Regular_shear_fwd_10.ttf
+│       ├── Cheiro-Regular_shear_fwd_25.ttf
+│       ├── Cheiro-Regular_stroke_collapse_30.ttf
+│       ├── Cheiro-Regular_stroke_collapse_70.ttf
+│       ├── Cheiro-Regular_vshear_10.ttf
+│       ├── Cheiro-Regular_vshear_neg10.ttf
+│       ├── Cheiro-Regular_vsquash_70.ttf
+│       ├── Cheiro-Regular_vstretch_130.ttf
+│       ├── Cheiro-Regular_wave_heavy.ttf
+│       ├── Cheiro-Regular_wave_mild.ttf
+│       ├── Clypto-Regular_asc_evap_30.ttf
+│       ├── Clypto-Regular_asc_evap_70.ttf
+│       ├── Clypto-Regular_condense_60.ttf
+│       ├── Clypto-Regular_condense_80.ttf
+│       ├── Clypto-Regular_desc_erode_50.ttf
+│       ├── Clypto-Regular_droop_heavy.ttf
+│       ├── Clypto-Regular_droop_mild.ttf
+│       ├── Clypto-Regular_dropout_20pct.ttf
+│       ├── Clypto-Regular_dropout_40pct.ttf
+│       ├── Clypto-Regular_dropout_5pct.ttf
+│       ├── Clypto-Regular_echo_right.ttf
+│       ├── Clypto-Regular_echo_shadow.ttf
+│       ├── Clypto-Regular_expand_120.ttf
+│       ├── Clypto-Regular_expand_150.ttf
+│       ├── Clypto-Regular_gaussian_heavy.ttf
+│       ├── Clypto-Regular_gaussian_mild.ttf
+│       ├── Clypto-Regular_jitter_heavy.ttf
+│       ├── Clypto-Regular_jitter_mild.ttf
+│       ├── Clypto-Regular_quantize_16.ttf
+│       ├── Clypto-Regular_quantize_32.ttf
+│       ├── Clypto-Regular_quantize_8.ttf
+│       ├── Clypto-Regular_radial_heavy.ttf
+│       ├── Clypto-Regular_radial_mild.ttf
+│       ├── Clypto-Regular_rotate_5.ttf
+│       ├── Clypto-Regular_rotate_neg5.ttf
+│       ├── Clypto-Regular_shear_back_10.ttf
+│       ├── Clypto-Regular_shear_fwd_10.ttf
+│       ├── Clypto-Regular_shear_fwd_25.ttf
+│       ├── Clypto-Regular_stroke_collapse_30.ttf
+│       ├── Clypto-Regular_stroke_collapse_70.ttf
+│       ├── Clypto-Regular_vshear_10.ttf
+│       ├── Clypto-Regular_vshear_neg10.ttf
+│       ├── Clypto-Regular_vsquash_70.ttf
+│       ├── Clypto-Regular_vstretch_130.ttf
+│       ├── Clypto-Regular_wave_heavy.ttf
+│       ├── Clypto-Regular_wave_mild.ttf
+│       ├── CursiveGalactic-Regular_asc_evap_30.ttf
+│       ├── CursiveGalactic-Regular_asc_evap_70.ttf
+│       ├── CursiveGalactic-Regular_condense_60.ttf
+│       ├── CursiveGalactic-Regular_condense_80.ttf
+│       ├── CursiveGalactic-Regular_desc_erode_50.ttf
+│       ├── CursiveGalactic-Regular_droop_heavy.ttf
+│       ├── CursiveGalactic-Regular_droop_mild.ttf
+│       ├── CursiveGalactic-Regular_dropout_20pct.ttf
+│       ├── CursiveGalactic-Regular_dropout_40pct.ttf
+│       ├── CursiveGalactic-Regular_dropout_5pct.ttf
+│       ├── CursiveGalactic-Regular_echo_right.ttf
+│       ├── CursiveGalactic-Regular_echo_shadow.ttf
+│       ├── CursiveGalactic-Regular_expand_120.ttf
+│       ├── CursiveGalactic-Regular_expand_150.ttf
+│       ├── CursiveGalactic-Regular_gaussian_heavy.ttf
+│       ├── CursiveGalactic-Regular_gaussian_mild.ttf
+│       ├── CursiveGalactic-Regular_jitter_heavy.ttf
+│       ├── CursiveGalactic-Regular_jitter_mild.ttf
+│       ├── CursiveGalactic-Regular_quantize_16.ttf
+│       ├── CursiveGalactic-Regular_quantize_32.ttf
+│       ├── CursiveGalactic-Regular_quantize_8.ttf
+│       ├── CursiveGalactic-Regular_radial_heavy.ttf
+│       ├── CursiveGalactic-Regular_radial_mild.ttf
+│       ├── CursiveGalactic-Regular_rotate_5.ttf
+│       ├── CursiveGalactic-Regular_rotate_neg5.ttf
+│       ├── CursiveGalactic-Regular_shear_back_10.ttf
+│       ├── CursiveGalactic-Regular_shear_fwd_10.ttf
+│       ├── CursiveGalactic-Regular_shear_fwd_25.ttf
+│       ├── CursiveGalactic-Regular_stroke_collapse_30.ttf
+│       ├── CursiveGalactic-Regular_stroke_collapse_70.ttf
+│       ├── CursiveGalactic-Regular_vshear_10.ttf
+│       ├── CursiveGalactic-Regular_vshear_neg10.ttf
+│       ├── CursiveGalactic-Regular_vsquash_70.ttf
+│       ├── CursiveGalactic-Regular_vstretch_130.ttf
+│       ├── CursiveGalactic-Regular_wave_heavy.ttf
+│       ├── CursiveGalactic-Regular_wave_mild.ttf
+│       ├── Lingojam_cipher-Regular_asc_evap_30.ttf
+│       ├── Lingojam_cipher-Regular_asc_evap_70.ttf
+│       ├── Lingojam_cipher-Regular_condense_60.ttf
+│       ├── Lingojam_cipher-Regular_condense_80.ttf
+│       ├── Lingojam_cipher-Regular_desc_erode_50.ttf
+│       ├── Lingojam_cipher-Regular_droop_heavy.ttf
+│       ├── Lingojam_cipher-Regular_droop_mild.ttf
+│       ├── Lingojam_cipher-Regular_dropout_20pct.ttf
+│       ├── Lingojam_cipher-Regular_dropout_40pct.ttf
+│       ├── Lingojam_cipher-Regular_dropout_5pct.ttf
+│       ├── Lingojam_cipher-Regular_echo_right.ttf
+│       ├── Lingojam_cipher-Regular_echo_shadow.ttf
+│       ├── Lingojam_cipher-Regular_expand_120.ttf
+│       ├── Lingojam_cipher-Regular_expand_150.ttf
+│       ├── Lingojam_cipher-Regular_gaussian_heavy.ttf
+│       ├── Lingojam_cipher-Regular_gaussian_mild.ttf
+│       ├── Lingojam_cipher-Regular_jitter_heavy.ttf
+│       ├── Lingojam_cipher-Regular_jitter_mild.ttf
+│       ├── Lingojam_cipher-Regular_quantize_16.ttf
+│       ├── Lingojam_cipher-Regular_quantize_32.ttf
+│       ├── Lingojam_cipher-Regular_quantize_8.ttf
+│       ├── Lingojam_cipher-Regular_radial_heavy.ttf
+│       ├── Lingojam_cipher-Regular_radial_mild.ttf
+│       ├── Lingojam_cipher-Regular_rotate_5.ttf
+│       ├── Lingojam_cipher-Regular_rotate_neg5.ttf
+│       ├── Lingojam_cipher-Regular_shear_back_10.ttf
+│       ├── Lingojam_cipher-Regular_shear_fwd_10.ttf
+│       ├── Lingojam_cipher-Regular_shear_fwd_25.ttf
+│       ├── Lingojam_cipher-Regular_stroke_collapse_30.ttf
+│       ├── Lingojam_cipher-Regular_stroke_collapse_70.ttf
+│       ├── Lingojam_cipher-Regular_vshear_10.ttf
+│       ├── Lingojam_cipher-Regular_vshear_neg10.ttf
+│       ├── Lingojam_cipher-Regular_vsquash_70.ttf
+│       ├── Lingojam_cipher-Regular_vstretch_130.ttf
+│       ├── Lingojam_cipher-Regular_wave_heavy.ttf
+│       ├── Lingojam_cipher-Regular_wave_mild.ttf
+│       ├── Logico_philosophicus-Regular_asc_evap_30.ttf
+│       ├── Logico_philosophicus-Regular_asc_evap_70.ttf
+│       ├── Logico_philosophicus-Regular_condense_60.ttf
+│       ├── Logico_philosophicus-Regular_condense_80.ttf
+│       ├── Logico_philosophicus-Regular_desc_erode_50.ttf
+│       ├── Logico_philosophicus-Regular_droop_heavy.ttf
+│       ├── Logico_philosophicus-Regular_droop_mild.ttf
+│       ├── Logico_philosophicus-Regular_dropout_20pct.ttf
+│       ├── Logico_philosophicus-Regular_dropout_40pct.ttf
+│       ├── Logico_philosophicus-Regular_dropout_5pct.ttf
+│       ├── Logico_philosophicus-Regular_echo_right.ttf
+│       ├── Logico_philosophicus-Regular_echo_shadow.ttf
+│       ├── Logico_philosophicus-Regular_expand_120.ttf
+│       ├── Logico_philosophicus-Regular_expand_150.ttf
+│       ├── Logico_philosophicus-Regular_gaussian_heavy.ttf
+│       ├── Logico_philosophicus-Regular_gaussian_mild.ttf
+│       ├── Logico_philosophicus-Regular_jitter_heavy.ttf
+│       ├── Logico_philosophicus-Regular_jitter_mild.ttf
+│       ├── Logico_philosophicus-Regular_quantize_16.ttf
+│       ├── Logico_philosophicus-Regular_quantize_32.ttf
+│       ├── Logico_philosophicus-Regular_quantize_8.ttf
+│       ├── Logico_philosophicus-Regular_radial_heavy.ttf
+│       ├── Logico_philosophicus-Regular_radial_mild.ttf
+│       ├── Logico_philosophicus-Regular_rotate_5.ttf
+│       ├── Logico_philosophicus-Regular_rotate_neg5.ttf
+│       ├── Logico_philosophicus-Regular_shear_back_10.ttf
+│       ├── Logico_philosophicus-Regular_shear_fwd_10.ttf
+│       ├── Logico_philosophicus-Regular_shear_fwd_25.ttf
+│       ├── Logico_philosophicus-Regular_stroke_collapse_30.ttf
+│       ├── Logico_philosophicus-Regular_stroke_collapse_70.ttf
+│       ├── Logico_philosophicus-Regular_vshear_10.ttf
+│       ├── Logico_philosophicus-Regular_vshear_neg10.ttf
+│       ├── Logico_philosophicus-Regular_vsquash_70.ttf
+│       ├── Logico_philosophicus-Regular_vstretch_130.ttf
+│       ├── Logico_philosophicus-Regular_wave_heavy.ttf
+│       ├── Logico_philosophicus-Regular_wave_mild.ttf
+│       ├── NovaMonoStandardGalactic_asc_evap_30.ttf
+│       ├── NovaMonoStandardGalactic_asc_evap_70.ttf
+│       ├── NovaMonoStandardGalactic_condense_60.ttf
+│       ├── NovaMonoStandardGalactic_condense_80.ttf
+│       ├── NovaMonoStandardGalactic_desc_erode_50.ttf
+│       ├── NovaMonoStandardGalactic_droop_heavy.ttf
+│       ├── NovaMonoStandardGalactic_droop_mild.ttf
+│       ├── NovaMonoStandardGalactic_dropout_20pct.ttf
+│       ├── NovaMonoStandardGalactic_dropout_40pct.ttf
+│       ├── NovaMonoStandardGalactic_dropout_5pct.ttf
+│       ├── NovaMonoStandardGalactic_echo_right.ttf
+│       ├── NovaMonoStandardGalactic_echo_shadow.ttf
+│       ├── NovaMonoStandardGalactic_expand_120.ttf
+│       ├── NovaMonoStandardGalactic_expand_150.ttf
+│       ├── NovaMonoStandardGalactic_gaussian_heavy.ttf
+│       ├── NovaMonoStandardGalactic_gaussian_mild.ttf
+│       ├── NovaMonoStandardGalactic_jitter_heavy.ttf
+│       ├── NovaMonoStandardGalactic_jitter_mild.ttf
+│       ├── NovaMonoStandardGalactic_quantize_16.ttf
+│       ├── NovaMonoStandardGalactic_quantize_32.ttf
+│       ├── NovaMonoStandardGalactic_quantize_8.ttf
+│       ├── NovaMonoStandardGalactic_radial_heavy.ttf
+│       ├── NovaMonoStandardGalactic_radial_mild.ttf
+│       ├── NovaMonoStandardGalactic_rotate_5.ttf
+│       ├── NovaMonoStandardGalactic_rotate_neg5.ttf
+│       ├── NovaMonoStandardGalactic_shear_back_10.ttf
+│       ├── NovaMonoStandardGalactic_shear_fwd_10.ttf
+│       ├── NovaMonoStandardGalactic_shear_fwd_25.ttf
+│       ├── NovaMonoStandardGalactic_stroke_collapse_30.ttf
+│       ├── NovaMonoStandardGalactic_stroke_collapse_70.ttf
+│       ├── NovaMonoStandardGalactic_vshear_10.ttf
+│       ├── NovaMonoStandardGalactic_vshear_neg10.ttf
+│       ├── NovaMonoStandardGalactic_vsquash_70.ttf
+│       ├── NovaMonoStandardGalactic_vstretch_130.ttf
+│       ├── NovaMonoStandardGalactic_wave_heavy.ttf
+│       ├── NovaMonoStandardGalactic_wave_mild.ttf
+│       ├── Sga-Regular_asc_evap_30.ttf
+│       ├── Sga-Regular_asc_evap_70.ttf
+│       ├── Sga-Regular_condense_60.ttf
+│       ├── Sga-Regular_condense_80.ttf
+│       ├── Sga-Regular_desc_erode_50.ttf
+│       ├── Sga-Regular_droop_heavy.ttf
+│       ├── Sga-Regular_droop_mild.ttf
+│       ├── Sga-Regular_dropout_20pct.ttf
+│       ├── Sga-Regular_dropout_40pct.ttf
+│       ├── Sga-Regular_dropout_5pct.ttf
+│       ├── Sga-Regular_echo_right.ttf
+│       ├── Sga-Regular_echo_shadow.ttf
+│       ├── Sga-Regular_expand_120.ttf
+│       ├── Sga-Regular_expand_150.ttf
+│       ├── Sga-Regular_gaussian_heavy.ttf
+│       ├── Sga-Regular_gaussian_mild.ttf
+│       ├── Sga-Regular_jitter_heavy.ttf
+│       ├── Sga-Regular_jitter_mild.ttf
+│       ├── Sga-Regular_quantize_16.ttf
+│       ├── Sga-Regular_quantize_32.ttf
+│       ├── Sga-Regular_quantize_8.ttf
+│       ├── Sga-Regular_radial_heavy.ttf
+│       ├── Sga-Regular_radial_mild.ttf
+│       ├── Sga-Regular_rotate_5.ttf
+│       ├── Sga-Regular_rotate_neg5.ttf
+│       ├── Sga-Regular_shear_back_10.ttf
+│       ├── Sga-Regular_shear_fwd_10.ttf
+│       ├── Sga-Regular_shear_fwd_25.ttf
+│       ├── Sga-Regular_stroke_collapse_30.ttf
+│       ├── Sga-Regular_stroke_collapse_70.ttf
+│       ├── Sga-Regular_vshear_10.ttf
+│       ├── Sga-Regular_vshear_neg10.ttf
+│       ├── Sga-Regular_vsquash_70.ttf
+│       ├── Sga-Regular_vstretch_130.ttf
+│       ├── Sga-Regular_wave_heavy.ttf
+│       ├── Sga-Regular_wave_mild.ttf
+│       ├── Systada-Regular_asc_evap_30.ttf
+│       ├── Systada-Regular_asc_evap_70.ttf
+│       ├── Systada-Regular_condense_60.ttf
+│       ├── Systada-Regular_condense_80.ttf
+│       ├── Systada-Regular_desc_erode_50.ttf
+│       ├── Systada-Regular_droop_heavy.ttf
+│       ├── Systada-Regular_droop_mild.ttf
+│       ├── Systada-Regular_dropout_20pct.ttf
+│       ├── Systada-Regular_dropout_40pct.ttf
+│       ├── Systada-Regular_dropout_5pct.ttf
+│       ├── Systada-Regular_echo_right.ttf
+│       ├── Systada-Regular_echo_shadow.ttf
+│       ├── Systada-Regular_expand_120.ttf
+│       ├── Systada-Regular_expand_150.ttf
+│       ├── Systada-Regular_gaussian_heavy.ttf
+│       ├── Systada-Regular_gaussian_mild.ttf
+│       ├── Systada-Regular_jitter_heavy.ttf
+│       ├── Systada-Regular_jitter_mild.ttf
+│       ├── Systada-Regular_quantize_16.ttf
+│       ├── Systada-Regular_quantize_32.ttf
+│       ├── Systada-Regular_quantize_8.ttf
+│       ├── Systada-Regular_radial_heavy.ttf
+│       ├── Systada-Regular_radial_mild.ttf
+│       ├── Systada-Regular_rotate_5.ttf
+│       ├── Systada-Regular_rotate_neg5.ttf
+│       ├── Systada-Regular_shear_back_10.ttf
+│       ├── Systada-Regular_shear_fwd_10.ttf
+│       ├── Systada-Regular_shear_fwd_25.ttf
+│       ├── Systada-Regular_stroke_collapse_30.ttf
+│       ├── Systada-Regular_stroke_collapse_70.ttf
+│       ├── Systada-Regular_vshear_10.ttf
+│       ├── Systada-Regular_vshear_neg10.ttf
+│       ├── Systada-Regular_vsquash_70.ttf
+│       ├── Systada-Regular_vstretch_130.ttf
+│       ├── Systada-Regular_wave_heavy.ttf
+│       ├── Systada-Regular_wave_mild.ttf
+│       ├── Systada_asc_evap_30.ttf
+│       ├── Systada_asc_evap_70.ttf
+│       ├── Systada_condense_60.ttf
+│       ├── Systada_condense_80.ttf
+│       ├── Systada_desc_erode_50.ttf
+│       ├── Systada_droop_heavy.ttf
+│       ├── Systada_droop_mild.ttf
+│       ├── Systada_dropout_20pct.ttf
+│       ├── Systada_dropout_40pct.ttf
+│       ├── Systada_dropout_5pct.ttf
+│       ├── Systada_echo_right.ttf
+│       ├── Systada_echo_shadow.ttf
+│       ├── Systada_expand_120.ttf
+│       ├── Systada_expand_150.ttf
+│       ├── Systada_gaussian_heavy.ttf
+│       ├── Systada_gaussian_mild.ttf
+│       ├── Systada_jitter_heavy.ttf
+│       ├── Systada_jitter_mild.ttf
+│       ├── Systada_quantize_16.ttf
+│       ├── Systada_quantize_32.ttf
+│       ├── Systada_quantize_8.ttf
+│       ├── Systada_radial_heavy.ttf
+│       ├── Systada_radial_mild.ttf
+│       ├── Systada_rotate_5.ttf
+│       ├── Systada_rotate_neg5.ttf
+│       ├── Systada_shear_back_10.ttf
+│       ├── Systada_shear_fwd_10.ttf
+│       ├── Systada_shear_fwd_25.ttf
+│       ├── Systada_stroke_collapse_30.ttf
+│       ├── Systada_stroke_collapse_70.ttf
+│       ├── Systada_vshear_10.ttf
+│       ├── Systada_vshear_neg10.ttf
+│       ├── Systada_vsquash_70.ttf
+│       ├── Systada_vstretch_130.ttf
+│       ├── Systada_wave_heavy.ttf
+│       ├── Systada_wave_mild.ttf
+│       ├── dactyl_asc_evap_30.ttf
+│       ├── dactyl_asc_evap_70.ttf
+│       ├── dactyl_condense_60.ttf
+│       ├── dactyl_condense_80.ttf
+│       ├── dactyl_desc_erode_50.ttf
+│       ├── dactyl_droop_heavy.ttf
+│       ├── dactyl_droop_mild.ttf
+│       ├── dactyl_dropout_20pct.ttf
+│       ├── dactyl_dropout_40pct.ttf
+│       ├── dactyl_dropout_5pct.ttf
+│       ├── dactyl_echo_right.ttf
+│       ├── dactyl_echo_shadow.ttf
+│       ├── dactyl_expand_120.ttf
+│       ├── dactyl_expand_150.ttf
+│       ├── dactyl_gaussian_heavy.ttf
+│       ├── dactyl_gaussian_mild.ttf
+│       ├── dactyl_jitter_heavy.ttf
+│       ├── dactyl_jitter_mild.ttf
+│       ├── dactyl_quantize_16.ttf
+│       ├── dactyl_quantize_32.ttf
+│       ├── dactyl_quantize_8.ttf
+│       ├── dactyl_radial_heavy.ttf
+│       ├── dactyl_radial_mild.ttf
+│       ├── dactyl_rotate_5.ttf
+│       ├── dactyl_rotate_neg5.ttf
+│       ├── dactyl_shear_back_10.ttf
+│       ├── dactyl_shear_fwd_10.ttf
+│       ├── dactyl_shear_fwd_25.ttf
+│       ├── dactyl_stroke_collapse_30.ttf
+│       ├── dactyl_stroke_collapse_70.ttf
+│       ├── dactyl_vshear_10.ttf
+│       ├── dactyl_vshear_neg10.ttf
+│       ├── dactyl_vsquash_70.ttf
+│       ├── dactyl_vstretch_130.ttf
+│       ├── dactyl_wave_heavy.ttf
+│       ├── dactyl_wave_mild.ttf
+│       ├── shapeform_asc_evap_30.ttf
+│       ├── shapeform_asc_evap_70.ttf
+│       ├── shapeform_condense_60.ttf
+│       ├── shapeform_condense_80.ttf
+│       ├── shapeform_desc_erode_50.ttf
+│       ├── shapeform_droop_heavy.ttf
+│       ├── shapeform_droop_mild.ttf
+│       ├── shapeform_dropout_20pct.ttf
+│       ├── shapeform_dropout_40pct.ttf
+│       ├── shapeform_dropout_5pct.ttf
+│       ├── shapeform_echo_right.ttf
+│       ├── shapeform_echo_shadow.ttf
+│       ├── shapeform_expand_120.ttf
+│       ├── shapeform_expand_150.ttf
+│       ├── shapeform_gaussian_heavy.ttf
+│       ├── shapeform_gaussian_mild.ttf
+│       ├── shapeform_jitter_heavy.ttf
+│       ├── shapeform_jitter_mild.ttf
+│       ├── shapeform_quantize_16.ttf
+│       ├── shapeform_quantize_32.ttf
+│       ├── shapeform_quantize_8.ttf
+│       ├── shapeform_radial_heavy.ttf
+│       ├── shapeform_radial_mild.ttf
+│       ├── shapeform_rotate_5.ttf
+│       ├── shapeform_rotate_neg5.ttf
+│       ├── shapeform_shear_back_10.ttf
+│       ├── shapeform_shear_fwd_10.ttf
+│       ├── shapeform_shear_fwd_25.ttf
+│       ├── shapeform_stroke_collapse_30.ttf
+│       ├── shapeform_stroke_collapse_70.ttf
+│       ├── shapeform_vshear_10.ttf
+│       ├── shapeform_vshear_neg10.ttf
+│       ├── shapeform_vsquash_70.ttf
+│       ├── shapeform_vstretch_130.ttf
+│       ├── shapeform_wave_heavy.ttf
+│       └── shapeform_wave_mild.ttf
+├── experiments-v01
+│   ├── Amiri-BoldItalic_condense70.ttf
+│   ├── Amiri-BoldItalic_expand130.ttf
+│   ├── Amiri-BoldItalic_jitter10.ttf
+│   ├── Amiri-BoldItalic_jitter20.ttf
+│   ├── Amiri-BoldItalic_jitter40.ttf
+│   ├── Amiri-BoldItalic_jitter80.ttf
+│   ├── Amiri-BoldItalic_shear10.ttf
+│   ├── Amiri-BoldItalic_shear20.ttf
+│   ├── Amiri-Bold_condense70.ttf
+│   ├── Amiri-Bold_expand130.ttf
+│   ├── Amiri-Bold_jitter10.ttf
+│   ├── Amiri-Bold_jitter20.ttf
+│   ├── Amiri-Bold_jitter40.ttf
+│   ├── Amiri-Bold_jitter80.ttf
+│   ├── Amiri-Bold_shear10.ttf
+│   ├── Amiri-Bold_shear20.ttf
+│   ├── Amiri-Italic_condense70.ttf
+│   ├── Amiri-Italic_expand130.ttf
+│   ├── Amiri-Italic_jitter10.ttf
+│   ├── Amiri-Italic_jitter20.ttf
+│   ├── Amiri-Italic_jitter40.ttf
+│   ├── Amiri-Italic_jitter80.ttf
+│   ├── Amiri-Italic_shear10.ttf
+│   ├── Amiri-Italic_shear20.ttf
+│   ├── Amiri-Regular_condense70.ttf
+│   ├── Amiri-Regular_expand130.ttf
+│   ├── Amiri-Regular_jitter10.ttf
+│   ├── Amiri-Regular_jitter20.ttf
+│   ├── Amiri-Regular_jitter40.ttf
+│   ├── Amiri-Regular_jitter80.ttf
+│   ├── Amiri-Regular_shear10.ttf
+│   ├── Amiri-Regular_shear20.ttf
+│   ├── Cheiro-Regular_condense70.ttf
+│   ├── Cheiro-Regular_expand130.ttf
+│   ├── Cheiro-Regular_jitter10.ttf
+│   ├── Cheiro-Regular_jitter20.ttf
+│   ├── Cheiro-Regular_jitter40.ttf
+│   ├── Cheiro-Regular_jitter80.ttf
+│   ├── Cheiro-Regular_shear10.ttf
+│   ├── Cheiro-Regular_shear20.ttf
+│   ├── Clypto-Regular_condense70.ttf
+│   ├── Clypto-Regular_expand130.ttf
+│   ├── Clypto-Regular_jitter10.ttf
+│   ├── Clypto-Regular_jitter20.ttf
+│   ├── Clypto-Regular_jitter40.ttf
+│   ├── Clypto-Regular_jitter80.ttf
+│   ├── Clypto-Regular_shear10.ttf
+│   ├── Clypto-Regular_shear20.ttf
+│   ├── CursiveGalactic-Regular_condense70.ttf
+│   ├── CursiveGalactic-Regular_expand130.ttf
+│   ├── CursiveGalactic-Regular_jitter10.ttf
+│   ├── CursiveGalactic-Regular_jitter20.ttf
+│   ├── CursiveGalactic-Regular_jitter40.ttf
+│   ├── CursiveGalactic-Regular_jitter80.ttf
+│   ├── CursiveGalactic-Regular_shear10.ttf
+│   ├── CursiveGalactic-Regular_shear20.ttf
+│   ├── Lingojam_cipher-Regular_condense70.ttf
+│   ├── Lingojam_cipher-Regular_expand130.ttf
+│   ├── Lingojam_cipher-Regular_jitter10.ttf
+│   ├── Lingojam_cipher-Regular_jitter20.ttf
+│   ├── Lingojam_cipher-Regular_jitter40.ttf
+│   ├── Lingojam_cipher-Regular_jitter80.ttf
+│   ├── Lingojam_cipher-Regular_shear10.ttf
+│   ├── Lingojam_cipher-Regular_shear20.ttf
+│   ├── Logico_philosophicus-Regular_condense70.ttf
+│   ├── Logico_philosophicus-Regular_expand130.ttf
+│   ├── Logico_philosophicus-Regular_jitter10.ttf
+│   ├── Logico_philosophicus-Regular_jitter20.ttf
+│   ├── Logico_philosophicus-Regular_jitter40.ttf
+│   ├── Logico_philosophicus-Regular_jitter80.ttf
+│   ├── Logico_philosophicus-Regular_shear10.ttf
+│   ├── Logico_philosophicus-Regular_shear20.ttf
+│   ├── NovaMonoStandardGalactic_condense70.ttf
+│   ├── NovaMonoStandardGalactic_expand130.ttf
+│   ├── NovaMonoStandardGalactic_jitter10.ttf
+│   ├── NovaMonoStandardGalactic_jitter20.ttf
+│   ├── NovaMonoStandardGalactic_jitter40.ttf
+│   ├── NovaMonoStandardGalactic_jitter80.ttf
+│   ├── NovaMonoStandardGalactic_shear10.ttf
+│   ├── NovaMonoStandardGalactic_shear20.ttf
+│   ├── Sga-Regular_condense70.ttf
+│   ├── Sga-Regular_expand130.ttf
+│   ├── Sga-Regular_jitter10.ttf
+│   ├── Sga-Regular_jitter20.ttf
+│   ├── Sga-Regular_jitter40.ttf
+│   ├── Sga-Regular_jitter80.ttf
+│   ├── Sga-Regular_shear10.ttf
+│   ├── Sga-Regular_shear20.ttf
+│   ├── Systada-Regular_condense70.ttf
+│   ├── Systada-Regular_expand130.ttf
+│   ├── Systada-Regular_jitter10.ttf
+│   ├── Systada-Regular_jitter20.ttf
+│   ├── Systada-Regular_jitter40.ttf
+│   ├── Systada-Regular_jitter80.ttf
+│   ├── Systada-Regular_shear10.ttf
+│   ├── Systada-Regular_shear20.ttf
+│   ├── Systada_condense70.ttf
+│   ├── Systada_expand130.ttf
+│   ├── Systada_jitter10.ttf
+│   ├── Systada_jitter20.ttf
+│   ├── Systada_jitter40.ttf
+│   ├── Systada_jitter80.ttf
+│   ├── Systada_shear10.ttf
+│   ├── Systada_shear20.ttf
+│   ├── dactyl_condense70.ttf
+│   ├── dactyl_expand130.ttf
+│   ├── dactyl_jitter10.ttf
+│   ├── dactyl_jitter20.ttf
+│   ├── dactyl_jitter40.ttf
+│   ├── dactyl_jitter80.ttf
+│   ├── dactyl_shear10.ttf
+│   ├── dactyl_shear20.ttf
+│   ├── shapeform_condense70.ttf
+│   ├── shapeform_expand130.ttf
+│   ├── shapeform_jitter10.ttf
+│   ├── shapeform_jitter20.ttf
+│   ├── shapeform_jitter40.ttf
+│   ├── shapeform_jitter80.ttf
+│   ├── shapeform_shear10.ttf
+│   └── shapeform_shear20.ttf
+├── file-list.txt
+├── findings.txt
+├── font-experiment-viewer.html
+├── font-manifest.json
+├── get_tree.sh
+├── glyph-test.txt
+├── make-font-manifest.py
+├── make_degradation_doc.py
+├── make_experiments-v01.py
+├── make_experiments.py
+├── output
+│   ├── body.tex
+│   ├── font_decls.tex
+│   ├── main.aux
+│   ├── main.log
+│   ├── main.pdf
+│   └── main.tex
+├── sample_sequence.py
+├── sga_jitter.html
+├── shapeform.g2n
+├── shapeform.ttf
+├── source.txt
+├── styled_fonts
+│   ├── NovaMonoStandardGalactic_bold.ttf
+│   ├── NovaMonoStandardGalactic_condense.ttf
+│   ├── NovaMonoStandardGalactic_expand.ttf
+│   ├── NovaMonoStandardGalactic_italic.ttf
+│   ├── NovaMonoStandardGalactic_outline.ttf
+│   ├── NovaMonoStandardGalactic_shadow.ttf
+│   ├── Systada_bold.ttf
+│   ├── Systada_italic.ttf
+│   ├── shapeform_bold.ttf
+│   ├── shapeform_condense.ttf
+│   ├── shapeform_expand.ttf
+│   ├── shapeform_italic.ttf
+│   ├── shapeform_outline.ttf
+│   └── shapeform_shadow.ttf
+├── stylesheet.css
+├── transform-v2.py
+├── transform-v3.py
+└── transform.py
+
+160 directories, 2452 files

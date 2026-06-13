@@ -1,0 +1,388 @@
+C:\> ./make_experiments.py
+Found 15 source font(s): ['Amiri-Bold.ttf', 'Amiri-BoldItalic.ttf', 'Amiri-Italic.ttf', 'Amiri-Regular.ttf', 'Cheiro-Regular.ttf', 'Clypto-Regular.ttf', 'CursiveGalactic-Regular.ttf', 'Lingojam_cipher-Regular.ttf', 'Logico_philosophicus-Regular.ttf', 'NovaMonoStandardGalactic.ttf', 'Sga-Regular.ttf', 'Systada-Regular.ttf', 'Systada.ttf', 'dactyl.ttf', 'shapeform.ttf']
+Output: experiments/  |  Steps per series: 8
+
+
+============================================================
+Source: Amiri-Bold.ttf
+============================================================
+  [pre-save overflows in Amiri-Bold_jitter_mild.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_jitter_mild.ttf
+  [pre-save overflows in Amiri-Bold_jitter_heavy.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_jitter_heavy.ttf
+  [pre-save overflows in Amiri-Bold_gaussian_mild.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_gaussian_mild.ttf
+  [pre-save overflows in Amiri-Bold_gaussian_heavy.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_gaussian_heavy.ttf
+  [pre-save overflows in Amiri-Bold_condense_60.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_condense_60.ttf
+  [pre-save overflows in Amiri-Bold_condense_80.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_condense_80.ttf
+  [pre-save overflows in Amiri-Bold_expand_120.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_expand_120.ttf
+  [pre-save overflows in Amiri-Bold_expand_150.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_expand_150.ttf
+  [pre-save overflows in Amiri-Bold_shear_fwd_10.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_shear_fwd_10.ttf
+  [pre-save overflows in Amiri-Bold_shear_fwd_25.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_shear_fwd_25.ttf
+  [pre-save overflows in Amiri-Bold_shear_back_10.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_shear_back_10.ttf
+  [pre-save overflows in Amiri-Bold_vshear_10.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_vshear_10.ttf
+  [pre-save overflows in Amiri-Bold_vshear_neg10.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_vshear_neg10.ttf
+  [pre-save overflows in Amiri-Bold_droop_mild.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_droop_mild.ttf
+  [pre-save overflows in Amiri-Bold_droop_heavy.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_droop_heavy.ttf
+  [pre-save overflows in Amiri-Bold_asc_evap_30.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_asc_evap_30.ttf
+  [pre-save overflows in Amiri-Bold_asc_evap_70.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_asc_evap_70.ttf
+  [pre-save overflows in Amiri-Bold_desc_erode_50.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_desc_erode_50.ttf
+  [pre-save overflows in Amiri-Bold_stroke_collapse_30.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_stroke_collapse_30.ttf
+  [pre-save overflows in Amiri-Bold_stroke_collapse_70.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_stroke_collapse_70.ttf
+  [pre-save overflows in Amiri-Bold_quantize_8.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_quantize_8.ttf
+  [pre-save overflows in Amiri-Bold_quantize_16.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_quantize_16.ttf
+  [pre-save overflows in Amiri-Bold_quantize_32.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_quantize_32.ttf
+  [pre-save overflows in Amiri-Bold_wave_mild.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_wave_mild.ttf
+  [pre-save overflows in Amiri-Bold_wave_heavy.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+  -> experiments/static/Amiri-Bold_wave_heavy.ttf
+    [normalize] rescaling by 0.7360 (max coord was 40762)
+  [pre-save overflows in Amiri-Bold_radial_mild.ttf]
+  OVERFLOW hhea.tableVersion = 65536
+  OVERFLOW head.checkSumAdjustment = 1807803606
+  OVERFLOW head.created = 3356111281
+  OVERFLOW head.magicNumber = 1594834165
+  OVERFLOW head.modified = 2082844800
+  OVERFLOW OS/2.fsLastCharIndex = 65279
+  OVERFLOW OS/2.ulCodePageRange2 = 524288
+  OVERFLOW OS/2.ulUnicodeRange1 = 2684362863
+  OVERFLOW OS/2.ulUnicodeRange2 = 2147491907
+  OVERFLOW OS/2.usLastCharIndex = 65279
+
+  FAILED: Amiri-Bold_radial_mild.ttf
+  ValueError: Value 38311 does not fit in format h for xMaxExtent
+
+===== FONT DIAGNOSTICS =====
+HEAD
+  xMin = -8243
+  yMin = -1173
+  xMax = 30000
+  yMax = 1562
+HHEA
+  advanceWidthMax = 11459
+  minLeftSideBearing = -447
+  minRightSideBearing = -26852
+  xMaxExtent = 38311
+  ascent = 1124
+  descent = -634
+  lineGap = 0
+  largest advance: ('uniFDFD', (11459, 68))
+  largest lsb:     ('glyph01235', (0, -447))
+Traceback (most recent call last):
+  File "/home/flyxion/miniconda3/lib/python3.13/site-packages/fontTools/misc/sstruct.py", line 80, in pack
+    struct.pack(names[name], value)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+struct.error: 'h' format requires -32768 <= number <= 32767
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/fonts/./make_experiments.py", line 206, in save_font
+    font.save(str(path))
+    ~~~~~~~~~^^^^^^^^^^^
+  File "/home/flyxion/miniconda3/lib/python3.13/site-packages/fontTools/ttLib/ttFont.py", line 226, in save
+    writer_reordersTables = self._save(tmp)
+  File "/home/flyxion/miniconda3/lib/python3.13/site-packages/fontTools/ttLib/ttFont.py", line 273, in _save
+    self._writeTable(tag, writer, done, tableCache)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/flyxion/miniconda3/lib/python3.13/site-packages/fontTools/ttLib/ttFont.py", line 721, in _writeTable
+    tabledata = self.getTableData(tag)
+  File "/home/flyxion/miniconda3/lib/python3.13/site-packages/fontTools/ttLib/ttFont.py", line 743, in getTableData
+    return self.tables[tag].compile(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/flyxion/miniconda3/lib/python3.13/site-packages/fontTools/ttLib/tables/_h_h_e_a.py", line 78, in compile
+    return sstruct.pack(hheaFormat, self)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/flyxion/miniconda3/lib/python3.13/site-packages/fontTools/misc/sstruct.py", line 82, in pack
+    raise ValueError(
+        "Value %s does not fit in format %s for %s" % (value, names[name], name)
+    ) from e
+ValueError: Value 38311 does not fit in format h for xMaxExtent
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/fonts/./make_experiments.py", line 625, in <module>
+    main()
+    ~~~~^^
+  File "/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/fonts/./make_experiments.py", line 508, in main
+    save_font(font, static_dir / f"{stem}_{name}.ttf")
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/fonts/./make_experiments.py", line 211, in save_font
+    diagnostic_report(font)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/mnt/c/Users/nateg/OneDrive/Documentos/GitHub/fonts/./make_experiments.py", line 183, in diagnostic_report
+    for name, g in font["glyf"].items():
+                   ^^^^^^^^^^^^^^^^^^
+AttributeError: 'table__g_l_y_f' object has no attribute 'items'
+
