@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Font Laboratory — standardgalactic</title>
+<meta name="description" content="An index of procedural font experiments and glyph-rendering tools.">
+
+<style>
+  @font-face { font-family: "Sga";     src: url("./Sga-Regular.woff2") format("woff2"), url("./Sga-Regular.woff") format("woff"), url("./Sga-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Cheiro";  src: url("./Cheiro-Regular.woff2") format("woff2"), url("./Cheiro-Regular.woff") format("woff"), url("./Cheiro-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Clypto";  src: url("./Clypto-Regular.woff2") format("woff2"), url("./Clypto-Regular.woff") format("woff"), url("./Clypto-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Systada"; src: url("./Systada-Regular.woff2") format("woff2"), url("./Systada-Regular.woff") format("woff"), url("./Systada-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "CursiveGalactic"; src: url("./CursiveGalactic-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "LogicoPhilosophicus"; src: url("./Logico_philosophicus-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "LingojamCipher"; src: url("./Lingojam_cipher-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Dactyl";  src: url("./dactyl.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Shapeform"; src: url("./shapeform.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "NovaMonoGalactic"; src: url("./NovaMonoStandardGalactic.ttf") format("truetype"); font-display: swap; }
+
+  :root{
+    --bg:        #0e0d0b;
+    --bg-panel:  #161410;
+    --rule:      #332e26;
+    --ink:       #e9e3d3;
+    --ink-dim:   #a89d87;
+    --accent:    #c98a3e;
+    --accent-dim:#7a5a2e;
+    --serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html,body{
+    margin:0; padding:0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+  }
+
+  body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 6vh 1.5rem 4rem;
+  }
+
+  main{
+    width:100%;
+    max-width: 640px;
+  }
+
+  .kicker{
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    color: var(--ink-dim);
+    margin: 0 0 0.6rem;
+  }
+
+  h1{
+    font-size: clamp(2rem, 5vw, 2.9rem);
+    line-height: 1.15;
+    margin: 0 0 1.1rem;
+    font-weight: 600;
+  }
+
+  .lede{
+    color: var(--ink-dim);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 52ch;
+    margin: 0 0 2.6rem;
+  }
+
+  /* --- specimen strip: each linked page's name rendered once in a
+     different constructed/procedural face, as a genuine preview of
+     what these tools were built to look at, not decoration for its
+     own sake --- */
+  .specimen{
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 1.4rem 0;
+    margin: 0 0 2.8rem;
+    display:flex;
+    flex-direction:column;
+    gap: 0.55rem;
+  }
+
+  .specimen-row{
+    display:flex;
+    align-items:baseline;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+  }
+
+  .specimen-row .glyph{
+    font-size: 1.5rem;
+    color: var(--accent);
+    line-height: 1;
+    min-width: 1.2em;
+  }
+
+  .specimen-row .label{
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--ink-dim);
+  }
+
+  nav{
+    display:flex;
+    flex-direction:column;
+  }
+
+  nav a{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 1.15rem 0;
+    border-bottom: 1px solid var(--rule);
+    color: var(--ink);
+    text-decoration:none;
+  }
+
+  nav a:first-child{ border-top: 1px solid var(--rule); }
+
+  nav a .name{
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+
+  nav a .desc{
+    color: var(--ink-dim);
+    font-size: 0.92rem;
+    flex: 1 1 auto;
+    text-align: right;
+  }
+
+  nav a:hover .name,
+  nav a:focus-visible .name{
+    color: var(--accent);
+  }
+
+  nav a:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+  }
+
+  footer{
+    margin-top: 3.5rem;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--accent-dim);
+  }
+
+  @media (max-width: 480px){
+    nav a{ flex-direction: column; gap: 0.2rem; }
+    nav a .desc{ text-align:left; }
+  }
+
+  @media (prefers-reduced-motion: no-preference){
+    nav a{ transition: color 120ms ease; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <p class="kicker">standardgalactic / fonts</p>
+  <h1>Font Laboratory</h1>
+  <p class="lede">
+    A working index of procedural font experiments: tools for generating,
+    inspecting, and comparing constructed and glyph-substitution typefaces.
+  </p>
+
+  <div class="specimen" aria-hidden="true">
+    <div class="specimen-row"><span class="glyph" style="font-family:'Sga', var(--serif);">standard galactic</span><span class="label">sga</span></div>
+    <div class="specimen-row"><span class="glyph" style="font-family:'Cheiro', var(--serif);">cheiro</span><span class="label">cheiro</span></div>
+    <div class="specimen-row"><span class="glyph" style="font-family:'Clypto', var(--serif);">clypto</span><span class="label">clypto</span></div>
+    <div class="specimen-row"><span class="glyph" style="font-family:'Systada', var(--serif);">systada</span><span class="label">systada</span></div>
+    <div class="specimen-row"><span class="glyph" style="font-family:'CursiveGalactic', var(--serif);">cursive galactic</span><span class="label">cursivegalactic</span></div>
+  </div>
+
+  <nav>
+    <a href="./font-experiment-viewer.html">
+      <span class="name">Font Experiment Viewer</span>
+      <span class="desc">Browse rendered glyph sets across the procedural typefaces</span>
+    </a>
+    <a href="./experiment-analysis-viewer.html">
+      <span class="name">Experiment Analysis Viewer</span>
+      <span class="desc">Inspect results from experiment-index.json</span>
+    </a>
+    <a href="./experiment-matrix-viewer.html">
+      <span class="name">Transformation Matrix</span>
+      <span class="desc">Compare transformations across the experiment suite</span>
+    </a>
+    <a href="./path-dependence-viewer.html">
+      <span class="name">Path Dependence Comparator</span>
+      <span class="desc">Compare path-dependent outcomes across experiment runs</span>
+    </a>
+    <a href="./sga_jitter.html">
+      <span class="name">Sga Jitter</span>
+      <span class="desc">Positional jitter experiment on the Standard Galactic face</span>
+    </a>
+    <a href="./demo.html">
+      <span class="name">Demo</span>
+      <span class="desc">General-purpose demo page</span>
+    </a>
+    <a href="./glyph-invaders.html">
+      <span class="name">Glyph Invaders</span>
+      <span class="desc">Type incoming words before they reach your ship, each set in a different procedural font</span>
+    </a>
+  </nav>
+
+  <footer>github.com/standardgalactic/fonts</footer>
+
+</main>
+</body>
+</html>

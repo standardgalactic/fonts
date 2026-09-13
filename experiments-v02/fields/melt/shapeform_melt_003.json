@@ -1,0 +1,53 @@
+{
+  "claim_scope": "geometric",
+  "created_utc": "2026-09-13T17:52:01.508393+00:00",
+  "measurements": {
+    "output": {
+      "advance_width": {
+        "maximum": 1017,
+        "mean": 982.481,
+        "minimum": 0
+      },
+      "bounding_box": {
+        "x_max": 943,
+        "x_min": 33,
+        "y_max": 753,
+        "y_min": -111
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 90261.66
+    },
+    "source": {
+      "advance_width": {
+        "maximum": 1017,
+        "mean": 982.481,
+        "minimum": 0
+      },
+      "bounding_box": {
+        "x_max": 943,
+        "x_min": 33,
+        "y_max": 753,
+        "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+    }
+  },
+  "output": "shapeform_melt_003.ttf",
+  "output_sha256": "e57e4e2657fd1aa1b6de1931338e3fa0604239957ff3a2487048a6493e158307",
+  "parameters": {
+    "strength": 142.5
+  },
+  "parent": "shapeform.ttf",
+  "schema_version": 1,
+  "sequence_kind": "independent_sweep",
+  "source": "shapeform.ttf",
+  "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+  "step": 3,
+  "steps": 5,
+  "transform": "melt"
+}

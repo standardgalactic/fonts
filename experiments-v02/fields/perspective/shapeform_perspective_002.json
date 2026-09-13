@@ -1,0 +1,53 @@
+{
+  "claim_scope": "geometric",
+  "created_utc": "2026-09-13T17:52:01.263900+00:00",
+  "measurements": {
+    "output": {
+      "advance_width": {
+        "maximum": 1017,
+        "mean": 982.481,
+        "minimum": 0
+      },
+      "bounding_box": {
+        "x_max": 956,
+        "x_min": -3,
+        "y_max": 753,
+        "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 83428.878
+    },
+    "source": {
+      "advance_width": {
+        "maximum": 1017,
+        "mean": 982.481,
+        "minimum": 0
+      },
+      "bounding_box": {
+        "x_max": 943,
+        "x_min": 33,
+        "y_max": 753,
+        "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+    }
+  },
+  "output": "shapeform_perspective_002.ttf",
+  "output_sha256": "7c26803bbcb730670a7e72490f144f922995d3b99ff600ef8195d582860d74ad",
+  "parameters": {
+    "strength": 0.55
+  },
+  "parent": "shapeform.ttf",
+  "schema_version": 1,
+  "sequence_kind": "independent_sweep",
+  "source": "shapeform.ttf",
+  "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+  "step": 2,
+  "steps": 5,
+  "transform": "perspective"
+}

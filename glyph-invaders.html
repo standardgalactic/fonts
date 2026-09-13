@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glyph Invaders — standardgalactic</title>
+<meta name="description" content="Type the words before they reach your ship. Each one renders in a different procedural font from the lab.">
+
+<style>
+  @font-face { font-family: "Sga";     src: url("./Sga-Regular.woff2") format("woff2"), url("./Sga-Regular.woff") format("woff"), url("./Sga-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Cheiro";  src: url("./Cheiro-Regular.woff2") format("woff2"), url("./Cheiro-Regular.woff") format("woff"), url("./Cheiro-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Clypto";  src: url("./Clypto-Regular.woff2") format("woff2"), url("./Clypto-Regular.woff") format("woff"), url("./Clypto-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Systada"; src: url("./Systada-Regular.woff2") format("woff2"), url("./Systada-Regular.woff") format("woff"), url("./Systada-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "CursiveGalactic"; src: url("./CursiveGalactic-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "LogicoPhilosophicus"; src: url("./Logico_philosophicus-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "LingojamCipher"; src: url("./Lingojam_cipher-Regular.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Dactyl";  src: url("./dactyl.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Shapeform"; src: url("./shapeform.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "NovaMonoGalactic"; src: url("./NovaMonoStandardGalactic.ttf") format("truetype"); font-display: swap; }
+  @font-face { font-family: "Amiri"; src: url("./Amiri-Regular.ttf") format("truetype"); font-display: swap; }
+
+  :root{
+    --bg: #05050a;
+    --ink: #e9e3d3;
+    --ink-dim: #7d7666;
+    --accent: #c98a3e;
+    --danger: #c9503e;
+    --ok: #6fae5a;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  }
+  *{ box-sizing: border-box; }
+  html,body{ margin:0; padding:0; background:var(--bg); color:var(--ink); overflow:hidden; height:100%; }
+  #wrap{ position:relative; width:100%; height:100vh; }
+  canvas{ display:block; width:100%; height:100%; }
+
+  #hud{
+    position:absolute; top:0; left:0; right:0;
+    display:flex; justify-content:space-between; align-items:flex-start;
+    padding: 1rem 1.25rem;
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    color: var(--ink-dim);
+    pointer-events:none;
+    letter-spacing:0.02em;
+  }
+  #hud .stat{ color: var(--ink); }
+  #hud .lives{ color: var(--danger); }
+
+  #overlay{
+    position:absolute; top:0; left:0; right:0; bottom:0;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    text-align:center;
+    background: rgba(5,5,10,0.86);
+    gap: 1rem;
+    padding: 2rem;
+  }
+  #overlay.hidden{ display:none; }
+  #overlay h1{
+    font-family: Georgia, "Iowan Old Style", serif;
+    font-size: clamp(1.8rem, 6vw, 2.6rem);
+    margin: 0;
+    color: var(--ink);
+  }
+  #overlay p{ color: var(--ink-dim); max-width: 42ch; line-height:1.5; margin: 0; font-size:0.95rem; }
+  #overlay .score-line{ font-family: var(--mono); color: var(--accent); font-size: 1.05rem; }
+  #overlay button{
+    font-family: var(--mono);
+    font-size: 0.9rem;
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--ink-dim);
+    padding: 0.7rem 1.4rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  #overlay button:hover, #overlay button:focus-visible{ border-color: var(--accent); color: var(--accent); outline:none; }
+
+  #back{
+    position:absolute; bottom: 0.9rem; left: 1.1rem;
+    font-family: var(--mono); font-size: 0.72rem;
+    color: var(--ink-dim); text-decoration:none;
+    pointer-events:auto;
+  }
+  #back:hover{ color: var(--accent); }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div>SCORE <span class="stat" id="score">0</span> &nbsp; LEVEL <span class="stat" id="level">1</span></div>
+    <div class="lives">SHIP <span id="lives">▮▮▮▮▮</span></div>
+  </div>
+
+  <div id="overlay">
+    <h1>Glyph Invaders</h1>
+    <p>
+      Words are inbound, each set in a different procedural typeface from the lab.
+      Type a word's letters, in order, to destroy it before it reaches your ship.
+      Five hits and it's over.
+    </p>
+    <p id="finalScoreLine" class="score-line" style="display:none;"></p>
+    <button id="startBtn">Start</button>
+  </div>
+
+  <a id="back" href="./index.html">← font laboratory</a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---------- word bank ----------
+  // Plain lowercase English words (the font only reskins the glyphs; the
+  // keys you press are always the ordinary Latin letters of the word).
+  var WORDS = [
+    "orbit","comet","nova","pulse","vertex","meteor","cosmos","ember",
+    "quasar","tundra","umbra","gravity","horizon","rocket","solar",
+    "wander","zenith","lumen","dagger","jester","karma","yonder",
+    "flux","ion","glyph","cipher","galactic","admissible","spherepop",
+    "flyxion","signal","drift","hollow","static","echo","fracture",
+    "collapse","dropout","jitter","radial","shear","wave","condense",
+    "expand","erosion","decay","suture","polarize","staircase","wind"
+  ];
+
+  var FONTS = [
+    { label: "sga",      family: "Sga, monospace" },
+    { label: "cheiro",   family: "Cheiro, serif" },
+    { label: "clypto",   family: "Clypto, monospace" },
+    { label: "systada",  family: "Systada, sans-serif" },
+    { label: "cursive-galactic", family: "CursiveGalactic, cursive" },
+    { label: "logico-philosophicus", family: "LogicoPhilosophicus, serif" },
+    { label: "lingojam-cipher", family: "LingojamCipher, monospace" },
+    { label: "dactyl",   family: "Dactyl, sans-serif" },
+    { label: "shapeform",family: "Shapeform, sans-serif" },
+    { label: "nova-mono-galactic", family: "NovaMonoGalactic, monospace" },
+    { label: "amiri",    family: "Amiri, serif" }
+  ];
+
+  // ---------- pure logic (kept separate from rendering/canvas so it can
+  // be exercised by a plain node test harness - see test/logic.test.js) ----------
+
+  function pickRandom(arr){ return arr[Math.floor(Math.random() * arr.length)]; }
+
+  function makeWord(id, text, font, spawnTime){
+    return {
+      id: id,
+      text: text,
+      font: font,
+      typed: 0,          // how many leading chars have been correctly typed
+      z: 0,               // 0 = just spawned, 1 = reached the ship
+      angle: Math.random() * Math.PI * 2,   // direction from center it travels toward
+      spawnTime: spawnTime,
+      dead: false
+    };
+  }
+
+  // Given the active (non-dead) words, a currently locked target id (or
+  // null), and a lowercase key press, returns:
+  //   { lockedId, completedId, matched }
+  // completedId is set when the press finishes a word (caller removes it
+  // and scores it). This function has no side effects on the word list;
+  // the caller applies `typed` increments using the returned lockedId.
+  function applyKeyPress(words, lockedId, key){
+    var locked = lockedId != null ? words.filter(function(w){ return w.id === lockedId && !w.dead; })[0] : null;
+
+    if (locked){
+      var nextChar = locked.text[locked.typed];
+      if (nextChar === key){
+        var newTyped = locked.typed + 1;
+        var completed = newTyped >= locked.text.length;
+        return { lockedId: completed ? null : lockedId, completedId: completed ? locked.id : null, matched: true, newTyped: newTyped };
+      }
+      // wrong key while locked: ignore (forgiving - no penalty, no unlock)
+      return { lockedId: lockedId, completedId: null, matched: false, newTyped: locked.typed };
+    }
+
+    // No current lock: find candidates whose first untyped char matches.
+    // Prefer the candidate closest to the ship (largest z) - the most
+    // urgent target - matching how the classic genre prioritizes threats.
+    var candidates = words.filter(function(w){ return !w.dead && w.typed === 0 && w.text[0] === key; });
+    if (candidates.length === 0){
+      return { lockedId: null, completedId: null, matched: false, newTyped: 0 };
+    }
+    candidates.sort(function(a, b){ return b.z - a.z; });
+    var target = candidates[0];
+    var newTyped = 1;
+    var completed = newTyped >= target.text.length; // one-letter word edge case
+    return { lockedId: completed ? null : target.id, completedId: completed ? target.id : null, matched: true, newTyped: newTyped, claimedId: target.id };
+  }
+
+  // Score for a completed word: longer words are worth more, and reward
+  // scales gently with level so later waves feel worth pushing through.
+  function scoreForWord(text, level){
+    return text.length * 10 * (1 + (level - 1) * 0.15) | 0;
+  }
+
+  // Difficulty curve: spawn interval (ms) and approach speed (z per ms)
+  // as a function of level. Both move modestly so early levels stay
+  // readable while later ones genuinely test you.
+  function difficultyForLevel(level){
+    var spawnIntervalMs = Math.max(750, 2000 - level * 110);
+    var approachRate = 0.00009 + level * 0.000018;
+    var maxConcurrent = Math.min(3 + Math.floor(level / 2), 8);
+    return { spawnIntervalMs: spawnIntervalMs, approachRate: approachRate, maxConcurrent: maxConcurrent };
+  }
+
+  // Expose pure functions for the node test harness (no-op in the browser).
+  if (typeof module !== "undefined" && module.exports){
+    module.exports = { applyKeyPress: applyKeyPress, scoreForWord: scoreForWord, difficultyForLevel: difficultyForLevel, makeWord: makeWord };
+    return;
+  }
+
+  // ---------- rendering / game loop (browser only) ----------
+
+  var canvas = document.getElementById("game");
+  var ctx = canvas.getContext("2d");
+  var overlay = document.getElementById("overlay");
+  var startBtn = document.getElementById("startBtn");
+  var scoreEl = document.getElementById("score");
+  var levelEl = document.getElementById("level");
+  var livesEl = document.getElementById("lives");
+  var finalScoreLine = document.getElementById("finalScoreLine");
+
+  var W = 0, H = 0;
+  function resize(){
+    W = canvas.width = window.innerWidth || document.documentElement.clientWidth || 800;
+    H = canvas.height = window.innerHeight || document.documentElement.clientHeight || 600;
+  }
+  window.addEventListener("resize", resize);
+  resize();
+
+  var state = null; // set in resetGame()
+  var running = false;
+  var nextId = 1;
+  var lastSpawn = 0;
+  var stars = [];
+
+  function initStars(){
+    stars = [];
+    for (var i = 0; i < 140; i++){
+      stars.push({ x: Math.random(), y: Math.random(), z: Math.random(), speed: 0.15 + Math.random() * 0.4 });
+    }
+  }
+
+  function resetGame(){
+    state = {
+      words: [],
+      lockedId: null,
+      score: 0,
+      level: 1,
+      lives: 5,
+      startTime: performance.now(),
+      lastLevelUpScore: 0
+    };
+    nextId = 1;
+    lastSpawn = 0;
+    initStars();
+    updateHud();
+  }
+
+  function updateHud(){
+    scoreEl.textContent = state.score;
+    levelEl.textContent = state.level;
+    livesEl.textContent = "▮".repeat(Math.max(0, state.lives)) + "▯".repeat(Math.max(0, 5 - state.lives));
+  }
+
+  function spawnWord(now){
+    var used = state.words.filter(function(w){ return !w.dead; }).map(function(w){ return w.text; });
+    var pool = WORDS.filter(function(w){ return used.indexOf(w) === -1; });
+    if (pool.length === 0) pool = WORDS;
+    var text = pickRandom(pool);
+    var font = pickRandom(FONTS);
+    var w = makeWord(nextId++, text, font, now);
+    state.words.push(w);
+  }
+
+  function onHitShip(word){
+    state.lives -= 1;
+    word.dead = true;
+    if (state.lockedId === word.id) state.lockedId = null;
+    updateHud();
+    flashDanger();
+    if (state.lives <= 0){
+      endGame();
+    }
+  }
+
+  var dangerFlash = 0;
+  function flashDanger(){ dangerFlash = 1; }
+
+  var particles = [];
+  function burst(x, y, color){
+    for (var i = 0; i < 18; i++){
+      var a = Math.random() * Math.PI * 2;
+      var speed = 1 + Math.random() * 3;
+      particles.push({
+        x: x, y: y,
+        vx: Math.cos(a) * speed, vy: Math.sin(a) * speed,
+        life: 1, color: color
+      });
+    }
+  }
+
+  function onWordCompleted(word){
+    var pts = scoreForWord(word.text, state.level);
+    state.score += pts;
+    word.dead = true;
+    if (state.lockedId === word.id) state.lockedId = null;
+
+    var pos = wordScreenPos(word);
+    burst(pos.x, pos.y, "111,180,90");
+
+    // Level up roughly every 120 points of progress, gentle and steady.
+    if (state.score - state.lastLevelUpScore >= 120){
+      state.level += 1;
+      state.lastLevelUpScore = state.score;
+    }
+    updateHud();
+  }
+
+  window.addEventListener("keydown", function(e){
+    if (!running) return;
+    var key = e.key;
+    if (key.length !== 1) return;
+    key = key.toLowerCase();
+    if (key < "a" || key > "z") return;
+
+    var result = applyKeyPress(state.words.filter(function(w){ return !w.dead; }), state.lockedId, key);
+    state.lockedId = result.lockedId;
+
+    if (result.claimedId != null || result.matched){
+      var idToUpdate = result.completedId != null ? result.completedId : (state.lockedId != null ? state.lockedId : result.claimedId);
+      var w = state.words.filter(function(ww){ return ww.id === idToUpdate; })[0];
+      if (w) w.typed = result.newTyped;
+    }
+
+    if (result.completedId != null){
+      var completedWord = state.words.filter(function(ww){ return ww.id === result.completedId; })[0];
+      if (completedWord) onWordCompleted(completedWord);
+    }
+  });
+
+  function wordScreenPos(word){
+    // Perspective approximation: interpolate from screen center (far,
+    // z=0) out toward a per-word destination angle at the frame edge
+    // (near, z=1), easing so the final approach feels fast.
+    var cx = W / 2, cy = H * 0.5;
+    var edgeDist = Math.min(W, H) * 0.62;
+    var destX = cx + Math.cos(word.angle) * edgeDist;
+    var destY = cy + Math.sin(word.angle) * edgeDist * 0.6; // flatten vertically
+    var ease = word.z * word.z; // accelerate inward
+    return {
+      x: cx + (destX - cx) * ease,
+      y: cy + (destY - cy) * ease
+    };
+  }
+
+  function draw(now, dt){
+    ctx.clearRect(0, 0, W, H);
+
+    // starfield
+    ctx.fillStyle = "#05050a";
+    ctx.fillRect(0, 0, W, H);
+    var cx = W / 2, cy = H / 2;
+    for (var i = 0; i < stars.length; i++){
+      var s = stars[i];
+      s.z -= s.speed * dt * 0.001;
+      if (s.z <= 0.01) { s.z = 1; s.x = Math.random(); s.y = Math.random(); }
+      var sx = cx + (s.x - 0.5) * W / s.z * 0.06;
+      var sy = cy + (s.y - 0.5) * H / s.z * 0.06;
+      if (sx < 0 || sx > W || sy < 0 || sy > H) continue;
+      var r = (1 - s.z) * 2 + 0.3;
+      ctx.fillStyle = "rgba(233,227,211," + (1 - s.z * 0.7) + ")";
+      ctx.beginPath();
+      ctx.arc(sx, sy, r, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // danger flash
+    if (dangerFlash > 0){
+      ctx.fillStyle = "rgba(201,80,62," + (dangerFlash * 0.35) + ")";
+      ctx.fillRect(0, 0, W, H);
+      dangerFlash = Math.max(0, dangerFlash - dt * 0.003);
+    }
+
+    // words
+    for (var wi = 0; wi < state.words.length; wi++){
+      var word = state.words[wi];
+      if (word.dead) continue;
+      var pos = wordScreenPos(word);
+      var size = 14 + word.z * 64;
+      var alpha = Math.min(1, word.z * 4 + 0.25);
+
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.font = size.toFixed(0) + "px " + word.font.family;
+
+      var typedPart = word.text.slice(0, word.typed);
+      var restPart = word.text.slice(word.typed);
+      var typedW = ctx.measureText(typedPart).width;
+      var restW = ctx.measureText(restPart).width;
+      var totalW = typedW + restW;
+      var startX = pos.x - totalW / 2;
+
+      var isLocked = state.lockedId === word.id;
+
+      ctx.textAlign = "left";
+      ctx.fillStyle = "rgba(111,174,90," + alpha + ")";
+      ctx.fillText(typedPart, startX, pos.y);
+      ctx.fillStyle = isLocked
+        ? "rgba(201,138,62," + alpha + ")"
+        : "rgba(233,227,211," + alpha + ")";
+      ctx.fillText(restPart, startX + typedW, pos.y);
+
+      // font label, small, beneath the word
+      ctx.font = "10px 'IBM Plex Mono', monospace";
+      ctx.fillStyle = "rgba(125,118,102," + (alpha * 0.8) + ")";
+      ctx.textAlign = "center";
+      ctx.fillText(word.font.label, pos.x, pos.y + size * 0.62 + 10);
+    }
+
+    // ship (simple triangle HUD at bottom center)
+    ctx.save();
+    ctx.translate(W / 2, H - 46);
+    ctx.fillStyle = "#c98a3e";
+    ctx.beginPath();
+    ctx.moveTo(0, -16);
+    ctx.lineTo(14, 14);
+    ctx.lineTo(0, 6);
+    ctx.lineTo(-14, 14);
+    ctx.closePath();
+    ctx.fill();
+    ctx.restore();
+
+    // particles
+    for (var pi = particles.length - 1; pi >= 0; pi--){
+      var p = particles[pi];
+      p.x += p.vx; p.y += p.vy; p.life -= dt * 0.0022;
+      if (p.life <= 0){ particles.splice(pi, 1); continue; }
+      ctx.fillStyle = "rgba(" + p.color + "," + p.life + ")";
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 2.4 * p.life, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  var lastFrame = 0;
+  function loop(now){
+    if (!running) return;
+    var dt = lastFrame ? now - lastFrame : 16;
+    lastFrame = now;
+
+    var diff = difficultyForLevel(state.level);
+
+    if (now - lastSpawn > diff.spawnIntervalMs){
+      var activeCount = state.words.filter(function(w){ return !w.dead; }).length;
+      if (activeCount < diff.maxConcurrent){
+        spawnWord(now);
+        lastSpawn = now;
+      }
+    }
+
+    for (var i = 0; i < state.words.length; i++){
+      var w = state.words[i];
+      if (w.dead) continue;
+      w.z += diff.approachRate * dt;
+      if (w.z >= 1){
+        onHitShip(w);
+      }
+    }
+
+    // garbage-collect dead words periodically to keep arrays small
+    if (state.words.length > 40){
+      state.words = state.words.filter(function(w){ return !w.dead; });
+    }
+
+    draw(now, dt);
+    requestAnimationFrame(loop);
+  }
+
+  function endGame(){
+    running = false;
+    finalScoreLine.style.display = "block";
+    finalScoreLine.textContent = "Final score: " + state.score + " — reached level " + state.level;
+    startBtn.textContent = "Play again";
+    overlay.classList.remove("hidden");
+  }
+
+  function startGame(){
+    resize(); // re-check viewport size at the moment play actually begins
+    resetGame();
+    overlay.classList.add("hidden");
+    running = true;
+    lastFrame = 0;
+    requestAnimationFrame(loop);
+  }
+
+  startBtn.addEventListener("click", startGame);
+
+  // Preload the fonts so the first wave doesn't render in fallback faces
+  // for a beat, then reveal the start screen (it's already visible by
+  // default so play isn't blocked if font loading is slow or fails).
+  if (document.fonts && document.fonts.ready){
+    var names = FONTS.map(function(f){ return "16px " + f.family; });
+    Promise.all(names.map(function(n){ try { return document.fonts.load(n); } catch(e){ return Promise.resolve(); } }))
+      .catch(function(){ /* ignore - fallback fonts still work */ });
+  }
+
+})();
+</script>
+</body>
+</html>

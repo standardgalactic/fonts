@@ -1,0 +1,53 @@
+{
+  "claim_scope": "geometric",
+  "created_utc": "2026-09-13T17:52:01.667372+00:00",
+  "measurements": {
+    "output": {
+      "advance_width": {
+        "maximum": 1017,
+        "mean": 982.481,
+        "minimum": 0
+      },
+      "bounding_box": {
+        "x_max": 940,
+        "x_min": 30,
+        "y_max": 760,
+        "y_min": -1
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82856.443
+    },
+    "source": {
+      "advance_width": {
+        "maximum": 1017,
+        "mean": 982.481,
+        "minimum": 0
+      },
+      "bounding_box": {
+        "x_max": 943,
+        "x_min": 33,
+        "y_max": 753,
+        "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+    }
+  },
+  "output": "shapeform_grid_then_wave_001.ttf",
+  "output_sha256": "d445c6b3f79d400ddb64bb9a62588c30c6af5eea2e6c9fadff227d9131b06a27",
+  "parameters": {
+    "intensity": 0.25
+  },
+  "parent": "shapeform.ttf",
+  "schema_version": 1,
+  "sequence_kind": "order_comparison",
+  "source": "shapeform.ttf",
+  "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+  "step": 1,
+  "steps": 5,
+  "transform": "grid_then_wave"
+}

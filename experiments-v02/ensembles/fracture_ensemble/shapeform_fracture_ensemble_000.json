@@ -1,0 +1,54 @@
+{
+  "claim_scope": "geometric",
+  "created_utc": "2026-09-13T17:52:01.758720+00:00",
+  "measurements": {
+    "output": {
+      "advance_width": {
+        "maximum": 1017,
+        "mean": 982.481,
+        "minimum": 0
+      },
+      "bounding_box": {
+        "x_max": 991,
+        "x_min": 19,
+        "y_max": 758,
+        "y_min": -40
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 91397.378
+    },
+    "source": {
+      "advance_width": {
+        "maximum": 1017,
+        "mean": 982.481,
+        "minimum": 0
+      },
+      "bounding_box": {
+        "x_max": 943,
+        "x_min": 33,
+        "y_max": 753,
+        "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+    }
+  },
+  "output": "shapeform_fracture_ensemble_000.ttf",
+  "output_sha256": "727f95c1ae6d77ded54423e2928a11269085bc536b940b2773bcb86c0334b310",
+  "parameters": {
+    "seed": 0,
+    "strength": 85
+  },
+  "parent": "shapeform.ttf",
+  "schema_version": 1,
+  "sequence_kind": "seed_ensemble",
+  "source": "shapeform.ttf",
+  "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+  "step": 0,
+  "steps": 5,
+  "transform": "fracture_ensemble"
+}

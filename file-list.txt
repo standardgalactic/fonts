@@ -21,6 +21,7 @@
 ├── Logico_philosophicus-Regular.g2n
 ├── Logico_philosophicus-Regular.ttf
 ├── NovaMonoStandardGalactic.ttf
+├── README.md
 ├── Sga-Regular.eot
 ├── Sga-Regular.g2n
 ├── Sga-Regular.svg
@@ -34,6 +35,7 @@
 ├── Systada-Regular.woff2
 ├── Systada.g2n
 ├── Systada.ttf
+├── advanced_experiments.py
 ├── alterations
 │   ├── bubble_font.ttf
 │   ├── bubble_font_preview.png
@@ -74,6 +76,11 @@
 ├── demo.html
 ├── detailed-errors.log
 ├── errors.log
+├── experiment-analysis-viewer.html
+├── experiment-index.json
+├── experiment-matrix-viewer.html
+├── experiment-patch.patch
+├── experiment_support.py
 ├── experiments
 │   ├── compound
 │   │   ├── Amiri-BoldItalic_dissolution_000.ttf
@@ -2569,13 +2576,175 @@
 │   ├── shapeform_jitter80.ttf
 │   ├── shapeform_shear10.ttf
 │   └── shapeform_shear20.ttf
+├── experiments-v02
+│   ├── ensembles
+│   │   └── fracture_ensemble
+│   │       ├── shapeform_fracture_ensemble_000.json
+│   │       ├── shapeform_fracture_ensemble_000.ttf
+│   │       ├── shapeform_fracture_ensemble_001.json
+│   │       ├── shapeform_fracture_ensemble_001.ttf
+│   │       ├── shapeform_fracture_ensemble_002.json
+│   │       ├── shapeform_fracture_ensemble_002.ttf
+│   │       ├── shapeform_fracture_ensemble_003.json
+│   │       ├── shapeform_fracture_ensemble_003.ttf
+│   │       ├── shapeform_fracture_ensemble_004.json
+│   │       └── shapeform_fracture_ensemble_004.ttf
+│   ├── fields
+│   │   ├── contour_phase
+│   │   │   ├── shapeform_contour_phase_000.json
+│   │   │   ├── shapeform_contour_phase_000.ttf
+│   │   │   ├── shapeform_contour_phase_001.json
+│   │   │   ├── shapeform_contour_phase_001.ttf
+│   │   │   ├── shapeform_contour_phase_002.json
+│   │   │   ├── shapeform_contour_phase_002.ttf
+│   │   │   ├── shapeform_contour_phase_003.json
+│   │   │   ├── shapeform_contour_phase_003.ttf
+│   │   │   ├── shapeform_contour_phase_004.json
+│   │   │   └── shapeform_contour_phase_004.ttf
+│   │   ├── envelope
+│   │   │   ├── shapeform_envelope_000.json
+│   │   │   ├── shapeform_envelope_000.ttf
+│   │   │   ├── shapeform_envelope_001.json
+│   │   │   ├── shapeform_envelope_001.ttf
+│   │   │   ├── shapeform_envelope_002.json
+│   │   │   ├── shapeform_envelope_002.ttf
+│   │   │   ├── shapeform_envelope_003.json
+│   │   │   ├── shapeform_envelope_003.ttf
+│   │   │   ├── shapeform_envelope_004.json
+│   │   │   └── shapeform_envelope_004.ttf
+│   │   ├── fold
+│   │   │   ├── shapeform_fold_000.json
+│   │   │   ├── shapeform_fold_000.ttf
+│   │   │   ├── shapeform_fold_001.json
+│   │   │   ├── shapeform_fold_001.ttf
+│   │   │   ├── shapeform_fold_002.json
+│   │   │   ├── shapeform_fold_002.ttf
+│   │   │   ├── shapeform_fold_003.json
+│   │   │   ├── shapeform_fold_003.ttf
+│   │   │   ├── shapeform_fold_004.json
+│   │   │   └── shapeform_fold_004.ttf
+│   │   ├── fracture
+│   │   │   ├── shapeform_fracture_000.json
+│   │   │   ├── shapeform_fracture_000.ttf
+│   │   │   ├── shapeform_fracture_001.json
+│   │   │   ├── shapeform_fracture_001.ttf
+│   │   │   ├── shapeform_fracture_002.json
+│   │   │   ├── shapeform_fracture_002.ttf
+│   │   │   ├── shapeform_fracture_003.json
+│   │   │   ├── shapeform_fracture_003.ttf
+│   │   │   ├── shapeform_fracture_004.json
+│   │   │   └── shapeform_fracture_004.ttf
+│   │   ├── melt
+│   │   │   ├── shapeform_melt_000.json
+│   │   │   ├── shapeform_melt_000.ttf
+│   │   │   ├── shapeform_melt_001.json
+│   │   │   ├── shapeform_melt_001.ttf
+│   │   │   ├── shapeform_melt_002.json
+│   │   │   ├── shapeform_melt_002.ttf
+│   │   │   ├── shapeform_melt_003.json
+│   │   │   ├── shapeform_melt_003.ttf
+│   │   │   ├── shapeform_melt_004.json
+│   │   │   └── shapeform_melt_004.ttf
+│   │   ├── perspective
+│   │   │   ├── shapeform_perspective_000.json
+│   │   │   ├── shapeform_perspective_000.ttf
+│   │   │   ├── shapeform_perspective_001.json
+│   │   │   ├── shapeform_perspective_001.ttf
+│   │   │   ├── shapeform_perspective_002.json
+│   │   │   ├── shapeform_perspective_002.ttf
+│   │   │   ├── shapeform_perspective_003.json
+│   │   │   ├── shapeform_perspective_003.ttf
+│   │   │   ├── shapeform_perspective_004.json
+│   │   │   └── shapeform_perspective_004.ttf
+│   │   ├── polarize
+│   │   │   ├── shapeform_polarize_000.json
+│   │   │   ├── shapeform_polarize_000.ttf
+│   │   │   ├── shapeform_polarize_001.json
+│   │   │   ├── shapeform_polarize_001.ttf
+│   │   │   ├── shapeform_polarize_002.json
+│   │   │   ├── shapeform_polarize_002.ttf
+│   │   │   ├── shapeform_polarize_003.json
+│   │   │   ├── shapeform_polarize_003.ttf
+│   │   │   ├── shapeform_polarize_004.json
+│   │   │   └── shapeform_polarize_004.ttf
+│   │   ├── staircase
+│   │   │   ├── shapeform_staircase_000.json
+│   │   │   ├── shapeform_staircase_000.ttf
+│   │   │   ├── shapeform_staircase_001.json
+│   │   │   ├── shapeform_staircase_001.ttf
+│   │   │   ├── shapeform_staircase_002.json
+│   │   │   ├── shapeform_staircase_002.ttf
+│   │   │   ├── shapeform_staircase_003.json
+│   │   │   ├── shapeform_staircase_003.ttf
+│   │   │   ├── shapeform_staircase_004.json
+│   │   │   └── shapeform_staircase_004.ttf
+│   │   ├── suture
+│   │   │   ├── shapeform_suture_000.json
+│   │   │   ├── shapeform_suture_000.ttf
+│   │   │   ├── shapeform_suture_001.json
+│   │   │   ├── shapeform_suture_001.ttf
+│   │   │   ├── shapeform_suture_002.json
+│   │   │   ├── shapeform_suture_002.ttf
+│   │   │   ├── shapeform_suture_003.json
+│   │   │   ├── shapeform_suture_003.ttf
+│   │   │   ├── shapeform_suture_004.json
+│   │   │   └── shapeform_suture_004.ttf
+│   │   └── wind
+│   │       ├── shapeform_wind_000.json
+│   │       ├── shapeform_wind_000.ttf
+│   │       ├── shapeform_wind_001.json
+│   │       ├── shapeform_wind_001.ttf
+│   │       ├── shapeform_wind_002.json
+│   │       ├── shapeform_wind_002.ttf
+│   │       ├── shapeform_wind_003.json
+│   │       ├── shapeform_wind_003.ttf
+│   │       ├── shapeform_wind_004.json
+│   │       └── shapeform_wind_004.ttf
+│   ├── order-effects
+│   │   ├── grid_then_wave
+│   │   │   ├── shapeform_grid_then_wave_000.json
+│   │   │   ├── shapeform_grid_then_wave_000.ttf
+│   │   │   ├── shapeform_grid_then_wave_001.json
+│   │   │   ├── shapeform_grid_then_wave_001.ttf
+│   │   │   ├── shapeform_grid_then_wave_002.json
+│   │   │   ├── shapeform_grid_then_wave_002.ttf
+│   │   │   ├── shapeform_grid_then_wave_003.json
+│   │   │   ├── shapeform_grid_then_wave_003.ttf
+│   │   │   ├── shapeform_grid_then_wave_004.json
+│   │   │   └── shapeform_grid_then_wave_004.ttf
+│   │   └── wave_then_grid
+│   │       ├── shapeform_wave_then_grid_000.json
+│   │       ├── shapeform_wave_then_grid_000.ttf
+│   │       ├── shapeform_wave_then_grid_001.json
+│   │       ├── shapeform_wave_then_grid_001.ttf
+│   │       ├── shapeform_wave_then_grid_002.json
+│   │       ├── shapeform_wave_then_grid_002.ttf
+│   │       ├── shapeform_wave_then_grid_003.json
+│   │       ├── shapeform_wave_then_grid_003.ttf
+│   │       ├── shapeform_wave_then_grid_004.json
+│   │       └── shapeform_wave_then_grid_004.ttf
+│   └── recovery
+│       └── shear_round_trip
+│           ├── shapeform_shear_round_trip_000.json
+│           ├── shapeform_shear_round_trip_000.ttf
+│           ├── shapeform_shear_round_trip_001.json
+│           ├── shapeform_shear_round_trip_001.ttf
+│           ├── shapeform_shear_round_trip_002.json
+│           ├── shapeform_shear_round_trip_002.ttf
+│           ├── shapeform_shear_round_trip_003.json
+│           ├── shapeform_shear_round_trip_003.ttf
+│           ├── shapeform_shear_round_trip_004.json
+│           └── shapeform_shear_round_trip_004.ttf
 ├── file-list.txt
 ├── findings.txt
 ├── font-experiment-viewer.html
 ├── font-manifest.json
 ├── get_tree.sh
 ├── glyph-test.txt
+├── index.html
+├── make-experiment-index.py
 ├── make-font-manifest.py
+├── make_advanced_experiments.py
 ├── make_degradation_doc.py
 ├── make_experiments-v01.py
 ├── make_experiments.py
@@ -2586,6 +2755,7 @@
 │   ├── main.log
 │   ├── main.pdf
 │   └── main.tex
+├── path-dependence-viewer.html
 ├── sample_sequence.py
 ├── sga_jitter.html
 ├── shapeform.g2n
@@ -2607,8 +2777,10 @@
 │   ├── shapeform_outline.ttf
 │   └── shapeform_shadow.ttf
 ├── stylesheet.css
+├── tests
+│   └── test_experiment_framework.py
 ├── transform-v2.py
 ├── transform-v3.py
 └── transform.py
 
-160 directories, 2452 files
+180 directories, 2604 files

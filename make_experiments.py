@@ -5,13 +5,17 @@ import argparse
 import math
 from pathlib import Path
 from fontTools.ttLib import TTFont
+from experiment_support import measure_font, validate_font, validate_saved_font, write_provenance
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Helpers
 # ─────────────────────────────────────────────────────────────────────────────
 
 def load_font(path):
-    return TTFont(str(path))
+    font = TTFont(str(path))
+    # Preserve the source timestamp so identical experiments serialize identically.
+    font.recalcTimestamp = False
+    return font
 
 def get_glyf(font):
     return font.get("glyf")
@@ -192,7 +196,7 @@ def diagnostic_report(font):
         print(f"  largest glyph extent: {biggest_name} = {biggest_extent}")
     print("============================\n")
 
-def save_font(font, path):
+def save_font(font, path, provenance=None):
     normalize_font(font)
     clamp_coords(font)
     clamp_metrics(font)
@@ -213,9 +217,24 @@ def save_font(font, path):
         for line in overflows:
             print(line)
     Path(path).parent.mkdir(parents=True, exist_ok=True)
+    structural_errors = validate_font(font)
+    if structural_errors:
+        print(f"  [pre-save validation failed in {Path(path).name}]")
+        for error in structural_errors:
+            print(f"  {error}")
+        return False
     try:
         font.save(str(path))
+        reopen_errors, output_metrics = validate_saved_font(path)
+        if reopen_errors:
+            print(f"  [post-save validation failed in {Path(path).name}]")
+            for error in reopen_errors:
+                print(f"  {error}")
+            return False
+        if provenance:
+            write_provenance(path, output_metrics=output_metrics, **provenance)
         print(f"  -> {path}")
+        return True
     except Exception as e:
         print(f"\n  FAILED: {Path(path).name}")
         print(f"  {type(e).__name__}: {e}")
@@ -227,7 +246,7 @@ def save_font(font, path):
         except Exception:
             pass
         print("  (skipping, continuing run)\n")
-        return  # don't re-raise; let the run continue
+        return False  # don't re-raise; let the run continue
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Transform families
@@ -421,16 +440,168 @@ def apply_echo(font, offset_x, offset_y, blend=0.3):
                 int(y * (1 - blend) + ey * blend),
             )
 
+def apply_arch(font, strength):
+    """Bend each glyph over a parabolic arch; negative strength makes a bowl."""
+    for _, g in iter_simple_glyphs(font):
+        coords = g.coordinates
+        if not coords:
+            continue
+        xs = [p[0] for p in coords]
+        left, width = min(xs), max(1, max(xs) - min(xs))
+        for i, (x, y) in enumerate(coords):
+            u = (x - left) / width
+            coords[i] = (x, int(y + strength * 240 * (1 - (2 * u - 1) ** 2)))
+
+def apply_twist(font, strength):
+    """Counter-shear the upper and lower portions around each glyph centre."""
+    for _, g in iter_simple_glyphs(font):
+        coords = g.coordinates
+        if not coords:
+            continue
+        ys = [p[1] for p in coords]
+        cy, height = (min(ys) + max(ys)) / 2, max(1, max(ys) - min(ys))
+        for i, (x, y) in enumerate(coords):
+            v = (y - cy) / height
+            coords[i] = (int(x + strength * 500 * v * abs(v)), y)
+
+def apply_pinch(font, strength):
+    """Pull the middle of a glyph inward while leaving top and bottom intact."""
+    for _, g in iter_simple_glyphs(font):
+        coords = g.coordinates
+        if not coords:
+            continue
+        xs, ys = [p[0] for p in coords], [p[1] for p in coords]
+        cx = (min(xs) + max(xs)) / 2
+        bottom, height = min(ys), max(1, max(ys) - min(ys))
+        for i, (x, y) in enumerate(coords):
+            waist = math.sin(math.pi * (y - bottom) / height) ** 2
+            coords[i] = (int(cx + (x - cx) * (1 - strength * waist)), y)
+
+def apply_fisheye(font, strength):
+    """Bulge coordinates radially around each glyph's bounding-box centre."""
+    for _, g in iter_simple_glyphs(font):
+        coords = g.coordinates
+        if not coords:
+            continue
+        xs, ys = [p[0] for p in coords], [p[1] for p in coords]
+        cx, cy = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
+        radius = max(1.0, math.hypot(max(xs) - min(xs), max(ys) - min(ys)) / 2)
+        for i, (x, y) in enumerate(coords):
+            dx, dy = x - cx, y - cy
+            r = min(1.0, math.hypot(dx, dy) / radius)
+            scale = 1 + strength * (1 - r) ** 2
+            coords[i] = (int(cx + dx * scale), int(cy + dy * scale))
+
+def apply_scanlines(font, strength, bands=9):
+    """Offset alternating horizontal bands like a damaged raster display."""
+    for _, g in iter_simple_glyphs(font):
+        coords = g.coordinates
+        if not coords:
+            continue
+        ys = [p[1] for p in coords]
+        bottom, height = min(ys), max(1, max(ys) - min(ys))
+        for i, (x, y) in enumerate(coords):
+            band = int((y - bottom) / height * bands)
+            coords[i] = (int(x + (-strength if band % 2 else strength)), y)
+
+def apply_attractor(font, strength, x_ratio=0.5, y_ratio=0.5):
+    """Pull points toward an internal attractor; negative strength repels them."""
+    for _, g in iter_simple_glyphs(font):
+        coords = g.coordinates
+        if not coords:
+            continue
+        xs, ys = [p[0] for p in coords], [p[1] for p in coords]
+        ax = min(xs) + (max(xs) - min(xs)) * x_ratio
+        ay = min(ys) + (max(ys) - min(ys)) * y_ratio
+        for i, (x, y) in enumerate(coords):
+            distance = max(1.0, math.hypot(ax - x, ay - y))
+            pull = strength * min(0.85, 180.0 / distance)
+            coords[i] = (int(x + (ax - x) * pull), int(y + (ay - y) * pull))
+
+def apply_vortex(font, strength):
+    """Rotate points by an angle that increases toward each glyph's centre."""
+    for _, g in iter_simple_glyphs(font):
+        coords = g.coordinates
+        if not coords:
+            continue
+        xs, ys = [p[0] for p in coords], [p[1] for p in coords]
+        cx, cy = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
+        radius = max(1.0, math.hypot(max(xs) - min(xs), max(ys) - min(ys)) / 2)
+        for i, (x, y) in enumerate(coords):
+            dx, dy = x - cx, y - cy
+            theta = strength * max(0.0, 1 - math.hypot(dx, dy) / radius)
+            coords[i] = (int(cx + dx * math.cos(theta) - dy * math.sin(theta)),
+                         int(cy + dx * math.sin(theta) + dy * math.cos(theta)))
+
+def apply_split(font, strength):
+    """Separate upper and lower glyph regions horizontally around the midline."""
+    for _, g in iter_simple_glyphs(font):
+        coords = g.coordinates
+        if not coords:
+            continue
+        ys = [p[1] for p in coords]
+        cy = (min(ys) + max(ys)) / 2
+        for i, (x, y) in enumerate(coords):
+            coords[i] = (int(x + (strength if y >= cy else -strength)), y)
+
+def apply_vertical_wave(font, amplitude, frequency=2.0):
+    """Displace x as a sinusoidal function of y."""
+    for _, g in iter_simple_glyphs(font):
+        coords = g.coordinates
+        for i, (x, y) in enumerate(coords):
+            coords[i] = (int(x + amplitude * math.sin(y * frequency * 2 * math.pi / 1000)), y)
+
+def apply_gravity(font, strength):
+    """Nonlinearly compress forms toward the baseline."""
+    for _, g in iter_simple_glyphs(font):
+        coords = g.coordinates
+        for i, (x, y) in enumerate(coords):
+            if y > 0:
+                coords[i] = (x, int(y - strength * 260 * min(2.0, y / 1000.0) ** 2))
+
+def apply_tectonic(font, strength, seed=42, plates=5):
+    """Move vertical plates independently, producing faults within letterforms."""
+    rng = random.Random(seed)
+    offsets = [(rng.uniform(-1, 1), rng.uniform(-0.5, 0.5)) for _ in range(plates)]
+    for _, g in iter_simple_glyphs(font):
+        coords = g.coordinates
+        if not coords:
+            continue
+        xs = [p[0] for p in coords]
+        left, width = min(xs), max(1, max(xs) - min(xs))
+        for i, (x, y) in enumerate(coords):
+            plate = min(plates - 1, int((x - left) / width * plates))
+            dx, dy = offsets[plate]
+            coords[i] = (int(x + dx * strength), int(y + dy * strength))
+
+def apply_memory(font, strength, seed=42):
+    """Displace whole contours coherently, like unevenly retained fragments."""
+    rng = random.Random(seed)
+    for _, g in iter_simple_glyphs(font):
+        coords = g.coordinates
+        start = 0
+        for end in g.endPtsOfContours:
+            dx, dy = rng.uniform(-strength, strength), rng.uniform(-strength, strength)
+            retention = rng.uniform(0.35, 1.0)
+            for i in range(start, end + 1):
+                x, y = coords[i]
+                coords[i] = (int(x + dx * retention), int(y + dy * retention))
+            start = end + 1
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Sequence generator — interpolate a single parameter across N steps
 # ─────────────────────────────────────────────────────────────────────────────
 
-def generate_sequence(source_path, out_dir, prefix, transform_fn, param_range, steps):
+def generate_sequence(source_path, out_dir, prefix, transform_fn, param_range, steps,
+                      parameter_name="strength"):
     """
     Generate `steps` fonts by linearly interpolating param_range=(lo, hi)
     and applying transform_fn(font, param).
     """
     lo, hi = param_range
+    source_font = load_font(source_path)
+    source_metrics = measure_font(source_font)
+    source_font.close()
     for i in range(steps):
         t = i / max(1, steps - 1)
         param = lo + t * (hi - lo)
@@ -438,7 +609,43 @@ def generate_sequence(source_path, out_dir, prefix, transform_fn, param_range, s
         transform_fn(font, param)
         stem = source_path.stem
         fname = out_dir / f"{stem}_{prefix}_{i:03d}.ttf"
-        save_font(font, fname)
+        save_font(font, fname, provenance={
+            "source_path": source_path,
+            "transform": prefix,
+            "parameters": {parameter_name: param},
+            "sequence_kind": "independent_sweep",
+            "step": i,
+            "steps": steps,
+            "parent": source_path,
+            "source_metrics": source_metrics,
+        })
+
+def generate_cumulative_sequence(source_path, out_dir, prefix, transform_fn,
+                                 param_range, steps, parameter_name="strength"):
+    """Generate states where each transformation operates on the prior state."""
+    lo, hi = param_range
+    source_font = load_font(source_path)
+    source_metrics = measure_font(source_font)
+    source_font.close()
+    parent = source_path
+    font = load_font(source_path)
+    for i in range(steps):
+        t = i / max(1, steps - 1)
+        param = lo + t * (hi - lo)
+        transform_fn(font, param)
+        fname = out_dir / f"{source_path.stem}_{prefix}_{i:03d}.ttf"
+        if not save_font(font, fname, provenance={
+            "source_path": source_path,
+            "transform": prefix,
+            "parameters": {parameter_name: param},
+            "sequence_kind": "cumulative_sequence",
+            "step": i,
+            "steps": steps,
+            "parent": parent,
+            "source_metrics": source_metrics,
+        }):
+            break
+        parent = fname
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Main
@@ -509,6 +716,20 @@ def main():
                 ("vstretch_130",   lambda f: apply_vertical_squash(f, 1.30)),
                 ("echo_right",     lambda f: apply_echo(f, 30, 0, 0.25)),
                 ("echo_shadow",    lambda f: apply_echo(f, 15, -15, 0.30)),
+                ("arch",           lambda f: apply_arch(f, 0.8)),
+                ("bowl",           lambda f: apply_arch(f, -0.8)),
+                ("twist",          lambda f: apply_twist(f, 0.8)),
+                ("pinch",          lambda f: apply_pinch(f, 0.65)),
+                ("fisheye",        lambda f: apply_fisheye(f, 1.0)),
+                ("scanlines",      lambda f: apply_scanlines(f, 35)),
+                ("attractor",      lambda f: apply_attractor(f, 0.7)),
+                ("repulsor",       lambda f: apply_attractor(f, -0.5)),
+                ("vortex",         lambda f: apply_vortex(f, 1.2)),
+                ("split",          lambda f: apply_split(f, 35)),
+                ("vertical_wave",  lambda f: apply_vertical_wave(f, 60)),
+                ("gravity",        lambda f: apply_gravity(f, 0.8)),
+                ("tectonic",       lambda f: apply_tectonic(f, 70)),
+                ("memory",         lambda f: apply_memory(f, 55)),
             ]
         }
 
@@ -585,6 +806,24 @@ def main():
             (0.0, 0.9), steps
         )
 
+        new_sequences = [
+            ("arch", lambda f, p: apply_arch(f, p), (0.0, 1.3)),
+            ("twist", lambda f, p: apply_twist(f, p), (0.0, 1.4)),
+            ("pinch", lambda f, p: apply_pinch(f, p), (0.0, 0.85)),
+            ("fisheye", lambda f, p: apply_fisheye(f, p), (0.0, 1.6)),
+            ("scanlines", lambda f, p: apply_scanlines(f, p), (0.0, 70.0)),
+            ("attractor", lambda f, p: apply_attractor(f, p), (0.0, 1.0)),
+            ("vortex", lambda f, p: apply_vortex(f, p), (0.0, 1.8)),
+            ("split", lambda f, p: apply_split(f, p), (0.0, 70.0)),
+            ("vertical_wave", lambda f, p: apply_vertical_wave(f, p), (0.0, 120.0)),
+            ("gravity", lambda f, p: apply_gravity(f, p), (0.0, 1.2)),
+            ("tectonic", lambda f, p: apply_tectonic(f, p), (0.0, 120.0)),
+            ("memory", lambda f, p: apply_memory(f, p), (0.0, 100.0)),
+        ]
+        for name, fn, bounds in new_sequences:
+            generate_sequence(fontfile, seq_dir / f"{stem}_{name}_seq",
+                              name, fn, bounds, steps)
+
         # ── 3. Compound mutations (stacked transforms) ────────────────────
 
         compound_dir = out_base / "compound"
@@ -624,6 +863,51 @@ def main():
             apply_ascender_evaporation(font, t * 0.7)
             apply_descender_erosion(font, t * 0.8)
             save_font(font, compound_dir / f"{stem}_wave_erosion_{i:03d}.ttf")
+
+        # Event horizon: attraction gives way to central rotational collapse.
+        for i in range(steps):
+            t = i / max(1, steps - 1)
+            font = load_font(fontfile)
+            apply_attractor(font, t * 0.9)
+            apply_vortex(font, t * 2.0)
+            apply_stroke_collapse(font, t * 0.45)
+            save_font(font, compound_dir / f"{stem}_event_horizon_{i:03d}.ttf")
+
+        # Fault memory: contours retain different histories across moving plates.
+        for i in range(steps):
+            t = i / max(1, steps - 1)
+            font = load_font(fontfile)
+            apply_tectonic(font, t * 100)
+            apply_memory(font, t * 65)
+            apply_quantize(font, max(1, int(2 + t * 22)))
+            save_font(font, compound_dir / f"{stem}_fault_memory_{i:03d}.ttf")
+
+        # CRT failure: scanline displacement, split, and vertical roll.
+        for i in range(steps):
+            t = i / max(1, steps - 1)
+            font = load_font(fontfile)
+            apply_scanlines(font, t * 65)
+            apply_split(font, t * 45)
+            apply_vertical_wave(font, t * 55, 1.25)
+            save_font(font, compound_dir / f"{stem}_crt_failure_{i:03d}.ttf")
+
+        # Fossil compression: gravity, arching, and grid mineralization.
+        for i in range(steps):
+            t = i / max(1, steps - 1)
+            font = load_font(fontfile)
+            apply_gravity(font, t)
+            apply_arch(font, -t * 0.8)
+            apply_quantize(font, max(1, int(2 + t * 34)))
+            save_font(font, compound_dir / f"{stem}_fossil_compression_{i:03d}.ttf")
+
+        # Signal possession: a smooth wave becomes a twisted raster fault.
+        for i in range(steps):
+            t = i / max(1, steps - 1)
+            font = load_font(fontfile)
+            apply_wave(font, int(t * 65), 1.7)
+            apply_twist(font, t)
+            apply_scanlines(font, t * 35)
+            save_font(font, compound_dir / f"{stem}_signal_possession_{i:03d}.ttf")
 
     print(f"\n\nAll done. Variants written to: {out_base}/")
     print("\nDirectory structure:")

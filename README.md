@@ -108,7 +108,20 @@ collapse
 droop
 dropout
 asc_evap
+arch / bowl
+twist / pinch / fisheye
+scanlines / split
+attractor / repulsor / vortex
+vertical_wave / gravity
+tectonic / memory
 ```
+
+The newer families broaden the experiment beyond affine distortion and point
+noise. `arch`, `twist`, `pinch`, `fisheye`, `attractor`, and `vortex` are
+continuous deformation fields. `scanlines`, `split`, and `tectonic` introduce
+discontinuities or faults. `memory` moves whole contours coherently rather than
+perturbing unrelated points, while `gravity` models nonlinear vertical
+compression.
 
 ---
 
@@ -154,6 +167,11 @@ full_decay
 dissolution
 wave_erosion
 geological
+event_horizon
+fault_memory
+crt_failure
+fossil_compression
+signal_possession
 ```
 
 These combine multiple transformations into a single progression.
@@ -179,6 +197,28 @@ experiments/compound/
 depending on configuration.
 
 Generated fonts are normalized before saving to prevent coordinate overflow.
+
+## Advanced experiment suite
+
+The v02 runner adds ten geometrically distinct operators: perspective,
+envelope, fold, fracture, wind, polarization, melt, contour phase, staircase,
+and suture. It also generates paired order-effect experiments, a shear
+round-trip, and seeded fracture ensembles:
+
+```bash
+python make_advanced_experiments.py CursiveGalactic-Regular.ttf
+python make-experiment-index.py
+```
+
+Outputs are written to `experiments-v02/`. The runner accepts multiple source
+fonts and `--steps N`; generated fonts include validation, measurements, hashes,
+and provenance sidecars.
+
+Two focused viewers accompany the suite. `experiment-matrix-viewer.html`
+compares every field transformation across aligned states.
+`path-dependence-viewer.html` holds source and intensity constant while
+comparing wave-then-grid with grid-then-wave. Serve the repository with
+`python -m http.server` before opening either page.
 
 ---
 
@@ -219,6 +259,26 @@ The generator should normalize coordinates before writing.
 ---
 
 # Previewing Fonts
+
+## Trajectory Analysis Viewer
+
+Build the experiment index and serve the repository locally:
+
+```bash
+python make-experiment-index.py
+python -m http.server
+```
+
+Then open `experiment-analysis-viewer.html`. It provides synchronized source
+and result specimens, a sequence scrubber, an overlay, provenance, and geometric
+measurements. New independent sweeps emit a JSON sidecar beside every generated
+font. The metadata deliberately labels these measurements as geometric; they do
+not establish perceptual legibility or semantic recognition.
+
+The sequence API distinguishes `generate_sequence` (every state is transformed
+from the original source) from `generate_cumulative_sequence` (each state is
+transformed from its predecessor). Both record the sequence kind and parent in
+their sidecars.
 
 ## HTML Preview
 
@@ -457,4 +517,3 @@ LICENSE
 ```
 
 for licensing information.
-
