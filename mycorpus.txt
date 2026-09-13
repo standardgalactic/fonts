@@ -1,0 +1,80 @@
+The signal arrived on schedule, faint but unmistakable, and the crew began the long work of confirming what they already suspected.
+Every measurement agreed with the last, which was itself the first sign that something had been overlooked.
+Records from the earlier expedition described the same drift, though nobody at the time had thought to name it.
+A pattern this consistent does not arise by accident, the technician said, though she could not yet say what had caused it.
+By the third week, the anomaly had stopped being an anomaly and started being simply how things worked here.
+The archive held thousands of similar reports, each one a small, careful account of something nobody had fully explained.
+Nothing about the terrain suggested instability, and yet the readings continued to shift by the same small margin.
+It was easier, in the end, to adjust the instruments than to admit the instruments had been right all along.
+The final report noted the discrepancy without resolving it, which was itself a kind of honesty.
+Whatever had caused the drift was still there, unbothered, when the next team arrived to measure it again.
+On the fourteenth day, the generator failed for the second time, and nobody was surprised.
+At 2:15 in the morning, the recorder logged a spike that no one on shift could later explain.
+Three hundred meters below the ridge, the sensor array kept transmitting long after the batteries should have failed.
+The manual, printed in 1987, still described procedures nobody had followed in a decade.
+A dozen technicians had filed the same complaint, and a dozen supervisors had filed it away.
+Rain had gotten into the housing again, and the readings that morning were, predictably, useless.
+Two of the six units reported normal values; the other four disagreed with each other by wide margins.
+The junior engineer suggested recalibration; the senior engineer suggested waiting until spring.
+Nobody wrote down whose idea it had been to bury the cable that shallow.
+The weather station upstream had gone silent in November and had not been missed until March.
+A single loose connection, it turned out, had cost them four months of usable data.
+The survey team returned with fewer samples than expected and considerably more questions.
+Someone had relabeled the storage crates sometime between the first and second expeditions, and the confusion never fully cleared.
+The old maps disagreed with the new ones by a margin too large to be surveying error.
+Every attempt to reproduce the result in the lab produced a slightly different number.
+The committee asked for a summary; what they received instead was forty pages of caveats.
+Nobody could say for certain when the drift began, only that it had been present for as long as anyone had been watching.
+The instrument's manufacturer had gone out of business years earlier, so replacement parts came from salvage.
+A faint hum, audible only at night, had been noted in the logs since the station's first winter.
+The backup generator started on the fourth try, which the crew considered a good outcome.
+By midsummer, the ice had retreated further than the models had predicted for the entire decade.
+The database migration lost exactly one column, and it was, of course, the one everyone needed.
+Three separate teams had proposed three separate explanations, and none of them agreed.
+The cable run was longer than specified, and the resulting signal loss went unnoticed for years.
+Every winter the access road washed out in the same place, and every spring it was rebuilt the same way.
+The intern's question, asked almost as an afterthought, turned out to be the one that mattered.
+Nobody had thought to check the calibration certificate, which had expired eighteen months earlier.
+The satellite pass came four minutes early, and the ground station was not ready to receive it.
+A single misplaced decimal point had been propagating through the reports for over a year.
+The field notes, handwritten and half illegible, were more reliable than the digital record beside them.
+It rained for eleven straight days, and the equipment, not designed for that, behaved accordingly.
+The replacement part arrived, eventually, but by then the original problem had changed shape entirely.
+Nobody remembered why the station had been placed exactly there, though the choice had clearly been deliberate once.
+The archive's index had not been updated since the previous administrator retired, six years prior.
+A single technician, working alone, had kept the station running through two winters nobody else wanted to staff.
+The instrument panel still listed units that had been decommissioned a decade earlier.
+Every reading from that sensor came with an asterisk, and every asterisk pointed to the same unresolved footnote.
+The survey vessel logged four hundred nautical miles without a single usable measurement.
+Someone had written "check this" in the margin of the 1994 report, and nobody ever had.
+The power budget assumed clear skies for six months of the year; the actual record showed closer to four.
+A backup copy of the dataset existed, though nobody could say on which drive, or in which building.
+The new sensor agreed with the old one for exactly nine days before the two began to diverge.
+Nobody had accounted for the tide when the original foundation was poured, and the structure had been listing ever since.
+The report's conclusion, written last, contradicted its own third paragraph.
+A stray radio signal, source unknown, had been interfering with the readings since at least 2003.
+The crew rotation left a four-day gap during which nobody was present to log the daily readings.
+Every attempt to patch the software introduced a new problem roughly the size of the one it fixed.
+The original blueprints had been lost in a flood decades earlier, so the current maintenance relied entirely on memory.
+A single sentence in the appendix explained the anomaly, but nobody had read past the summary in years.
+The instrument cluster had been recalibrated four times that year, each time against a slightly different standard.
+Nobody could explain why the readings improved every time the observer with the red notebook was on shift.
+The station's founding charter promised annual review; the most recent review was over a decade overdue.
+A single corroded contact, the size of a grain of rice, had been the cause of three years of intermittent failures.
+The expedition's final entry simply read: conditions unchanged, proceeding as planned, which turned out not to be true.
+Every one of the six replacement units failed within the same eleven-day window, for six different reasons.
+The archive listed the sample as lost, though it later turned up, unlabeled, in an unrelated box.
+A visiting researcher noticed within an hour what the resident team had missed for eight years.
+The generator's fuel gauge had been broken since spring, and nobody had prioritized fixing an inconvenience that cheap.
+Every version of the manual disagreed slightly with the version before it, and none of them matched the equipment as built.
+The storm knocked out the primary line, and the backup line, installed the same week, failed an hour later.
+Nobody flagged the missing data point until the annual review, four months after the gap first appeared.
+The station log for that winter consists mostly of the phrase "nothing to report," repeated for eleven weeks.
+A single transposed digit in the coordinates sent the resupply boat to the wrong inlet entirely.
+The oldest instrument on site, installed before anyone currently on staff was born, remained the most reliable.
+Every attempt to formalize the informal procedure made the procedure noticeably worse.
+The final calibration run agreed with the manufacturer's specification to three decimal places, which nobody quite believed.
+A quiet disagreement between two senior researchers had, over the years, shaped nearly every policy at the site.
+The replacement cable was rated for conditions considerably milder than the ones it was installed in.
+Nobody had tested the emergency procedure since the manual was written, and the manual was eleven years old.
+The last entry in the logbook, dated the previous autumn, ended mid-sentence.

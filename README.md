@@ -4,7 +4,7 @@ A collection of custom fonts, experimental font transformations, degradation seq
 
 The project explores the idea that typography can be treated as a dynamic process rather than a fixed object. Fonts become trajectories. Glyphs become evolving structures. Documents become experiments in legibility, decay, distortion, erosion, collapse, and transformation.
 
----
+![](memory_trace.png)
 
 ## Repository Overview
 
