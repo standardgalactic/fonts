@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Measurement Viewer | standardgalactic fonts</title>
+<meta name="description" content="Invariants, recoverability, and projections for procedural font experiments.">
+<style>
+  :root{
+    --bg:#0e0d0b; --panel:#161410; --rule:#332e26;
+    --ink:#e9e3d3; --dim:#a89d87; --accent:#c98a3e; --accent-dim:#7a5a2e;
+    --relocating:#8fa37a; --faulting:#c98a3e; --deleting:#b0584a;
+    --serif:"Source Serif 4","Iowan Old Style","Palatino Linotype",Georgia,serif;
+    --mono:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif)}
+  body{padding:5vh 1.5rem 4rem}
+  main{max-width:1080px;margin:0 auto}
+  a{color:var(--accent)}
+  .kicker{font-family:var(--mono);font-size:.78rem;color:var(--dim);margin:0 0 .6rem}
+  .kicker a{color:var(--dim);text-decoration:none}
+  .kicker a:hover{color:var(--accent)}
+  h1{font-size:clamp(2rem,5vw,2.9rem);line-height:1.15;margin:0 0 1rem;font-weight:600}
+  .lede{color:var(--dim);font-size:1.05rem;line-height:1.6;max-width:62ch;margin:0 0 2rem}
+  h2{font-size:1.35rem;font-weight:600;margin:2.6rem 0 .4rem}
+  h2 + p{color:var(--dim);margin:0 0 1.2rem;max-width:66ch;line-height:1.55}
+
+  .loader{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;padding:1rem 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .loader input[type=text]{flex:1 1 18rem;background:var(--panel);color:var(--ink);border:1px solid var(--rule);padding:.55rem .7rem;font:inherit;font-size:.95rem}
+  button,.filebtn{background:none;color:var(--ink);border:1px solid var(--accent-dim);padding:.5rem .9rem;font:inherit;font-size:.95rem;cursor:pointer}
+  button:hover,.filebtn:hover{border-color:var(--accent);color:var(--accent)}
+  button:focus-visible,.filebtn:focus-within,select:focus-visible,input:focus-visible,.step:focus-visible,.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .filebtn input{position:absolute;opacity:0;width:1px;height:1px}
+  .status{width:100%;color:var(--dim);font-size:.9rem;margin:0}
+  .status.error{color:var(--deleting)}
+
+  .controls{display:flex;flex-wrap:wrap;gap:1.2rem;align-items:center;margin:1.4rem 0 0}
+  select{background:var(--panel);color:var(--ink);border:1px solid var(--rule);padding:.4rem .5rem;font:inherit}
+  .legend{display:flex;flex-wrap:wrap;gap:1rem;color:var(--dim);font-size:.88rem}
+  .legend i{display:inline-block;width:.9rem;height:.2rem;vertical-align:middle;margin-right:.35rem}
+  .legend i.block{height:.7rem;width:.7rem}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.9rem}
+  .card{border-top:1px solid var(--rule);padding:.8rem 0 .4rem}
+  .card h3{font-size:1rem;font-weight:600;margin:0 0 .15rem;overflow-wrap:anywhere}
+  .card .sub{color:var(--dim);font-size:.82rem;margin:0 0 .5rem}
+  svg{display:block;width:100%;height:auto;overflow:visible}
+  .step{cursor:pointer}
+  .step:hover rect.hit{fill:rgba(201,138,62,.10)}
+  .step.on rect.hit{fill:rgba(201,138,62,.18)}
+
+  .detail{margin-top:1.6rem;background:var(--panel);border:1px solid var(--rule);padding:1.2rem 1.3rem}
+  .detail[hidden]{display:none}
+  .detail h3{margin:0 0 .2rem;font-size:1.15rem;overflow-wrap:anywhere}
+  .detail .path{font-family:var(--mono);font-size:.78rem;color:var(--dim);overflow-wrap:anywhere;margin:0 0 1rem}
+  .nums{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.8rem 1.4rem;margin:0 0 1.2rem}
+  .nums div{border-top:1px solid var(--rule);padding-top:.4rem}
+  .nums dt{color:var(--dim);font-size:.82rem}
+  .nums dd{margin:.1rem 0 0;font-size:1.25rem;font-variant-numeric:tabular-nums}
+  .detail h4{font-size:.98rem;font-weight:600;margin:1.2rem 0 .3rem}
+  .detail h4 + p{color:var(--dim);font-size:.88rem;margin:0 0 .6rem;max-width:70ch}
+  .tiles{display:flex;flex-wrap:wrap;gap:.5rem}
+  .tile{border:1px solid var(--rule);padding:.4rem .5rem .3rem;text-align:center;min-width:5.2rem}
+  .tile .pair{display:flex;gap:.5rem;justify-content:center;align-items:baseline;font-size:2.1rem;line-height:1.15}
+  .tile .pair span:first-child{color:var(--dim)}
+  .tile .pair span:last-child{color:var(--accent)}
+  .tile small{display:block;color:var(--dim);font-size:.72rem;font-family:var(--mono);overflow-wrap:anywhere}
+  .empty{color:var(--dim);font-size:.9rem;margin:0}
+
+  table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
+  th,td{text-align:left;padding:.45rem .6rem;border-bottom:1px solid var(--rule)}
+  th{color:var(--dim);font-weight:400}
+  .bar{height:.55rem;background:var(--accent-dim);display:inline-block;vertical-align:middle}
+  .bar.hi{background:var(--accent)}
+  .scroll{overflow-x:auto}
+  footer{margin-top:3.5rem;font-family:var(--mono);font-size:.72rem;color:var(--accent-dim)}
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker"><a href="./index.html">standardgalactic / fonts</a></p>
+  <h1>Measurement Viewer</h1>
+  <p class="lede">What each transform preserves, what it destroys, and which view reveals the difference.
+  Each sequence is charted by raster overlap and by recognizability against the source font's own glyphs;
+  the strip underneath shows whether glyphs were relocated, faulted, or had distinctions deleted.</p>
+
+  <div class="loader">
+    <input type="text" id="src" value="experiments-v02/measurements.json" aria-label="Path to measurements.json">
+    <button id="load">Load</button>
+    <label class="filebtn">Open file<input type="file" id="file" accept=".json,application/json"></label>
+    <p class="status" id="status">Generate the file with <code>python measure_experiments.py experiments-v02 --sources Sga-Regular.ttf</code>, then load it here.</p>
+  </div>
+
+  <div id="app" hidden>
+    <div class="controls">
+      <label>Source <select id="source"></select></label>
+      <div class="legend">
+        <span><i style="background:var(--accent)"></i>raster IoU</span>
+        <span><i style="background:var(--ink)"></i>recognized</span>
+        <span><i class="block" style="background:var(--relocating)"></i>relocating</span>
+        <span><i class="block" style="background:var(--faulting)"></i>faulting</span>
+        <span><i class="block" style="background:var(--deleting)"></i>deleting</span>
+      </div>
+    </div>
+
+    <section id="groups"></section>
+
+    <section class="detail" id="detail" hidden aria-live="polite"></section>
+
+    <section id="orders"></section>
+    <section id="ensembles"></section>
+  </div>
+
+  <footer>github.com/standardgalactic/fonts</footer>
+</main>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const fmt = (v, d = 3) => v == null || Number.isNaN(v) ? "n/a" : Number(v).toFixed(d);
+  const pct = v => v == null ? "n/a" : Math.round(v * 100) + "%";
+
+  let data = null, base = "", selected = null;
+  const loadedFaces = new Map();
+
+  const GROUPS = [
+    ["fields", "Fields", "Single operators swept across intensity."],
+    ["order-effects", "Order effects", "The same operators applied in both orders. Divergence between the pair is summarized further down."],
+    ["recovery", "Recovery", "Round trips. Any remaining displacement or overlap loss is the residual the inverse failed to remove."],
+    ["ensembles", "Ensembles", "One strength, different seeds. Steps here are seeds, not intensities."],
+  ];
+
+  // AGL names for common non-letter glyphs; single-character names map to themselves.
+  const AGL = {zero:"0",one:"1",two:"2",three:"3",four:"4",five:"5",six:"6",seven:"7",eight:"8",nine:"9",
+    period:".",comma:",",colon:":",semicolon:";",exclam:"!",question:"?",hyphen:"-",parenleft:"(",parenright:")",
+    ampersand:"&",at:"@",numbersign:"#",dollar:"$",percent:"%",asterisk:"*",plus:"+",equal:"=",slash:"/",
+    quotesingle:"'",quotedbl:'"',bracketleft:"[",bracketright:"]",braceleft:"{",braceright:"}",less:"<",greater:">"};
+  const charFor = name => name.length === 1 ? name
+    : AGL[name] || (/^uni([0-9A-F]{4})$/.exec(name) ? String.fromCodePoint(parseInt(name.slice(3), 16)) : null);
+
+  async function face(key, url) {
+    if (loadedFaces.has(key)) return loadedFaces.get(key);
+    const p = new FontFace(key, `url("${url}")`).load()
+      .then(f => { document.fonts.add(f); return key; })
+      .catch(() => null);
+    loadedFaces.set(key, p);
+    return p;
+  }
+
+  function status(msg, error = false) {
+    const el = $("status");
+    el.textContent = msg;
+    el.classList.toggle("error", error);
+  }
+
+  function accept(json, from) {
+    if (!json || !Array.isArray(json.states)) throw new Error("This file has no states array. Is it the output of measure_experiments.py?");
+    data = json;
+    base = from ? from.replace(/[^/]*$/, "") : "";
+    const sel = $("source");
+    sel.innerHTML = Object.entries(json.sources || {}).map(([k, v]) =>
+      `<option value="${esc(k)}">${esc(k)} (${v.glyphs} glyphs)</option>`).join("");
+    $("app").hidden = false;
+    status(`${json.states.length} states loaded${from ? " from " + from : ""}.` +
+      (from ? "" : " Glyph previews need the page and fonts served from the repo, so they are off for local files."));
+    render();
+  }
+
+  async function loadUrl(url) {
+    status("Loading " + url);
+    try {
+      const r = await fetch(url);
+      if (!r.ok) throw new Error(`${url} returned ${r.status}. Check the path relative to this page.`);
+      accept(await r.json(), url);
+      const u = new URL(location); u.searchParams.set("src", url); history.replaceState(null, "", u);
+    } catch (e) { status(e.message, true); }
+  }
+
+  $("load").onclick = () => loadUrl($("src").value.trim());
+  $("src").addEventListener("keydown", e => { if (e.key === "Enter") loadUrl($("src").value.trim()); });
+  $("file").onchange = async e => {
+    const f = e.target.files[0];
+    if (!f) return;
+    try { accept(JSON.parse(await f.text()), null); } catch (err) { status(err.message, true); }
+  };
+  $("source").onchange = () => { selected = null; render(); };
+
+  const groupOf = seq => (GROUPS.find(([k]) => seq.split("/").includes(k)) || ["other"])[0];
+
+  function chart(states) {
+    const W = 260, H = 96, pad = 4, strip = 10;
+    const n = states.length;
+    const x = i => n === 1 ? W / 2 : pad + i * (W - 2 * pad) / (n - 1);
+    // Zoom the vertical axis onto the range the sequence actually uses.
+    const vals = states.flatMap(s => [s.iou, s.recognition]).filter(v => v != null);
+    const lo = Math.min(0.5, Math.floor(Math.min(...vals, 1) * 10) / 10);
+    const y = v => pad + (1 - (v - lo) / (1 - lo)) * (H - 2 * pad);
+    const line = (key, color, dash) => {
+      const pts = states.map((s, i) => s[key] == null ? null : `${x(i)},${y(s[key])}`).filter(Boolean).join(" ");
+      return `<polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.6" ${dash ? 'stroke-dasharray="3 3"' : ""}/>`;
+    };
+    const colW = (W - 2 * pad) / Math.max(1, n);
+    let steps = "";
+    states.forEach((s, i) => {
+      const c = s.classes || {}, tot = (c.relocating || 0) + (c.faulting || 0) + (c.deleting || 0) || 1;
+      const cx = n === 1 ? pad : pad + i * colW;
+      let off = 0, bars = "";
+      for (const k of ["relocating", "faulting", "deleting"]) {
+        const w = (c[k] || 0) / tot * (colW - 2);
+        if (w > 0) bars += `<rect x="${cx + 1 + off}" y="${H + 4}" width="${w}" height="${strip}" fill="var(--${k})"/>`;
+        off += w;
+      }
+      const on = selected === s.path ? " on" : "";
+      steps += `<g class="step${on}" tabindex="0" role="button" data-path="${esc(s.path)}"
+        aria-label="step ${s.step}: IoU ${fmt(s.iou, 2)}, recognized ${pct(s.recognition)}">
+        <rect class="hit" x="${cx}" y="0" width="${colW}" height="${H + strip + 6}" fill="transparent"/>${bars}</g>`;
+    });
+    const grid = [lo, (lo + 1) / 2, 1].map(v => `<line x1="0" x2="${W}" y1="${y(v)}" y2="${y(v)}" stroke="var(--rule)" stroke-width="1"/>
+      <text x="${W}" y="${y(v) - 2}" text-anchor="end" font-size="8" fill="var(--dim)">${v.toFixed(2)}</text>`).join("");
+    return `<svg viewBox="0 0 ${W} ${H + strip + 8}" aria-hidden="false">${grid}${steps}
+      ${line("iou", "var(--accent)")}${line("recognition", "var(--ink)", true)}</svg>`;
+  }
+
+  function render() {
+    const src = $("source").value;
+    const states = data.states.filter(s => s.source === src);
+    const bySeq = new Map();
+    for (const s of states) {
+      if (!bySeq.has(s.sequence)) bySeq.set(s.sequence, []);
+      bySeq.get(s.sequence).push(s);
+    }
+    for (const list of bySeq.values()) list.sort((a, b) => (a.step ?? 0) - (b.step ?? 0));
+
+    const groups = [...GROUPS, ["other", "Other", "Sequences outside the v02 layout."]];
+    $("groups").innerHTML = groups.map(([key, title, blurb]) => {
+      const seqs = [...bySeq.entries()].filter(([seq]) => groupOf(seq) === key).sort(([a], [b]) => a.localeCompare(b));
+      if (!seqs.length) return "";
+      return `<h2>${title}</h2><p>${blurb}</p><div class="grid">` + seqs.map(([seq, list]) => {
+        const last = list[list.length - 1];
+        const name = seq.split("/").pop();
+        return `<div class="card"><h3>${esc(name)}</h3>
+          <p class="sub">${list.length} states, ends at IoU ${fmt(last.iou, 2)}, ${pct(last.recognition)} recognized</p>
+          ${chart(list)}</div>`;
+      }).join("") + "</div>";
+    }).join("");
+
+    document.querySelectorAll(".step").forEach(g => {
+      const pick = () => { selected = g.dataset.path; render(); showDetail(selected); };
+      g.addEventListener("click", pick);
+      g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(); } });
+    });
+
+    renderOrders(src);
+    renderEnsembles(src);
+  }
+
+  async function tiles(names, state, sourceKey) {
+    if (!names || !names.length) return `<p class="empty">None at this step.</p>`;
+    const canPreview = base !== "" || location.protocol !== "file:";
+    let srcFace = null, stFace = null;
+    if (canPreview) {
+      const srcPath = data.sources[sourceKey]?.path;
+      srcFace = srcPath ? await face("src-" + sourceKey, new URL(srcPath, location).href) : null;
+      stFace = await face("st-" + state.path, new URL(base + state.path, location).href);
+    }
+    return `<div class="tiles">` + names.slice(0, 40).map(n => {
+      const ch = charFor(n);
+      const glyph = ch && srcFace && stFace
+        ? `<div class="pair"><span style="font-family:'${srcFace}'">${esc(ch)}</span><span style="font-family:'${esc(stFace)}'">${esc(ch)}</span></div>`
+        : "";
+      return `<div class="tile">${glyph}<small>${esc(n)}</small></div>`;
+    }).join("") + (names.length > 40 ? `<p class="empty">and ${names.length - 40} more</p>` : "") + `</div>`;
+  }
+
+  async function showDetail(path) {
+    const s = data.states.find(x => x.path === path);
+    const el = $("detail");
+    if (!s) { el.hidden = true; return; }
+    const p = s.preserved || {};
+    const c = s.classes || {};
+    el.hidden = false;
+    el.innerHTML = `<h3>${esc(s.sequence.split("/").pop())}, step ${s.step ?? "?"}</h3>
+      <p class="path">${esc(s.path)}</p>
+      <dl class="nums">
+        <div><dt>Raster IoU</dt><dd>${fmt(s.iou)}</dd></div>
+        <div><dt>Recognized</dt><dd>${pct(s.recognition)}</dd></div>
+        <div><dt>Mean margin</dt><dd>${fmt(s.margin)}</dd></div>
+        <div><dt>Displacement (em)</dt><dd>${fmt(s.displacement, 4)}</dd></div>
+        ${s.recovery_residual !== undefined ? `<div><dt>Recovery residual (em)</dt><dd>${fmt(s.recovery_residual, 4)}</dd></div>` : ""}
+        <div><dt>Points kept</dt><dd>${pct(p.points)}</dd></div>
+        <div><dt>Contours kept</dt><dd>${pct(p.contours)}</dd></div>
+        <div><dt>Winding kept</dt><dd>${pct(p.winding)}</dd></div>
+        <div><dt>Relocating / faulting / deleting</dt><dd>${c.relocating || 0} / ${c.faulting || 0} / ${c.deleting || 0}</dd></div>
+      </dl>
+      <h4>Hidden but readable</h4>
+      <p>Less than half the ink overlaps the source, yet the glyph is still identified correctly. The raster view loses it; the recognition view does not.</p>
+      <div id="t-hidden"></div>
+      <h4>Intact but unreadable</h4>
+      <p>Every structural invariant holds, yet the glyph is read as something else. The structure survived; the identity did not.</p>
+      <div id="t-intact"></div>`;
+    $("t-hidden").innerHTML = await tiles(s.hidden_but_readable, s, s.source);
+    $("t-intact").innerHTML = await tiles(s.intact_but_unreadable, s, s.source);
+    el.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "nearest"});
+  }
+
+  function renderOrders(src) {
+    const rows = (data.order_effects || {})[src] || [];
+    if (!rows.length) { $("orders").innerHTML = ""; return; }
+    $("orders").innerHTML = `<h2>Order effects</h2>
+      <p>Overlap between the two orderings at each step. 1.0 means the operators commute on this font; the fall below 1.0 is the cost of order.</p>
+      <div class="scroll"><table><thead><tr><th>Step</th><th>Pair</th><th>IoU between orders</th><th></th></tr></thead><tbody>` +
+      rows.map(r => `<tr><td>${r.step}</td><td>${esc(r.pair.join(" vs "))}</td><td>${fmt(r.iou_between_orders)}</td>
+        <td><span class="bar" style="width:${Math.max(0, r.iou_between_orders) * 12}rem"></span></td></tr>`).join("") +
+      `</tbody></table></div>`;
+  }
+
+  function renderEnsembles(src) {
+    const rows = Object.entries(data.ensembles || {}).filter(([k]) => k.startsWith(src + "/"));
+    if (!rows.length) { $("ensembles").innerHTML = ""; return; }
+    $("ensembles").innerHTML = `<h2>Ensemble consensus</h2>
+      <p>A majority vote across seeds against the average single seed. When the consensus overlaps the source better, each seed displaced the glyph differently and the displacement cancels.</p>
+      <div class="scroll"><table><thead><tr><th>Ensemble</th><th>Seeds</th><th>Single seed IoU</th><th>Consensus IoU</th><th>Consensus recognized</th></tr></thead><tbody>` +
+      rows.map(([k, e]) => `<tr><td>${esc(k.split("/").pop())}</td><td>${e.members}</td>
+        <td><span class="bar" style="width:${e.mean_single_iou * 8}rem"></span> ${fmt(e.mean_single_iou)}</td>
+        <td><span class="bar hi" style="width:${e.consensus_iou * 8}rem"></span> ${fmt(e.consensus_iou)}</td>
+        <td>${pct(e.consensus_recognition)}</td></tr>`).join("") +
+      `</tbody></table></div>`;
+  }
+
+  // Load ?src= if given, otherwise try the default path. A missing default
+  // file is not an error: the page just waits for a path or an opened file.
+  const q = new URLSearchParams(location.search).get("src");
+  if (q) { $("src").value = q; loadUrl(q); }
+  else if (location.protocol !== "file:") {
+    const url = $("src").value.trim();
+    fetch(url, {method: "HEAD"}).then(r => { if (r.ok) loadUrl(url); }).catch(() => {});
+  } else {
+    status("Opened as a local file, so the browser blocks automatic loading. Use Open file, or serve the folder with python3 -m http.server.");
+  }
+})();
+</script>
+</body>
+</html>

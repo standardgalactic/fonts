@@ -1,0 +1,7952 @@
+{
+ "generated_by": "measure_experiments.py",
+ "raster_resolution": 96,
+ "sources": {
+  "shapeform": {
+   "path": "shapeform.ttf",
+   "glyphs": 52,
+   "shape_classes": 52
+  }
+ },
+ "states": [
+  {
+   "path": "ensembles/fracture_ensemble/shapeform_fracture_ensemble_000.ttf",
+   "source": "shapeform",
+   "sequence": "ensembles/fracture_ensemble",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.758720+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 991,
+       "x_min": 19,
+       "y_max": 758,
+       "y_min": -40
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 91397.378
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fracture_ensemble_000.ttf",
+    "output_sha256": "727f95c1ae6d77ded54423e2928a11269085bc536b940b2773bcb86c0334b310",
+    "parameters": {
+     "seed": 0,
+     "strength": 85
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "seed_ensemble",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "fracture_ensemble"
+   },
+   "glyphs": 52,
+   "iou": 0.6561834296000815,
+   "recognition": 0.4423076923076923,
+   "margin": -0.018220261453999444,
+   "displacement": 0.04685097082976121,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [
+    "i"
+   ],
+   "intact_but_unreadable": [
+    "A",
+    "D",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "P",
+    "S",
+    "U",
+    "V",
+    "Y",
+    "a",
+    "c",
+    "d",
+    "f",
+    "h",
+    "l",
+    "m",
+    "n",
+    "o",
+    "q",
+    "r",
+    "t",
+    "u",
+    "w",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "ensembles/fracture_ensemble/shapeform_fracture_ensemble_001.ttf",
+   "source": "shapeform",
+   "sequence": "ensembles/fracture_ensemble",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.766515+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 968,
+       "x_min": 77,
+       "y_max": 741,
+       "y_min": -41
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 89805.384
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fracture_ensemble_001.ttf",
+    "output_sha256": "145b19d170260eeeddf41072bf4a51b40c5f6e25e733c0147419926d41f74fc8",
+    "parameters": {
+     "seed": 1,
+     "strength": 85
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "seed_ensemble",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "fracture_ensemble"
+   },
+   "glyphs": 52,
+   "iou": 0.5603654219326742,
+   "recognition": 0.19230769230769232,
+   "margin": -0.08147431707226281,
+   "displacement": 0.06917709836084786,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [
+    "i",
+    "w"
+   ],
+   "intact_but_unreadable": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "I",
+    "J",
+    "K",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "h",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "ensembles/fracture_ensemble/shapeform_fracture_ensemble_002.ttf",
+   "source": "shapeform",
+   "sequence": "ensembles/fracture_ensemble",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.774723+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 971,
+       "x_min": -42,
+       "y_max": 762,
+       "y_min": -70
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 91947.367
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fracture_ensemble_002.ttf",
+    "output_sha256": "6cb3c48032d927ad9f8ae09f477e4d164036d0e9eae136829fe10cf7af448fec",
+    "parameters": {
+     "seed": 2,
+     "strength": 85
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "seed_ensemble",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "fracture_ensemble"
+   },
+   "glyphs": 52,
+   "iou": 0.6190155640097165,
+   "recognition": 0.25,
+   "margin": -0.05293378277552315,
+   "displacement": 0.05898359403444869,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [
+    "I"
+   ],
+   "intact_but_unreadable": [
+    "A",
+    "B",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "N",
+    "O",
+    "P",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "Y",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "h",
+    "i",
+    "j",
+    "l",
+    "m",
+    "n",
+    "o",
+    "r",
+    "s",
+    "t",
+    "u",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "ensembles/fracture_ensemble/shapeform_fracture_ensemble_003.ttf",
+   "source": "shapeform",
+   "sequence": "ensembles/fracture_ensemble",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.782381+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 898,
+       "x_min": 10,
+       "y_max": 747,
+       "y_min": -73
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 87327.861
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fracture_ensemble_003.ttf",
+    "output_sha256": "68297c17f1c30aa7c129c367ef7dac74302e0f0499c05c0495b0716dca13e192",
+    "parameters": {
+     "seed": 3,
+     "strength": 85
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "seed_ensemble",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "fracture_ensemble"
+   },
+   "glyphs": 52,
+   "iou": 0.6401912917417711,
+   "recognition": 0.19230769230769232,
+   "margin": -0.07035156400293019,
+   "displacement": 0.06618197647117453,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "D",
+    "E",
+    "F",
+    "G",
+    "J",
+    "K",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "S",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "w",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "ensembles/fracture_ensemble/shapeform_fracture_ensemble_004.ttf",
+   "source": "shapeform",
+   "sequence": "ensembles/fracture_ensemble",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.789844+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 1014,
+       "x_min": 15,
+       "y_max": 715,
+       "y_min": -58
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 91515.907
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fracture_ensemble_004.ttf",
+    "output_sha256": "16df0156da786036e61c6a91b7eea84b4f4f842122046af5b42dbc4d4b29b532",
+    "parameters": {
+     "seed": 4,
+     "strength": 85
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "seed_ensemble",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "fracture_ensemble"
+   },
+   "glyphs": 52,
+   "iou": 0.6246260529888992,
+   "recognition": 0.2692307692307692,
+   "margin": -0.05222605941237632,
+   "displacement": 0.07006145791148297,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [
+    "V",
+    "w"
+   ],
+   "intact_but_unreadable": [
+    "C",
+    "D",
+    "J",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "S",
+    "T",
+    "U",
+    "W",
+    "Y",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/contour_phase/shapeform_contour_phase_000.ttf",
+   "source": "shapeform",
+   "sequence": "fields/contour_phase",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.526052+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_contour_phase_000.ttf",
+    "output_sha256": "cb390fbec261923fe7f97bae2c470efd839554dd78627bfcbe9d4e262d324d25",
+    "parameters": {
+     "strength": 0.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "contour_phase"
+   },
+   "glyphs": 52,
+   "iou": 1.0,
+   "recognition": 1.0,
+   "margin": 0.04760174359239104,
+   "displacement": 0.0,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": []
+  },
+  {
+   "path": "fields/contour_phase/shapeform_contour_phase_001.ttf",
+   "source": "shapeform",
+   "sequence": "fields/contour_phase",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.534110+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 945,
+       "x_min": 16,
+       "y_max": 764,
+       "y_min": -6
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82470.853
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_contour_phase_001.ttf",
+    "output_sha256": "e6bf32dd2c9237da22b2bfb1f47b3487e8b491de42a0dafc08d7b992a24c2ff6",
+    "parameters": {
+     "strength": 0.175
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "contour_phase"
+   },
+   "glyphs": 52,
+   "iou": 0.8988760136261058,
+   "recognition": 0.7307692307692307,
+   "margin": 0.017771850054233516,
+   "displacement": 0.018787155848070166,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "C",
+    "L",
+    "M",
+    "O",
+    "P",
+    "S",
+    "d",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "q",
+    "t"
+   ]
+  },
+  {
+   "path": "fields/contour_phase/shapeform_contour_phase_002.ttf",
+   "source": "shapeform",
+   "sequence": "fields/contour_phase",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.541574+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 939,
+       "x_min": -26,
+       "y_max": 771,
+       "y_min": -11
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82470.732
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_contour_phase_002.ttf",
+    "output_sha256": "e4e6e7287dcb60fd6200b337bd8f499668a3eecbad15b852ca207419437a4cc4",
+    "parameters": {
+     "strength": 0.35
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "contour_phase"
+   },
+   "glyphs": 52,
+   "iou": 0.826264734039238,
+   "recognition": 0.5769230769230769,
+   "margin": 0.002516336079430782,
+   "displacement": 0.03743378533777524,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "C",
+    "D",
+    "J",
+    "L",
+    "M",
+    "P",
+    "Q",
+    "R",
+    "U",
+    "X",
+    "Y",
+    "Z",
+    "d",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "q",
+    "r",
+    "s",
+    "t"
+   ]
+  },
+  {
+   "path": "fields/contour_phase/shapeform_contour_phase_003.ttf",
+   "source": "shapeform",
+   "sequence": "fields/contour_phase",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.548944+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 924,
+       "x_min": -65,
+       "y_max": 775,
+       "y_min": -15
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82473.386
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_contour_phase_003.ttf",
+    "output_sha256": "3c15398a1a81a7ab9fdaba1d8c60dd53004dcdbc05cada763b6188664afd1900",
+    "parameters": {
+     "strength": 0.5249999999999999
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "contour_phase"
+   },
+   "glyphs": 52,
+   "iou": 0.7693924729220443,
+   "recognition": 0.38461538461538464,
+   "margin": -0.03370127474348787,
+   "displacement": 0.05595059527926206,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "C",
+    "D",
+    "G",
+    "J",
+    "L",
+    "M",
+    "P",
+    "Q",
+    "R",
+    "U",
+    "V",
+    "X",
+    "Y",
+    "Z",
+    "a",
+    "b",
+    "d",
+    "f",
+    "h",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "w",
+    "y"
+   ]
+  },
+  {
+   "path": "fields/contour_phase/shapeform_contour_phase_004.ttf",
+   "source": "shapeform",
+   "sequence": "fields/contour_phase",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.556045+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 902,
+       "x_min": -97,
+       "y_max": 775,
+       "y_min": -19
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82468.254
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_contour_phase_004.ttf",
+    "output_sha256": "1878b45259f55fde86912c9fe94f2b47de30496e8ae0245947235ebc32a83e85",
+    "parameters": {
+     "strength": 0.7
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "contour_phase"
+   },
+   "glyphs": 52,
+   "iou": 0.7221812347463807,
+   "recognition": 0.25,
+   "margin": -0.0789904660847153,
+   "displacement": 0.0742977163206148,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "P",
+    "Q",
+    "R",
+    "U",
+    "V",
+    "X",
+    "Y",
+    "Z",
+    "a",
+    "b",
+    "d",
+    "f",
+    "h",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/envelope/shapeform_envelope_000.ttf",
+   "source": "shapeform",
+   "sequence": "fields/envelope",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.288055+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_envelope_000.ttf",
+    "output_sha256": "cb390fbec261923fe7f97bae2c470efd839554dd78627bfcbe9d4e262d324d25",
+    "parameters": {
+     "strength": 0.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "envelope"
+   },
+   "glyphs": 52,
+   "iou": 1.0,
+   "recognition": 1.0,
+   "margin": 0.04760174359239104,
+   "displacement": 0.0,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": []
+  },
+  {
+   "path": "fields/envelope/shapeform_envelope_001.ttf",
+   "source": "shapeform",
+   "sequence": "fields/envelope",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.295737+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 1009,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 87772.919
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_envelope_001.ttf",
+    "output_sha256": "6fda61306ab82f24f62e308b32a9c23ba415faad019ba5ff6a1b488468cc2c15",
+    "parameters": {
+     "strength": 0.225
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "envelope"
+   },
+   "glyphs": 52,
+   "iou": 0.7810154366207142,
+   "recognition": 0.5,
+   "margin": 0.002592262681250822,
+   "displacement": 0.01596624095371565,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "D",
+    "E",
+    "N",
+    "S",
+    "U",
+    "a",
+    "b",
+    "c",
+    "d",
+    "f",
+    "g",
+    "h",
+    "i",
+    "k",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/envelope/shapeform_envelope_002.ttf",
+   "source": "shapeform",
+   "sequence": "fields/envelope",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.302955+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 1076,
+       "x_min": -7,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 93743.905
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_envelope_002.ttf",
+    "output_sha256": "a9a2e7e4a0435f26b8f4a18eb02ede7006aac13abf99cb1795482e3c716b4dac",
+    "parameters": {
+     "strength": 0.45
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "envelope"
+   },
+   "glyphs": 52,
+   "iou": 0.63308240391498,
+   "recognition": 0.3076923076923077,
+   "margin": -0.04838112531053673,
+   "displacement": 0.03191546238427565,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "J",
+    "M",
+    "N",
+    "O",
+    "P",
+    "S",
+    "U",
+    "X",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "n",
+    "o",
+    "q",
+    "r",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/envelope/shapeform_envelope_003.ttf",
+   "source": "shapeform",
+   "sequence": "fields/envelope",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.310863+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 1143,
+       "x_min": -83,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 100222.079
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_envelope_003.ttf",
+    "output_sha256": "2c9bb26cf79bba91a038a82162f8012f53cac77cf4d888572db6b9a9b2f28a9d",
+    "parameters": {
+     "strength": 0.675
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "envelope"
+   },
+   "glyphs": 52,
+   "iou": 0.5294489662348724,
+   "recognition": 0.19230769230769232,
+   "margin": -0.0949273127244871,
+   "displacement": 0.04788798964193701,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [
+    "I",
+    "Q",
+    "T",
+    "W",
+    "f"
+   ],
+   "intact_but_unreadable": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "J",
+    "L",
+    "N",
+    "O",
+    "P",
+    "R",
+    "S",
+    "U",
+    "X",
+    "Y",
+    "Z",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/envelope/shapeform_envelope_004.ttf",
+   "source": "shapeform",
+   "sequence": "fields/envelope",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.318125+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 1209,
+       "x_min": -159,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 107080.227
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_envelope_004.ttf",
+    "output_sha256": "3fbba4f68af31700d5828667e3a350a36cb5c981970a4e8eeabbdc4f578b82f5",
+    "parameters": {
+     "strength": 0.9
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "envelope"
+   },
+   "glyphs": 52,
+   "iou": 0.4597216689986499,
+   "recognition": 0.15384615384615385,
+   "margin": -0.13688134082556463,
+   "displacement": 0.06384576500591176,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [
+    "I",
+    "M",
+    "Q",
+    "T",
+    "V",
+    "W",
+    "m"
+   ],
+   "intact_but_unreadable": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    "N",
+    "O",
+    "P",
+    "R",
+    "S",
+    "U",
+    "X",
+    "Y",
+    "Z",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/fold/shapeform_fold_000.ttf",
+   "source": "shapeform",
+   "sequence": "fields/fold",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.327886+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fold_000.ttf",
+    "output_sha256": "cb390fbec261923fe7f97bae2c470efd839554dd78627bfcbe9d4e262d324d25",
+    "parameters": {
+     "strength": 0.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "fold"
+   },
+   "glyphs": 52,
+   "iou": 1.0,
+   "recognition": 1.0,
+   "margin": 0.04760174359239104,
+   "displacement": 0.0,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": []
+  },
+  {
+   "path": "fields/fold/shapeform_fold_001.ttf",
+   "source": "shapeform",
+   "sequence": "fields/fold",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.334989+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 790,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 72798.814
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fold_001.ttf",
+    "output_sha256": "baaebe3155ee245cee126dfa393f90d946c8c2688ddae910ab9d4f34737661ad",
+    "parameters": {
+     "strength": 0.25
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "fold"
+   },
+   "glyphs": 52,
+   "iou": 0.7525149999594078,
+   "recognition": 0.3076923076923077,
+   "margin": -0.04444583787275949,
+   "displacement": 0.0328416661021165,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "U",
+    "V",
+    "X",
+    "Y",
+    "Z",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "h",
+    "l",
+    "m",
+    "o",
+    "p",
+    "r",
+    "t",
+    "u",
+    "y"
+   ]
+  },
+  {
+   "path": "fields/fold/shapeform_fold_002.ttf",
+   "source": "shapeform",
+   "sequence": "fields/fold",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.341823+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 637,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 65856.006
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fold_002.ttf",
+    "output_sha256": "ab7a38a6872b7078c2adbf2c3174b9537cf15a3938a3579b7e1f49d40fc8e8e9",
+    "parameters": {
+     "strength": 0.5
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "fold"
+   },
+   "glyphs": 52,
+   "iou": 0.5320586966581974,
+   "recognition": 0.038461538461538464,
+   "margin": -0.25398905995578314,
+   "displacement": 0.06542891222306708,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 49,
+    "faulting": 0,
+    "deleting": 3
+   },
+   "hidden_but_readable": [
+    "i"
+   ],
+   "intact_but_unreadable": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/fold/shapeform_fold_003.ttf",
+   "source": "shapeform",
+   "sequence": "fields/fold",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.348838+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 631,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 67908.459
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fold_003.ttf",
+    "output_sha256": "a845964e17f214557c0dfa687b0baa03fb7c447fc10b7aa40db57fca13575708",
+    "parameters": {
+     "strength": 0.75
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "fold"
+   },
+   "glyphs": 52,
+   "iou": 0.3269253655864287,
+   "recognition": 0.038461538461538464,
+   "margin": -0.2960072354277253,
+   "displacement": 0.0981541208243511,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [
+    "i",
+    "j"
+   ],
+   "intact_but_unreadable": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/fold/shapeform_fold_004.ttf",
+   "source": "shapeform",
+   "sequence": "fields/fold",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.355921+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 626,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 74154.143
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fold_004.ttf",
+    "output_sha256": "34158ea6182a6ed39e2bfccc9c4fdb0e940f62b306ea389b289d77b21a14a458",
+    "parameters": {
+     "strength": 1.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "fold"
+   },
+   "glyphs": 52,
+   "iou": 0.16007910787058194,
+   "recognition": 0.019230769230769232,
+   "margin": -0.3174897735043668,
+   "displacement": 0.13061890815409288,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 0.6538461538461539,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 51,
+    "faulting": 0,
+    "deleting": 1
+   },
+   "hidden_but_readable": [
+    "j"
+   ],
+   "intact_but_unreadable": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "H",
+    "J",
+    "K",
+    "L",
+    "M",
+    "Q",
+    "R",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "h",
+    "k",
+    "l",
+    "m",
+    "q",
+    "r",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/fracture/shapeform_fracture_000.ttf",
+   "source": "shapeform",
+   "sequence": "fields/fracture",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.365306+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fracture_000.ttf",
+    "output_sha256": "cb390fbec261923fe7f97bae2c470efd839554dd78627bfcbe9d4e262d324d25",
+    "parameters": {
+     "strength": 0.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "fracture"
+   },
+   "glyphs": 52,
+   "iou": 1.0,
+   "recognition": 1.0,
+   "margin": 0.04760174359239104,
+   "displacement": 0.0,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": []
+  },
+  {
+   "path": "fields/fracture/shapeform_fracture_001.ttf",
+   "source": "shapeform",
+   "sequence": "fields/fracture",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.373310+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 964,
+       "x_min": 17,
+       "y_max": 753,
+       "y_min": -15
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 84652.955
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fracture_001.ttf",
+    "output_sha256": "54381e5d1f488d1b7cdcdee8997307a0e13854680c92519653e768f66fddc467",
+    "parameters": {
+     "strength": 27.5
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "fracture"
+   },
+   "glyphs": 52,
+   "iou": 0.826843780994445,
+   "recognition": 0.5961538461538461,
+   "margin": 0.004012344761487948,
+   "displacement": 0.024200775139969467,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "B",
+    "C",
+    "J",
+    "L",
+    "M",
+    "P",
+    "W",
+    "a",
+    "d",
+    "e",
+    "g",
+    "h",
+    "k",
+    "n",
+    "o",
+    "q",
+    "r",
+    "t",
+    "u",
+    "v",
+    "y"
+   ]
+  },
+  {
+   "path": "fields/fracture/shapeform_fracture_002.ttf",
+   "source": "shapeform",
+   "sequence": "fields/fracture",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.381010+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 986,
+       "x_min": 2,
+       "y_max": 753,
+       "y_min": -30
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 87911.762
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fracture_002.ttf",
+    "output_sha256": "66b34548aa295abcd0b0baa04d4bf96fd05063f5243b1a5a0de7f73a26299c44",
+    "parameters": {
+     "strength": 55.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "fracture"
+   },
+   "glyphs": 52,
+   "iou": 0.7086960491806911,
+   "recognition": 0.36538461538461536,
+   "margin": -0.04263080094470853,
+   "displacement": 0.047996371519378536,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "J",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "R",
+    "S",
+    "T",
+    "U",
+    "W",
+    "Y",
+    "Z",
+    "a",
+    "d",
+    "e",
+    "g",
+    "h",
+    "k",
+    "n",
+    "o",
+    "q",
+    "r",
+    "t",
+    "u",
+    "v",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/fracture/shapeform_fracture_003.ttf",
+   "source": "shapeform",
+   "sequence": "fields/fracture",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.388148+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 1007,
+       "x_min": -13,
+       "y_max": 753,
+       "y_min": -45
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 92263.791
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fracture_003.ttf",
+    "output_sha256": "eaab434918b9b3e8b6600f1bd3778051ccd4330a1f565451702c26d2a409cb7d",
+    "parameters": {
+     "strength": 82.5
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "fracture"
+   },
+   "glyphs": 52,
+   "iou": 0.6212397319032755,
+   "recognition": 0.25,
+   "margin": -0.08750510192362548,
+   "displacement": 0.0718676295145252,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [
+    "V",
+    "w"
+   ],
+   "intact_but_unreadable": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "G",
+    "J",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "R",
+    "S",
+    "T",
+    "U",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "a",
+    "c",
+    "d",
+    "e",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "t",
+    "u",
+    "v",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/fracture/shapeform_fracture_004.ttf",
+   "source": "shapeform",
+   "sequence": "fields/fracture",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.395398+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 1029,
+       "x_min": -28,
+       "y_max": 754,
+       "y_min": -60
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 97747.662
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_fracture_004.ttf",
+    "output_sha256": "9fff55f9fb1192f8dad05e3f3ad323ac0a0ddcbc58e23e919cee6b76d618adb4",
+    "parameters": {
+     "strength": 110.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "fracture"
+   },
+   "glyphs": 52,
+   "iou": 0.5554735349042075,
+   "recognition": 0.15384615384615385,
+   "margin": -0.1250517323249796,
+   "displacement": 0.09548473767692078,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [
+    "V"
+   ],
+   "intact_but_unreadable": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "I",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "a",
+    "c",
+    "d",
+    "e",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/melt/shapeform_melt_000.ttf",
+   "source": "shapeform",
+   "sequence": "fields/melt",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.485345+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_melt_000.ttf",
+    "output_sha256": "cb390fbec261923fe7f97bae2c470efd839554dd78627bfcbe9d4e262d324d25",
+    "parameters": {
+     "strength": 0.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "melt"
+   },
+   "glyphs": 52,
+   "iou": 1.0,
+   "recognition": 1.0,
+   "margin": 0.04760174359239104,
+   "displacement": 0.0,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": []
+  },
+  {
+   "path": "fields/melt/shapeform_melt_001.ttf",
+   "source": "shapeform",
+   "sequence": "fields/melt",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.493416+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": -37
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 84769.868
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_melt_001.ttf",
+    "output_sha256": "b4029dc55d5cddcd40b5d3ccf48c6faafb382c1c51f3c8722439b40096a9959c",
+    "parameters": {
+     "strength": 47.5
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "melt"
+   },
+   "glyphs": 52,
+   "iou": 0.9387286691304028,
+   "recognition": 0.7692307692307693,
+   "margin": 0.019527666649670625,
+   "displacement": 0.007581668955201344,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "F",
+    "K",
+    "P",
+    "Q",
+    "V",
+    "g",
+    "m",
+    "o",
+    "r",
+    "s",
+    "w",
+    "x"
+   ]
+  },
+  {
+   "path": "fields/melt/shapeform_melt_002.ttf",
+   "source": "shapeform",
+   "sequence": "fields/melt",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.501058+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": -74
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 87396.438
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_melt_002.ttf",
+    "output_sha256": "42db2a5ad02b9ce2b7443109f8f43b6367342311acae117db68c8c915454aa79",
+    "parameters": {
+     "strength": 95.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "melt"
+   },
+   "glyphs": 52,
+   "iou": 0.8859049921913258,
+   "recognition": 0.6538461538461539,
+   "margin": 0.012294394193826096,
+   "displacement": 0.014540464882620754,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "F",
+    "G",
+    "H",
+    "K",
+    "P",
+    "Q",
+    "U",
+    "V",
+    "Y",
+    "c",
+    "l",
+    "m",
+    "o",
+    "r",
+    "s",
+    "t",
+    "x",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/melt/shapeform_melt_003.ttf",
+   "source": "shapeform",
+   "sequence": "fields/melt",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.508393+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": -111
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 90261.66
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_melt_003.ttf",
+    "output_sha256": "e57e4e2657fd1aa1b6de1931338e3fa0604239957ff3a2487048a6493e158307",
+    "parameters": {
+     "strength": 142.5
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "melt"
+   },
+   "glyphs": 52,
+   "iou": 0.8419434454668373,
+   "recognition": 0.5,
+   "margin": -0.014097332244470325,
+   "displacement": 0.02152323704045617,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "F",
+    "H",
+    "I",
+    "J",
+    "K",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "U",
+    "V",
+    "Y",
+    "b",
+    "c",
+    "e",
+    "l",
+    "m",
+    "o",
+    "p",
+    "r",
+    "t",
+    "u",
+    "v",
+    "x"
+   ]
+  },
+  {
+   "path": "fields/melt/shapeform_melt_004.ttf",
+   "source": "shapeform",
+   "sequence": "fields/melt",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.516207+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": -156
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 93329.344
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_melt_004.ttf",
+    "output_sha256": "f6ded05669c9638e234fae329327abd6eb8dd82a15d8375a557c1a41853ed6ae",
+    "parameters": {
+     "strength": 190.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "melt"
+   },
+   "glyphs": 52,
+   "iou": 0.8008549806953044,
+   "recognition": 0.38461538461538464,
+   "margin": -0.04045916114601484,
+   "displacement": 0.028492811212067284,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "A",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "M",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "U",
+    "V",
+    "X",
+    "Y",
+    "b",
+    "c",
+    "d",
+    "e",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "x",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/perspective/shapeform_perspective_000.ttf",
+   "source": "shapeform",
+   "sequence": "fields/perspective",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.249298+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_perspective_000.ttf",
+    "output_sha256": "cb390fbec261923fe7f97bae2c470efd839554dd78627bfcbe9d4e262d324d25",
+    "parameters": {
+     "strength": 0.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "perspective"
+   },
+   "glyphs": 52,
+   "iou": 1.0,
+   "recognition": 1.0,
+   "margin": 0.04760174359239104,
+   "displacement": 0.0,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": []
+  },
+  {
+   "path": "fields/perspective/shapeform_perspective_001.ttf",
+   "source": "shapeform",
+   "sequence": "fields/perspective",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.256842+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 949,
+       "x_min": 14,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82771.614
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_perspective_001.ttf",
+    "output_sha256": "4a32edaa75d12f31b26526a6622d0ac016b889c76de3d54bdcfa9458b002187b",
+    "parameters": {
+     "strength": 0.275
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "perspective"
+   },
+   "glyphs": 52,
+   "iou": 0.8964022165101745,
+   "recognition": 0.7115384615384616,
+   "margin": 0.02230693541567052,
+   "displacement": 0.010356164201014909,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "A",
+    "B",
+    "K",
+    "c",
+    "d",
+    "e",
+    "l",
+    "m",
+    "n",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "x"
+   ]
+  },
+  {
+   "path": "fields/perspective/shapeform_perspective_002.ttf",
+   "source": "shapeform",
+   "sequence": "fields/perspective",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.263900+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 956,
+       "x_min": -3,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 83428.878
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_perspective_002.ttf",
+    "output_sha256": "7c26803bbcb730670a7e72490f144f922995d3b99ff600ef8195d582860d74ad",
+    "parameters": {
+     "strength": 0.55
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "perspective"
+   },
+   "glyphs": 52,
+   "iou": 0.8082099524845733,
+   "recognition": 0.5961538461538461,
+   "margin": 0.00955046097137963,
+   "displacement": 0.02068481786853498,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "A",
+    "B",
+    "G",
+    "K",
+    "N",
+    "P",
+    "c",
+    "d",
+    "e",
+    "f",
+    "l",
+    "m",
+    "o",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x"
+   ]
+  },
+  {
+   "path": "fields/perspective/shapeform_perspective_003.ttf",
+   "source": "shapeform",
+   "sequence": "fields/perspective",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.271064+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 963,
+       "x_min": -21,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 84446.899
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_perspective_003.ttf",
+    "output_sha256": "185bb033934b9cf57370e466b918561c0a12f2959bba8171368d294ce2a16163",
+    "parameters": {
+     "strength": 0.8250000000000001
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "perspective"
+   },
+   "glyphs": 52,
+   "iou": 0.7286858398075767,
+   "recognition": 0.46153846153846156,
+   "margin": -0.005906843631469113,
+   "displacement": 0.031040180391470884,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [
+    "V",
+    "b"
+   ],
+   "intact_but_unreadable": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "G",
+    "K",
+    "L",
+    "N",
+    "P",
+    "R",
+    "U",
+    "X",
+    "Y",
+    "c",
+    "d",
+    "e",
+    "f",
+    "i",
+    "l",
+    "m",
+    "o",
+    "q",
+    "r",
+    "t",
+    "u",
+    "v",
+    "x"
+   ]
+  },
+  {
+   "path": "fields/perspective/shapeform_perspective_004.ttf",
+   "source": "shapeform",
+   "sequence": "fields/perspective",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.278561+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 970,
+       "x_min": -39,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 85792.249
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_perspective_004.ttf",
+    "output_sha256": "42f82e1176ced3061babe5fbc70a4d6f56a900a3809fbea240ee9067cfeaa322",
+    "parameters": {
+     "strength": 1.1
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "perspective"
+   },
+   "glyphs": 52,
+   "iou": 0.6588070609658672,
+   "recognition": 0.3269230769230769,
+   "margin": -0.03993350899051489,
+   "displacement": 0.041360508759964734,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [
+    "S",
+    "V",
+    "k",
+    "p"
+   ],
+   "intact_but_unreadable": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "G",
+    "J",
+    "K",
+    "L",
+    "N",
+    "O",
+    "P",
+    "R",
+    "T",
+    "U",
+    "X",
+    "Y",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "i",
+    "j",
+    "l",
+    "m",
+    "n",
+    "o",
+    "q",
+    "r",
+    "t",
+    "u",
+    "v",
+    "x",
+    "y"
+   ]
+  },
+  {
+   "path": "fields/polarize/shapeform_polarize_000.ttf",
+   "source": "shapeform",
+   "sequence": "fields/polarize",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.442879+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_polarize_000.ttf",
+    "output_sha256": "cb390fbec261923fe7f97bae2c470efd839554dd78627bfcbe9d4e262d324d25",
+    "parameters": {
+     "strength": 0.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "polarize"
+   },
+   "glyphs": 52,
+   "iou": 1.0,
+   "recognition": 1.0,
+   "margin": 0.04760174359239104,
+   "displacement": 0.0,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": []
+  },
+  {
+   "path": "fields/polarize/shapeform_polarize_001.ttf",
+   "source": "shapeform",
+   "sequence": "fields/polarize",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.449944+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 965,
+       "x_min": 10,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 87043.18
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_polarize_001.ttf",
+    "output_sha256": "55e8b6afb7daa52d2a6323684a8d3a4663c469ac548616e55c0bb29294668c2d",
+    "parameters": {
+     "strength": 22.5
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "polarize"
+   },
+   "glyphs": 52,
+   "iou": 0.8573804254252769,
+   "recognition": 0.6346153846153846,
+   "margin": 0.013644431605443577,
+   "displacement": 0.02249223401851185,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "i",
+    "k",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y"
+   ]
+  },
+  {
+   "path": "fields/polarize/shapeform_polarize_002.ttf",
+   "source": "shapeform",
+   "sequence": "fields/polarize",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.457577+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 988,
+       "x_min": -12,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 91830.363
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_polarize_002.ttf",
+    "output_sha256": "38e476499b11ba7b7d4077e8d234f773797aa1f480bae1b468a90665ca768657",
+    "parameters": {
+     "strength": 45.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "polarize"
+   },
+   "glyphs": 52,
+   "iou": 0.7537678933960378,
+   "recognition": 0.5,
+   "margin": -0.0030564661290416887,
+   "displacement": 0.045,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "J",
+    "M",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/polarize/shapeform_polarize_003.ttf",
+   "source": "shapeform",
+   "sequence": "fields/polarize",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.464948+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 1010,
+       "x_min": -34,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 96704.859
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_polarize_003.ttf",
+    "output_sha256": "3dd1badb21cf6c031dc9c42a72b984c6ff38d65bc11f4040f3d44f047d89e10b",
+    "parameters": {
+     "strength": 67.5
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "polarize"
+   },
+   "glyphs": 52,
+   "iou": 0.6736647126654547,
+   "recognition": 0.3269230769230769,
+   "margin": -0.049215848969429245,
+   "displacement": 0.06749223401851186,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "D",
+    "E",
+    "J",
+    "L",
+    "M",
+    "O",
+    "R",
+    "S",
+    "U",
+    "Y",
+    "Z",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/polarize/shapeform_polarize_004.ttf",
+   "source": "shapeform",
+   "sequence": "fields/polarize",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.472657+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 1033,
+       "x_min": -57,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 101635.864
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_polarize_004.ttf",
+    "output_sha256": "930df844f1fa59b82b8cc5e0ecdbd156e28bec283bacd3adac7f97266ac09379",
+    "parameters": {
+     "strength": 90.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "polarize"
+   },
+   "glyphs": 52,
+   "iou": 0.6119743661561048,
+   "recognition": 0.15384615384615385,
+   "margin": -0.10844719687971995,
+   "displacement": 0.09,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "U",
+    "X",
+    "Y",
+    "Z",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/staircase/shapeform_staircase_000.ttf",
+   "source": "shapeform",
+   "sequence": "fields/staircase",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.565762+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_staircase_000.ttf",
+    "output_sha256": "cb390fbec261923fe7f97bae2c470efd839554dd78627bfcbe9d4e262d324d25",
+    "parameters": {
+     "strength": 0.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "staircase"
+   },
+   "glyphs": 52,
+   "iou": 1.0,
+   "recognition": 1.0,
+   "margin": 0.04760174359239104,
+   "displacement": 0.0,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": []
+  },
+  {
+   "path": "fields/staircase/shapeform_staircase_001.ttf",
+   "source": "shapeform",
+   "sequence": "fields/staircase",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.573186+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 959,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82498.694
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_staircase_001.ttf",
+    "output_sha256": "cbdcd4142f94bd33dd6a20addba5fa70b8ee0be26ac541ea331e583f7cb0d76e",
+    "parameters": {
+     "strength": 32.5
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "staircase"
+   },
+   "glyphs": 52,
+   "iou": 0.9292250035921458,
+   "recognition": 0.7884615384615384,
+   "margin": 0.024720727212790165,
+   "displacement": 0.015177246943340062,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "b",
+    "c",
+    "e",
+    "f",
+    "j",
+    "l",
+    "m",
+    "o",
+    "q",
+    "r",
+    "u"
+   ]
+  },
+  {
+   "path": "fields/staircase/shapeform_staircase_002.ttf",
+   "source": "shapeform",
+   "sequence": "fields/staircase",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.580902+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 975,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82697.812
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_staircase_002.ttf",
+    "output_sha256": "032ccab34eebfc61811bb646f7a593df1e1d48c766569f8d8c193ffb3fddee4b",
+    "parameters": {
+     "strength": 65.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "staircase"
+   },
+   "glyphs": 52,
+   "iou": 0.8669997390856946,
+   "recognition": 0.6730769230769231,
+   "margin": 0.0157464187995849,
+   "displacement": 0.030354493886680125,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "o",
+    "q",
+    "r",
+    "t",
+    "u",
+    "x"
+   ]
+  },
+  {
+   "path": "fields/staircase/shapeform_staircase_003.ttf",
+   "source": "shapeform",
+   "sequence": "fields/staircase",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.588067+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 991,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 83095.555
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_staircase_003.ttf",
+    "output_sha256": "18228891c22ae65546eab7f179a57d7a5e5d87db34ad7c53daa314928f350a69",
+    "parameters": {
+     "strength": 97.5
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "staircase"
+   },
+   "glyphs": 52,
+   "iou": 0.8116676844553028,
+   "recognition": 0.6346153846153846,
+   "margin": 0.00839690002478313,
+   "displacement": 0.04590311823803727,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "N",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "h",
+    "i",
+    "j",
+    "l",
+    "m",
+    "o",
+    "q",
+    "r",
+    "t",
+    "u",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/staircase/shapeform_staircase_004.ttf",
+   "source": "shapeform",
+   "sequence": "fields/staircase",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.595731+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 1008,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 83649.252
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_staircase_004.ttf",
+    "output_sha256": "4496843997ab9b416044d9515a7776809affa488900e66036e90c77a2b48e08e",
+    "parameters": {
+     "strength": 130.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "staircase"
+   },
+   "glyphs": 52,
+   "iou": 0.7628185022882717,
+   "recognition": 0.5,
+   "margin": -0.007050266110216861,
+   "displacement": 0.06127566510749711,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "D",
+    "L",
+    "N",
+    "U",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/suture/shapeform_suture_000.ttf",
+   "source": "shapeform",
+   "sequence": "fields/suture",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.605291+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_suture_000.ttf",
+    "output_sha256": "cb390fbec261923fe7f97bae2c470efd839554dd78627bfcbe9d4e262d324d25",
+    "parameters": {
+     "strength": 0.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "suture"
+   },
+   "glyphs": 52,
+   "iou": 1.0,
+   "recognition": 1.0,
+   "margin": 0.04760174359239104,
+   "displacement": 0.0,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": []
+  },
+  {
+   "path": "fields/suture/shapeform_suture_001.ttf",
+   "source": "shapeform",
+   "sequence": "fields/suture",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.612758+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 81718.694
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_suture_001.ttf",
+    "output_sha256": "2aeca15965baaddd6c052c5829a36d3819b163d695f45d8ffa0bc97146985291",
+    "parameters": {
+     "strength": 0.2
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "suture"
+   },
+   "glyphs": 52,
+   "iou": 0.9692809753242126,
+   "recognition": 1.0,
+   "margin": 0.03868825899518469,
+   "displacement": 0.005154502152705594,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": []
+  },
+  {
+   "path": "fields/suture/shapeform_suture_002.ttf",
+   "source": "shapeform",
+   "sequence": "fields/suture",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.620569+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 81114.332
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_suture_002.ttf",
+    "output_sha256": "787f423033d3f64aa78df5f93178dd89869cd469abb120ad5483cc700a9714cc",
+    "parameters": {
+     "strength": 0.4
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "suture"
+   },
+   "glyphs": 52,
+   "iou": 0.9365229028223498,
+   "recognition": 0.9230769230769231,
+   "margin": 0.030885740008210295,
+   "displacement": 0.010267935632181584,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "F",
+    "c",
+    "d",
+    "n"
+   ]
+  },
+  {
+   "path": "fields/suture/shapeform_suture_003.ttf",
+   "source": "shapeform",
+   "sequence": "fields/suture",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.629064+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 80651.441
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_suture_003.ttf",
+    "output_sha256": "c59fe15157ced6b9d1231b6b20bfda5c4deab2e9cbc32e135f07f2d207a8a4a0",
+    "parameters": {
+     "strength": 0.6000000000000001
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "suture"
+   },
+   "glyphs": 52,
+   "iou": 0.9047980109130461,
+   "recognition": 0.8846153846153846,
+   "margin": 0.026954023951177665,
+   "displacement": 0.01536905927237405,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "F",
+    "I",
+    "Q",
+    "c",
+    "d",
+    "n"
+   ]
+  },
+  {
+   "path": "fields/suture/shapeform_suture_004.ttf",
+   "source": "shapeform",
+   "sequence": "fields/suture",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.636944+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 80360.59
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_suture_004.ttf",
+    "output_sha256": "82bfc953c7bf2b0b71374222e2b5068d18c43334b756d23c3f471914a5e88df0",
+    "parameters": {
+     "strength": 0.8
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "suture"
+   },
+   "glyphs": 52,
+   "iou": 0.8738164579807939,
+   "recognition": 0.8461538461538461,
+   "margin": 0.023544133050178544,
+   "displacement": 0.020455655773039375,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "F",
+    "I",
+    "Q",
+    "Z",
+    "c",
+    "d",
+    "n",
+    "t"
+   ]
+  },
+  {
+   "path": "fields/wind/shapeform_wind_000.ttf",
+   "source": "shapeform",
+   "sequence": "fields/wind",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.404925+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_wind_000.ttf",
+    "output_sha256": "cb390fbec261923fe7f97bae2c470efd839554dd78627bfcbe9d4e262d324d25",
+    "parameters": {
+     "strength": 0.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "wind"
+   },
+   "glyphs": 52,
+   "iou": 1.0,
+   "recognition": 1.0,
+   "margin": 0.04760174359239104,
+   "displacement": 0.0,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": []
+  },
+  {
+   "path": "fields/wind/shapeform_wind_001.ttf",
+   "source": "shapeform",
+   "sequence": "fields/wind",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.412033+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 958,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82691.465
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_wind_001.ttf",
+    "output_sha256": "6a0be43fc6c2927e11cdb5f7fb535301321343817106e197d9882da4c1a8a91d",
+    "parameters": {
+     "strength": 45.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "wind"
+   },
+   "glyphs": 52,
+   "iou": 0.9023542120207723,
+   "recognition": 0.7115384615384616,
+   "margin": 0.018185009887670044,
+   "displacement": 0.01812323393121723,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "o",
+    "q",
+    "r",
+    "t",
+    "u"
+   ]
+  },
+  {
+   "path": "fields/wind/shapeform_wind_002.ttf",
+   "source": "shapeform",
+   "sequence": "fields/wind",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.418945+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 973,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 83288.714
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_wind_002.ttf",
+    "output_sha256": "4796dfb028a89c8eacc3f116228be99e592136311aa32007014e4505fc1224e0",
+    "parameters": {
+     "strength": 90.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "wind"
+   },
+   "glyphs": 52,
+   "iou": 0.8269818606249065,
+   "recognition": 0.6538461538461539,
+   "margin": 0.009905921410579298,
+   "displacement": 0.03664437341504649,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "N",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "i",
+    "j",
+    "l",
+    "m",
+    "o",
+    "q",
+    "r",
+    "t",
+    "u",
+    "v",
+    "x",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/wind/shapeform_wind_003.ttf",
+   "source": "shapeform",
+   "sequence": "fields/wind",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.426682+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 988,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 84275.035
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_wind_003.ttf",
+    "output_sha256": "67db8a8aae687cd5d42a8070f438dd38f47b5a8d9ea19c15e7bd02194f1d4e8d",
+    "parameters": {
+     "strength": 135.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "wind"
+   },
+   "glyphs": 52,
+   "iou": 0.7638468774901277,
+   "recognition": 0.4230769230769231,
+   "margin": -0.013929385153588238,
+   "displacement": 0.05512696735619305,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "D",
+    "L",
+    "N",
+    "P",
+    "S",
+    "U",
+    "W",
+    "Y",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "fields/wind/shapeform_wind_004.ttf",
+   "source": "shapeform",
+   "sequence": "fields/wind",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.433833+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 1003,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 85630.003
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_wind_004.ttf",
+    "output_sha256": "2654cb4f6aa11f7588ba0d69cbe591ad8f205511eb12c3e218ec2d7c23d455d6",
+    "parameters": {
+     "strength": 180.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "independent_sweep",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "wind"
+   },
+   "glyphs": 52,
+   "iou": 0.7062391744286629,
+   "recognition": 0.25,
+   "margin": -0.05394779836752847,
+   "displacement": 0.07366396245876256,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "D",
+    "E",
+    "G",
+    "J",
+    "L",
+    "N",
+    "O",
+    "P",
+    "R",
+    "S",
+    "U",
+    "W",
+    "X",
+    "Y",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "order-effects/grid_then_wave/shapeform_grid_then_wave_000.ttf",
+   "source": "shapeform",
+   "sequence": "order-effects/grid_then_wave",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.652024+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 944,
+       "x_min": 32,
+       "y_max": 752,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82492.841
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_grid_then_wave_000.ttf",
+    "output_sha256": "5cd26aeacfad70e18cb445a0687339df7a6aaaf85d2231c526af128359e9e6f2",
+    "parameters": {
+     "intensity": 0.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "order_comparison",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "grid_then_wave"
+   },
+   "glyphs": 52,
+   "iou": 0.991728250615705,
+   "recognition": 0.9423076923076923,
+   "margin": 0.03725386944588835,
+   "displacement": 0.0008690954426887066,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "d",
+    "k",
+    "x"
+   ]
+  },
+  {
+   "path": "order-effects/grid_then_wave/shapeform_grid_then_wave_001.ttf",
+   "source": "shapeform",
+   "sequence": "order-effects/grid_then_wave",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.667372+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 940,
+       "x_min": 30,
+       "y_max": 760,
+       "y_min": -1
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82856.443
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_grid_then_wave_001.ttf",
+    "output_sha256": "d445c6b3f79d400ddb64bb9a62588c30c6af5eea2e6c9fadff227d9131b06a27",
+    "parameters": {
+     "intensity": 0.25
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "order_comparison",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "grid_then_wave"
+   },
+   "glyphs": 52,
+   "iou": 0.8973870094911813,
+   "recognition": 0.6346153846153846,
+   "margin": 0.011667229584067157,
+   "displacement": 0.014857081587159428,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "F",
+    "H",
+    "N",
+    "P",
+    "Q",
+    "V",
+    "W",
+    "Y",
+    "a",
+    "b",
+    "c",
+    "d",
+    "j",
+    "l",
+    "o",
+    "r",
+    "t",
+    "v",
+    "z"
+   ]
+  },
+  {
+   "path": "order-effects/grid_then_wave/shapeform_grid_then_wave_002.ttf",
+   "source": "shapeform",
+   "sequence": "order-effects/grid_then_wave",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.682548+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 950,
+       "x_min": 38,
+       "y_max": 783,
+       "y_min": -4
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 84064.562
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_grid_then_wave_002.ttf",
+    "output_sha256": "ecb4af2bcf66f44e72d20282984f1f51d072d954f67b20d63be48bf7c57b5f95",
+    "parameters": {
+     "intensity": 0.5
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "order_comparison",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "grid_then_wave"
+   },
+   "glyphs": 52,
+   "iou": 0.8179149273877098,
+   "recognition": 0.5192307692307693,
+   "margin": -0.003626144887951943,
+   "displacement": 0.030168305780318705,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 50,
+    "faulting": 0,
+    "deleting": 2
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "E",
+    "F",
+    "H",
+    "I",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "W",
+    "X",
+    "Y",
+    "b",
+    "c",
+    "d",
+    "e",
+    "h",
+    "j",
+    "m",
+    "o",
+    "r",
+    "t",
+    "u",
+    "v",
+    "y",
+    "z"
+   ]
+  },
+  {
+   "path": "order-effects/grid_then_wave/shapeform_grid_then_wave_003.ttf",
+   "source": "shapeform",
+   "sequence": "order-effects/grid_then_wave",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.697556+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 945,
+       "x_min": 27,
+       "y_max": 796,
+       "y_min": -32
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 86172.341
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_grid_then_wave_003.ttf",
+    "output_sha256": "6a65a02602f9d03e9c6807f6b951eaca715528f24edea28852d0a927debbc3aa",
+    "parameters": {
+     "intensity": 0.75
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "order_comparison",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "grid_then_wave"
+   },
+   "glyphs": 52,
+   "iou": 0.7456936427337489,
+   "recognition": 0.2692307692307692,
+   "margin": -0.038236061719209694,
+   "displacement": 0.045204618587458424,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 44,
+    "faulting": 0,
+    "deleting": 8
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F",
+    "H",
+    "J",
+    "K",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "g",
+    "h",
+    "j",
+    "l",
+    "n",
+    "o",
+    "p",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "y"
+   ]
+  },
+  {
+   "path": "order-effects/grid_then_wave/shapeform_grid_then_wave_004.ttf",
+   "source": "shapeform",
+   "sequence": "order-effects/grid_then_wave",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.712801+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 936,
+       "x_min": 36,
+       "y_max": 844,
+       "y_min": -50
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 88105.381
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_grid_then_wave_004.ttf",
+    "output_sha256": "e7ada313f3f1c0879f5f87245587903931ba482ba09fb1f9b80d86a6ec7a87eb",
+    "parameters": {
+     "intensity": 1.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "order_comparison",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "grid_then_wave"
+   },
+   "glyphs": 52,
+   "iou": 0.6814061539778608,
+   "recognition": 0.19230769230769232,
+   "margin": -0.07629003044671719,
+   "displacement": 0.06022172838946887,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 38,
+    "faulting": 0,
+    "deleting": 14
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "H",
+    "I",
+    "J",
+    "K",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "g",
+    "h",
+    "j",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y"
+   ]
+  },
+  {
+   "path": "order-effects/wave_then_grid/shapeform_wave_then_grid_000.ttf",
+   "source": "shapeform",
+   "sequence": "order-effects/wave_then_grid",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.644604+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 944,
+       "x_min": 32,
+       "y_max": 752,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82492.841
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_wave_then_grid_000.ttf",
+    "output_sha256": "5cd26aeacfad70e18cb445a0687339df7a6aaaf85d2231c526af128359e9e6f2",
+    "parameters": {
+     "intensity": 0.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "order_comparison",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "wave_then_grid"
+   },
+   "glyphs": 52,
+   "iou": 0.991728250615705,
+   "recognition": 0.9423076923076923,
+   "margin": 0.03725386944588835,
+   "displacement": 0.0008690954426887066,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "d",
+    "k",
+    "x"
+   ]
+  },
+  {
+   "path": "order-effects/wave_then_grid/shapeform_wave_then_grid_001.ttf",
+   "source": "shapeform",
+   "sequence": "order-effects/wave_then_grid",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.660113+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 940,
+       "x_min": 30,
+       "y_max": 760,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82823.123
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_wave_then_grid_001.ttf",
+    "output_sha256": "8af2b2a1d903d18382b20e4466df48b414b53698b03ddfeb8be5a7b048ce2527",
+    "parameters": {
+     "intensity": 0.25
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "order_comparison",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "wave_then_grid"
+   },
+   "glyphs": 52,
+   "iou": 0.8970224151085583,
+   "recognition": 0.6153846153846154,
+   "margin": 0.007859986037393617,
+   "displacement": 0.015082247327739388,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "F",
+    "G",
+    "H",
+    "N",
+    "P",
+    "Q",
+    "V",
+    "X",
+    "Y",
+    "a",
+    "c",
+    "d",
+    "i",
+    "j",
+    "l",
+    "m",
+    "o",
+    "r",
+    "t",
+    "v"
+   ]
+  },
+  {
+   "path": "order-effects/wave_then_grid/shapeform_wave_then_grid_002.ttf",
+   "source": "shapeform",
+   "sequence": "order-effects/wave_then_grid",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.675055+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 950,
+       "x_min": 38,
+       "y_max": 779,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 83917.797
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_wave_then_grid_002.ttf",
+    "output_sha256": "fdbfffb2f764cc24d090dd926107542ec819508062c11a15a21fe98f701ebc93",
+    "parameters": {
+     "intensity": 0.5
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "order_comparison",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "wave_then_grid"
+   },
+   "glyphs": 52,
+   "iou": 0.8192937936537812,
+   "recognition": 0.4807692307692308,
+   "margin": -0.003548568090739802,
+   "displacement": 0.02996158151185596,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 47,
+    "faulting": 0,
+    "deleting": 5
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "D",
+    "E",
+    "F",
+    "H",
+    "N",
+    "P",
+    "Q",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "h",
+    "j",
+    "k",
+    "m",
+    "o",
+    "r",
+    "t",
+    "u",
+    "v",
+    "y"
+   ]
+  },
+  {
+   "path": "order-effects/wave_then_grid/shapeform_wave_then_grid_003.ttf",
+   "source": "shapeform",
+   "sequence": "order-effects/wave_then_grid",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.689970+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 945,
+       "x_min": 27,
+       "y_max": 810,
+       "y_min": -27
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 86173.289
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_wave_then_grid_003.ttf",
+    "output_sha256": "c88eb85814914a87cd7d9bc068f69b9f452d7296b96b09719b9dee53bf3fc3b3",
+    "parameters": {
+     "intensity": 0.75
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "order_comparison",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "wave_then_grid"
+   },
+   "glyphs": 52,
+   "iou": 0.7470455114679699,
+   "recognition": 0.25,
+   "margin": -0.03495898707145587,
+   "displacement": 0.045357468701601476,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 45,
+    "faulting": 0,
+    "deleting": 7
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "A",
+    "C",
+    "D",
+    "E",
+    "F",
+    "H",
+    "J",
+    "K",
+    "N",
+    "P",
+    "Q",
+    "R",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "j",
+    "k",
+    "l",
+    "n",
+    "o",
+    "p",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y"
+   ]
+  },
+  {
+   "path": "order-effects/wave_then_grid/shapeform_wave_then_grid_004.ttf",
+   "source": "shapeform",
+   "sequence": "order-effects/wave_then_grid",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.705203+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 936,
+       "x_min": 36,
+       "y_max": 828,
+       "y_min": -36
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 88329.059
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_wave_then_grid_004.ttf",
+    "output_sha256": "895c92d4b157cdf9752dafebd85c469587550964c29ca71e4d31adda20917673",
+    "parameters": {
+     "intensity": 1.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "order_comparison",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "wave_then_grid"
+   },
+   "glyphs": 52,
+   "iou": 0.6845436904013784,
+   "recognition": 0.19230769230769232,
+   "margin": -0.06999112680831063,
+   "displacement": 0.06098701619214596,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 39,
+    "faulting": 0,
+    "deleting": 13
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "g",
+    "h",
+    "j",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y"
+   ]
+  },
+  {
+   "path": "recovery/shear_round_trip/shapeform_shear_round_trip_000.ttf",
+   "source": "shapeform",
+   "sequence": "recovery/shear_round_trip",
+   "step": 0,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.720152+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_shear_round_trip_000.ttf",
+    "output_sha256": "cb390fbec261923fe7f97bae2c470efd839554dd78627bfcbe9d4e262d324d25",
+    "parameters": {
+     "forward": 0.0,
+     "reverse": -0.0
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "round_trip",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 0,
+    "steps": 5,
+    "transform": "shear_round_trip"
+   },
+   "glyphs": 52,
+   "iou": 1.0,
+   "recognition": 1.0,
+   "margin": 0.04760174359239104,
+   "displacement": 0.0,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [],
+   "recovery_residual": 0.0
+  },
+  {
+   "path": "recovery/shear_round_trip/shapeform_shear_round_trip_001.ttf",
+   "source": "shapeform",
+   "sequence": "recovery/shear_round_trip",
+   "step": 1,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.727756+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 942,
+       "x_min": 32,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82474.113
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_shear_round_trip_001.ttf",
+    "output_sha256": "ac3a7721396fbefaaace3bca4c2ae24a7c35534893a9736f83f11502e3d3b3e8",
+    "parameters": {
+     "forward": 0.1125,
+     "reverse": -0.1125
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "round_trip",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 1,
+    "steps": 5,
+    "transform": "shear_round_trip"
+   },
+   "glyphs": 52,
+   "iou": 0.9997682133244735,
+   "recognition": 1.0,
+   "margin": 0.04747952398787411,
+   "displacement": 0.000989455719718878,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [],
+   "recovery_residual": 0.000989455719718878
+  },
+  {
+   "path": "recovery/shear_round_trip/shapeform_shear_round_trip_002.ttf",
+   "source": "shapeform",
+   "sequence": "recovery/shear_round_trip",
+   "step": 2,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.735399+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 942,
+       "x_min": 32,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.642
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_shear_round_trip_002.ttf",
+    "output_sha256": "d3d9b239b49b33a5dd6672b232a6da9adb5a4e3fd552e3eff3c87c45f552eb2e",
+    "parameters": {
+     "forward": 0.225,
+     "reverse": -0.225
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "round_trip",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 2,
+    "steps": 5,
+    "transform": "shear_round_trip"
+   },
+   "glyphs": 52,
+   "iou": 0.9995121823731764,
+   "recognition": 1.0,
+   "margin": 0.04756362195371854,
+   "displacement": 0.0009670124578525391,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [],
+   "recovery_residual": 0.0009670124578525391
+  },
+  {
+   "path": "recovery/shear_round_trip/shapeform_shear_round_trip_003.ttf",
+   "source": "shapeform",
+   "sequence": "recovery/shear_round_trip",
+   "step": 3,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.743049+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 942,
+       "x_min": 32,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82474.113
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_shear_round_trip_003.ttf",
+    "output_sha256": "ac3a7721396fbefaaace3bca4c2ae24a7c35534893a9736f83f11502e3d3b3e8",
+    "parameters": {
+     "forward": 0.3375,
+     "reverse": -0.3375
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "round_trip",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 3,
+    "steps": 5,
+    "transform": "shear_round_trip"
+   },
+   "glyphs": 52,
+   "iou": 0.9997682133244735,
+   "recognition": 1.0,
+   "margin": 0.04747952398787411,
+   "displacement": 0.000989455719718878,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [],
+   "recovery_residual": 0.000989455719718878
+  },
+  {
+   "path": "recovery/shear_round_trip/shapeform_shear_round_trip_004.ttf",
+   "source": "shapeform",
+   "sequence": "recovery/shear_round_trip",
+   "step": 4,
+   "provenance": {
+    "claim_scope": "geometric",
+    "created_utc": "2026-09-13T17:52:01.751027+00:00",
+    "measurements": {
+     "output": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 942,
+       "x_min": 32,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82474.169
+     },
+     "source": {
+      "advance_width": {
+       "maximum": 1017,
+       "mean": 982.481,
+       "minimum": 0
+      },
+      "bounding_box": {
+       "x_max": 943,
+       "x_min": 33,
+       "y_max": 753,
+       "y_min": 0
+      },
+      "contours": 58,
+      "points": 682,
+      "simple_glyphs": 53,
+      "total_contour_length": 82475.39
+     }
+    },
+    "output": "shapeform_shear_round_trip_004.ttf",
+    "output_sha256": "42564d8043cc3bb7c781a017b13c2fe462b51a46949f5f52a45c3f910d8cb98c",
+    "parameters": {
+     "forward": 0.45,
+     "reverse": -0.45
+    },
+    "parent": "shapeform.ttf",
+    "schema_version": 1,
+    "sequence_kind": "round_trip",
+    "source": "shapeform.ttf",
+    "source_sha256": "53ae4238d81725400e17a0544d25ec34a1e2c1a2895f97fb81143d4fca2f4202",
+    "step": 4,
+    "steps": 5,
+    "transform": "shear_round_trip"
+   },
+   "glyphs": 52,
+   "iou": 0.9986063852717272,
+   "recognition": 1.0,
+   "margin": 0.04697635276816449,
+   "displacement": 0.0009497951230618238,
+   "preserved": {
+    "points": 1.0,
+    "contours": 1.0,
+    "winding": 1.0,
+    "advance": 1.0
+   },
+   "classes": {
+    "relocating": 52,
+    "faulting": 0,
+    "deleting": 0
+   },
+   "hidden_but_readable": [],
+   "intact_but_unreadable": [],
+   "recovery_residual": 0.0009497951230618238
+  }
+ ],
+ "sequences": {
+  "ensembles/fracture_ensemble": [
+   {
+    "step": 0,
+    "iou": 0.6561834296000815,
+    "recognition": 0.4423076923076923,
+    "margin": -0.018220261453999444,
+    "displacement": 0.04685097082976121,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.5603654219326742,
+    "recognition": 0.19230769230769232,
+    "margin": -0.08147431707226281,
+    "displacement": 0.06917709836084786,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.6190155640097165,
+    "recognition": 0.25,
+    "margin": -0.05293378277552315,
+    "displacement": 0.05898359403444869,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.6401912917417711,
+    "recognition": 0.19230769230769232,
+    "margin": -0.07035156400293019,
+    "displacement": 0.06618197647117453,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.6246260529888992,
+    "recognition": 0.2692307692307692,
+    "margin": -0.05222605941237632,
+    "displacement": 0.07006145791148297,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   }
+  ],
+  "fields/contour_phase": [
+   {
+    "step": 0,
+    "iou": 1.0,
+    "recognition": 1.0,
+    "margin": 0.04760174359239104,
+    "displacement": 0.0,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.8988760136261058,
+    "recognition": 0.7307692307692307,
+    "margin": 0.017771850054233516,
+    "displacement": 0.018787155848070166,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.826264734039238,
+    "recognition": 0.5769230769230769,
+    "margin": 0.002516336079430782,
+    "displacement": 0.03743378533777524,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.7693924729220443,
+    "recognition": 0.38461538461538464,
+    "margin": -0.03370127474348787,
+    "displacement": 0.05595059527926206,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.7221812347463807,
+    "recognition": 0.25,
+    "margin": -0.0789904660847153,
+    "displacement": 0.0742977163206148,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   }
+  ],
+  "fields/envelope": [
+   {
+    "step": 0,
+    "iou": 1.0,
+    "recognition": 1.0,
+    "margin": 0.04760174359239104,
+    "displacement": 0.0,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.7810154366207142,
+    "recognition": 0.5,
+    "margin": 0.002592262681250822,
+    "displacement": 0.01596624095371565,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.63308240391498,
+    "recognition": 0.3076923076923077,
+    "margin": -0.04838112531053673,
+    "displacement": 0.03191546238427565,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.5294489662348724,
+    "recognition": 0.19230769230769232,
+    "margin": -0.0949273127244871,
+    "displacement": 0.04788798964193701,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.4597216689986499,
+    "recognition": 0.15384615384615385,
+    "margin": -0.13688134082556463,
+    "displacement": 0.06384576500591176,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   }
+  ],
+  "fields/fold": [
+   {
+    "step": 0,
+    "iou": 1.0,
+    "recognition": 1.0,
+    "margin": 0.04760174359239104,
+    "displacement": 0.0,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.7525149999594078,
+    "recognition": 0.3076923076923077,
+    "margin": -0.04444583787275949,
+    "displacement": 0.0328416661021165,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.5320586966581974,
+    "recognition": 0.038461538461538464,
+    "margin": -0.25398905995578314,
+    "displacement": 0.06542891222306708,
+    "classes": {
+     "relocating": 49,
+     "faulting": 0,
+     "deleting": 3
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.3269253655864287,
+    "recognition": 0.038461538461538464,
+    "margin": -0.2960072354277253,
+    "displacement": 0.0981541208243511,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.16007910787058194,
+    "recognition": 0.019230769230769232,
+    "margin": -0.3174897735043668,
+    "displacement": 0.13061890815409288,
+    "classes": {
+     "relocating": 51,
+     "faulting": 0,
+     "deleting": 1
+    }
+   }
+  ],
+  "fields/fracture": [
+   {
+    "step": 0,
+    "iou": 1.0,
+    "recognition": 1.0,
+    "margin": 0.04760174359239104,
+    "displacement": 0.0,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.826843780994445,
+    "recognition": 0.5961538461538461,
+    "margin": 0.004012344761487948,
+    "displacement": 0.024200775139969467,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.7086960491806911,
+    "recognition": 0.36538461538461536,
+    "margin": -0.04263080094470853,
+    "displacement": 0.047996371519378536,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.6212397319032755,
+    "recognition": 0.25,
+    "margin": -0.08750510192362548,
+    "displacement": 0.0718676295145252,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.5554735349042075,
+    "recognition": 0.15384615384615385,
+    "margin": -0.1250517323249796,
+    "displacement": 0.09548473767692078,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   }
+  ],
+  "fields/melt": [
+   {
+    "step": 0,
+    "iou": 1.0,
+    "recognition": 1.0,
+    "margin": 0.04760174359239104,
+    "displacement": 0.0,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.9387286691304028,
+    "recognition": 0.7692307692307693,
+    "margin": 0.019527666649670625,
+    "displacement": 0.007581668955201344,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.8859049921913258,
+    "recognition": 0.6538461538461539,
+    "margin": 0.012294394193826096,
+    "displacement": 0.014540464882620754,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.8419434454668373,
+    "recognition": 0.5,
+    "margin": -0.014097332244470325,
+    "displacement": 0.02152323704045617,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.8008549806953044,
+    "recognition": 0.38461538461538464,
+    "margin": -0.04045916114601484,
+    "displacement": 0.028492811212067284,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   }
+  ],
+  "fields/perspective": [
+   {
+    "step": 0,
+    "iou": 1.0,
+    "recognition": 1.0,
+    "margin": 0.04760174359239104,
+    "displacement": 0.0,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.8964022165101745,
+    "recognition": 0.7115384615384616,
+    "margin": 0.02230693541567052,
+    "displacement": 0.010356164201014909,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.8082099524845733,
+    "recognition": 0.5961538461538461,
+    "margin": 0.00955046097137963,
+    "displacement": 0.02068481786853498,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.7286858398075767,
+    "recognition": 0.46153846153846156,
+    "margin": -0.005906843631469113,
+    "displacement": 0.031040180391470884,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.6588070609658672,
+    "recognition": 0.3269230769230769,
+    "margin": -0.03993350899051489,
+    "displacement": 0.041360508759964734,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   }
+  ],
+  "fields/polarize": [
+   {
+    "step": 0,
+    "iou": 1.0,
+    "recognition": 1.0,
+    "margin": 0.04760174359239104,
+    "displacement": 0.0,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.8573804254252769,
+    "recognition": 0.6346153846153846,
+    "margin": 0.013644431605443577,
+    "displacement": 0.02249223401851185,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.7537678933960378,
+    "recognition": 0.5,
+    "margin": -0.0030564661290416887,
+    "displacement": 0.045,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.6736647126654547,
+    "recognition": 0.3269230769230769,
+    "margin": -0.049215848969429245,
+    "displacement": 0.06749223401851186,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.6119743661561048,
+    "recognition": 0.15384615384615385,
+    "margin": -0.10844719687971995,
+    "displacement": 0.09,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   }
+  ],
+  "fields/staircase": [
+   {
+    "step": 0,
+    "iou": 1.0,
+    "recognition": 1.0,
+    "margin": 0.04760174359239104,
+    "displacement": 0.0,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.9292250035921458,
+    "recognition": 0.7884615384615384,
+    "margin": 0.024720727212790165,
+    "displacement": 0.015177246943340062,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.8669997390856946,
+    "recognition": 0.6730769230769231,
+    "margin": 0.0157464187995849,
+    "displacement": 0.030354493886680125,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.8116676844553028,
+    "recognition": 0.6346153846153846,
+    "margin": 0.00839690002478313,
+    "displacement": 0.04590311823803727,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.7628185022882717,
+    "recognition": 0.5,
+    "margin": -0.007050266110216861,
+    "displacement": 0.06127566510749711,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   }
+  ],
+  "fields/suture": [
+   {
+    "step": 0,
+    "iou": 1.0,
+    "recognition": 1.0,
+    "margin": 0.04760174359239104,
+    "displacement": 0.0,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.9692809753242126,
+    "recognition": 1.0,
+    "margin": 0.03868825899518469,
+    "displacement": 0.005154502152705594,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.9365229028223498,
+    "recognition": 0.9230769230769231,
+    "margin": 0.030885740008210295,
+    "displacement": 0.010267935632181584,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.9047980109130461,
+    "recognition": 0.8846153846153846,
+    "margin": 0.026954023951177665,
+    "displacement": 0.01536905927237405,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.8738164579807939,
+    "recognition": 0.8461538461538461,
+    "margin": 0.023544133050178544,
+    "displacement": 0.020455655773039375,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   }
+  ],
+  "fields/wind": [
+   {
+    "step": 0,
+    "iou": 1.0,
+    "recognition": 1.0,
+    "margin": 0.04760174359239104,
+    "displacement": 0.0,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.9023542120207723,
+    "recognition": 0.7115384615384616,
+    "margin": 0.018185009887670044,
+    "displacement": 0.01812323393121723,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.8269818606249065,
+    "recognition": 0.6538461538461539,
+    "margin": 0.009905921410579298,
+    "displacement": 0.03664437341504649,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.7638468774901277,
+    "recognition": 0.4230769230769231,
+    "margin": -0.013929385153588238,
+    "displacement": 0.05512696735619305,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.7062391744286629,
+    "recognition": 0.25,
+    "margin": -0.05394779836752847,
+    "displacement": 0.07366396245876256,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   }
+  ],
+  "order-effects/grid_then_wave": [
+   {
+    "step": 0,
+    "iou": 0.991728250615705,
+    "recognition": 0.9423076923076923,
+    "margin": 0.03725386944588835,
+    "displacement": 0.0008690954426887066,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.8973870094911813,
+    "recognition": 0.6346153846153846,
+    "margin": 0.011667229584067157,
+    "displacement": 0.014857081587159428,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.8179149273877098,
+    "recognition": 0.5192307692307693,
+    "margin": -0.003626144887951943,
+    "displacement": 0.030168305780318705,
+    "classes": {
+     "relocating": 50,
+     "faulting": 0,
+     "deleting": 2
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.7456936427337489,
+    "recognition": 0.2692307692307692,
+    "margin": -0.038236061719209694,
+    "displacement": 0.045204618587458424,
+    "classes": {
+     "relocating": 44,
+     "faulting": 0,
+     "deleting": 8
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.6814061539778608,
+    "recognition": 0.19230769230769232,
+    "margin": -0.07629003044671719,
+    "displacement": 0.06022172838946887,
+    "classes": {
+     "relocating": 38,
+     "faulting": 0,
+     "deleting": 14
+    }
+   }
+  ],
+  "order-effects/wave_then_grid": [
+   {
+    "step": 0,
+    "iou": 0.991728250615705,
+    "recognition": 0.9423076923076923,
+    "margin": 0.03725386944588835,
+    "displacement": 0.0008690954426887066,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.8970224151085583,
+    "recognition": 0.6153846153846154,
+    "margin": 0.007859986037393617,
+    "displacement": 0.015082247327739388,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.8192937936537812,
+    "recognition": 0.4807692307692308,
+    "margin": -0.003548568090739802,
+    "displacement": 0.02996158151185596,
+    "classes": {
+     "relocating": 47,
+     "faulting": 0,
+     "deleting": 5
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.7470455114679699,
+    "recognition": 0.25,
+    "margin": -0.03495898707145587,
+    "displacement": 0.045357468701601476,
+    "classes": {
+     "relocating": 45,
+     "faulting": 0,
+     "deleting": 7
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.6845436904013784,
+    "recognition": 0.19230769230769232,
+    "margin": -0.06999112680831063,
+    "displacement": 0.06098701619214596,
+    "classes": {
+     "relocating": 39,
+     "faulting": 0,
+     "deleting": 13
+    }
+   }
+  ],
+  "recovery/shear_round_trip": [
+   {
+    "step": 0,
+    "iou": 1.0,
+    "recognition": 1.0,
+    "margin": 0.04760174359239104,
+    "displacement": 0.0,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 1,
+    "iou": 0.9997682133244735,
+    "recognition": 1.0,
+    "margin": 0.04747952398787411,
+    "displacement": 0.000989455719718878,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 2,
+    "iou": 0.9995121823731764,
+    "recognition": 1.0,
+    "margin": 0.04756362195371854,
+    "displacement": 0.0009670124578525391,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 3,
+    "iou": 0.9997682133244735,
+    "recognition": 1.0,
+    "margin": 0.04747952398787411,
+    "displacement": 0.000989455719718878,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   },
+   {
+    "step": 4,
+    "iou": 0.9986063852717272,
+    "recognition": 1.0,
+    "margin": 0.04697635276816449,
+    "displacement": 0.0009497951230618238,
+    "classes": {
+     "relocating": 52,
+     "faulting": 0,
+     "deleting": 0
+    }
+   }
+  ]
+ },
+ "order_effects": {
+  "shapeform": [
+   {
+    "step": 0,
+    "pair": [
+     "grid_then_wave",
+     "wave_then_grid"
+    ],
+    "iou_between_orders": 1.0
+   },
+   {
+    "step": 1,
+    "pair": [
+     "grid_then_wave",
+     "wave_then_grid"
+    ],
+    "iou_between_orders": 0.9771937420056495
+   },
+   {
+    "step": 2,
+    "pair": [
+     "grid_then_wave",
+     "wave_then_grid"
+    ],
+    "iou_between_orders": 0.9561220716988479
+   },
+   {
+    "step": 3,
+    "pair": [
+     "grid_then_wave",
+     "wave_then_grid"
+    ],
+    "iou_between_orders": 0.9301259648954657
+   },
+   {
+    "step": 4,
+    "pair": [
+     "grid_then_wave",
+     "wave_then_grid"
+    ],
+    "iou_between_orders": 0.9062163405598057
+   }
+  ]
+ },
+ "ensembles": {
+  "shapeform/fracture_ensemble": {
+   "members": 5,
+   "mean_single_iou": 0.6200763520546284,
+   "consensus_iou": 0.6968834502310028,
+   "consensus_recognition": 0.4230769230769231
+  }
+ }
+}
