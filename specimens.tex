@@ -1,0 +1,339 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{needspace}
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue!40!black,citecolor=black]{hyperref}
+\setmainfont{Amiri-Regular.ttf}[Path=./,BoldFont=Amiri-Bold.ttf,ItalicFont=Amiri-Italic.ttf,Ligatures=TeX]
+\setstretch{1.1}
+\setlength{\parindent}{1.4em}
+\setlength{\parskip}{0pt}
+\sloppy
+\emergencystretch=2em
+
+\newfontfamily\fsga{Sga-Regular.ttf}[Path=./]
+\newfontfamily\fcursive{CursiveGalactic-Regular.ttf}[Path=./]
+\newfontfamily\fsystada{Systada-Regular.ttf}[Path=./]
+\newfontfamily\fdactyl{dactyl.ttf}[Path=./]
+\newfontfamily\fnovamono{NovaMonoStandardGalactic.ttf}[Path=./]
+\newfontfamily\flogico{Logico_philosophicus-Regular.ttf}[Path=./]
+\newfontfamily\fcheiro{Cheiro-Regular.ttf}[Path=./]
+\newfontfamily\fclypto{Clypto-Regular.ttf}[Path=./]
+\newfontfamily\fshapeform{shapeform.ttf}[Path=./,HyphenChar=None]
+\newfontfamily\flingojam{Lingojam_cipher-Regular.ttf}[Path=./]
+\newfontfamily\fwaveA{CursiveGalactic-Regular_wave_000.ttf}[Path=./experiments/sequences/CursiveGalactic-Regular_wave_seq/]
+\newfontfamily\fdecayA{CursiveGalactic-Regular_full_decay_000.ttf}[Path=./experiments/compound/]
+\newfontfamily\fwaveB{CursiveGalactic-Regular_wave_001.ttf}[Path=./experiments/sequences/CursiveGalactic-Regular_wave_seq/]
+\newfontfamily\fdecayB{CursiveGalactic-Regular_full_decay_001.ttf}[Path=./experiments/compound/]
+\newfontfamily\fwaveC{CursiveGalactic-Regular_wave_002.ttf}[Path=./experiments/sequences/CursiveGalactic-Regular_wave_seq/]
+\newfontfamily\fdecayC{CursiveGalactic-Regular_full_decay_002.ttf}[Path=./experiments/compound/]
+\newfontfamily\fwaveD{CursiveGalactic-Regular_wave_003.ttf}[Path=./experiments/sequences/CursiveGalactic-Regular_wave_seq/]
+\newfontfamily\fdecayD{CursiveGalactic-Regular_full_decay_003.ttf}[Path=./experiments/compound/]
+\newfontfamily\fwaveE{CursiveGalactic-Regular_wave_004.ttf}[Path=./experiments/sequences/CursiveGalactic-Regular_wave_seq/]
+\newfontfamily\fdecayE{CursiveGalactic-Regular_full_decay_004.ttf}[Path=./experiments/compound/]
+\newfontfamily\fwaveF{CursiveGalactic-Regular_wave_005.ttf}[Path=./experiments/sequences/CursiveGalactic-Regular_wave_seq/]
+\newfontfamily\fdecayF{CursiveGalactic-Regular_full_decay_005.ttf}[Path=./experiments/compound/]
+\newfontfamily\fwaveG{CursiveGalactic-Regular_wave_006.ttf}[Path=./experiments/sequences/CursiveGalactic-Regular_wave_seq/]
+\newfontfamily\fdecayG{CursiveGalactic-Regular_full_decay_006.ttf}[Path=./experiments/compound/]
+\newfontfamily\fwaveH{CursiveGalactic-Regular_wave_007.ttf}[Path=./experiments/sequences/CursiveGalactic-Regular_wave_seq/]
+\newfontfamily\fdecayH{CursiveGalactic-Regular_full_decay_007.ttf}[Path=./experiments/compound/]
+\newfontfamily\fwtgA{shapeform_wave_then_grid_000.ttf}[Path=./experiments-v02/order-effects/wave_then_grid/,HyphenChar=None]
+\newfontfamily\fgtwA{shapeform_grid_then_wave_000.ttf}[Path=./experiments-v02/order-effects/grid_then_wave/,HyphenChar=None]
+\newfontfamily\fwtgC{shapeform_wave_then_grid_002.ttf}[Path=./experiments-v02/order-effects/wave_then_grid/,HyphenChar=None]
+\newfontfamily\fgtwC{shapeform_grid_then_wave_002.ttf}[Path=./experiments-v02/order-effects/grid_then_wave/,HyphenChar=None]
+\newfontfamily\fwtgE{shapeform_wave_then_grid_004.ttf}[Path=./experiments-v02/order-effects/wave_then_grid/,HyphenChar=None]
+\newfontfamily\fgtwE{shapeform_grid_then_wave_004.ttf}[Path=./experiments-v02/order-effects/grid_then_wave/,HyphenChar=None]
+
+\newcommand{\specimenlabel}[1]{\par\Needspace{5\baselineskip}\vspace{0.9em}\noindent{\small\itshape #1}\par\vspace{0.15em}}
+\newcommand{\specimenrule}{\par\vspace{0.1em}\noindent\rule{\linewidth}{0.3pt}\par}
+\newcommand{\codepoint}[1]{\texttt{U+#1}}
+\title{Specimens for a Procedural Typography\\[0.4em]
+\large The Galactic faces set against their own framework sentences}
+\author{Flyxion\\ \small Independent Researcher}
+\date{October 2026}
+\begin{document}
+\maketitle
+
+
+\begin{abstract}\noindent
+This essay sets the faces of the \texttt{standardgalactic/fonts} repository to work. Every specimen is typeset live in the font it describes, using sentences taken from the titles of Flyxion's other essays, and every specimen is paired with a statement about the font files that is either measured or marked as an observation, so that what is shown and what is claimed stay apart. The specimens display five things: one sentence in nine faces, the difference between stored text and displayed text, composition in the Cistercian numeral block, the behaviour of independent sweeps under two schedules of decay, and an order effect in which two operations at matched intensity leave the same summary statistics and different outlines.
+\end{abstract}
+
+
+\section{Conventions}
+
+A font is easy to describe and hard to judge in prose, because the properties that matter, such as rhythm, texture, and the ease with which a sentence can be followed, appear only when text is set in it. The specimens below are therefore not images pasted into a document. They are lines of ordinary text set by the typesetter in the font files themselves, which means that every character shown is a character the font actually contains, and a specimen that required a missing character would have shown a gap, which the build log reports. Where a face lacks a character, the sentence has been chosen or adjusted to avoid it, and the text says so.
+
+The sentences are the titles of other essays by Flyxion, among them the phrases ``arrival is not acquisition,'' ``increments are not contributions,'' and ``retraction is an operation.'' They were chosen because each names a distinction that the specimen next to it can display, and the pairing of a sentence with a face is an editorial choice made for that reason. It is not a claim that the essays themselves argue from these fonts. One further sentence, ``intensity does not determine state,'' belongs to the companion essay on the repository and states the idea that organizes the later sections: a font produced by a process is not fixed by the strength of that process alone.
+
+Measurements come from the font files at the repository snapshot with the commit hash beginning \texttt{0d57718}, read with FontTools. Advance widths are in font units, and a figure is quoted with its unit-per-em value where the comparison needs it. The experiment fonts used here are the Cursive Galactic wave sweep, the Cursive Galactic full-decay sequence, and the shapeform order-effect pairs, and the build file expects the repository layout so that it can be compiled with XeLaTeX from the repository root.
+
+
+\section{One sentence in nine faces}
+
+\specimenlabel{SGA Regular (14,208 glyphs)}
+{\noindent\fsga\fontsize{22}{27}\selectfont Intensity does not determine state.\par}
+\specimenrule
+
+\specimenlabel{Cursive Galactic (1,134 glyphs)}
+{\noindent\fcursive\fontsize{22}{27}\selectfont Intensity does not determine state.\par}
+\specimenrule
+
+\specimenlabel{Systada (669 glyphs, 160-unit em)}
+{\noindent\fsystada\fontsize{22}{27}\selectfont Intensity does not determine state.\par}
+\specimenrule
+
+\specimenlabel{Dactyl (669 glyphs, 160-unit em)}
+{\noindent\fdactyl\fontsize{22}{27}\selectfont Intensity does not determine state.\par}
+\specimenrule
+
+\specimenlabel{NovaMono Standard Galactic (6,024 glyphs)}
+{\noindent\fnovamono\fontsize{22}{27}\selectfont Intensity does not determine state.\par}
+\specimenrule
+
+\specimenlabel{Logico\_philosophicus (283 glyphs)}
+{\noindent\flogico\fontsize{22}{27}\selectfont Intensity does not determine state.\par}
+\specimenrule
+
+\specimenlabel{Cheiro (66 glyphs)}
+{\noindent\fcheiro\fontsize{22}{27}\selectfont Intensity does not determine state.\par}
+\specimenrule
+
+\specimenlabel{Clypto (66 glyphs)}
+{\noindent\fclypto\fontsize{22}{27}\selectfont Intensity does not determine state.\par}
+\specimenrule
+
+\specimenlabel{shapeform (81 glyphs, no space glyph; set word by word)}
+{\noindent\fshapeform\fontsize{20}{27}\selectfont Intensity\hspace{0.7em}Does\hspace{0.7em}Not\hspace{0.7em}Determine\hspace{0.7em}State\par}
+\specimenrule
+
+
+Set side by side, the faces divide by what they do to an unchanged Latin string. SGA Regular, Systada, and Dactyl draw the Latin positions as Galactic letterforms, so the stored sentence is ordinary English and only its appearance has changed, and at this size the three look much alike. Cursive Galactic does the same with a leaning, more continuous stroke. NovaMono is the opposite case, since it draws the same Latin string as Latin, in a monospaced face, and keeps its Galactic repertoire elsewhere in the character map. Logico\_philosophicus turns the sentence into an arrangement of signs that resemble notation, Cheiro and Clypto keep it recognizably English handwriting with different temperaments, and shapeform reduces each letter to a dark silhouette that no reader could decode without a key, which is why its line is set word by word with the spacing supplied by the page, the face having no space glyph.
+
+The resemblance of Systada and Dactyl to SGA Regular at this scale should not be taken to extend to their spacing. In Systada the hand-drawn Latin letters have advance widths running from 27 to 87 units in a 160-unit em, which makes them proportional, while 542 of the file's 667 mapped glyphs share a single advance of 80 units, a half-em cell. Dactyl has the same arrangement with 544 glyphs on the 80-unit cell and Latin letters between 29 and 92 units. The repository's \texttt{FONTLOG.txt} consists of the single line ``Terminal Friendly Standard Galactic Font,'' and on Flyxion's account it describes Systada. The measurements are compatible with that purpose in one respect only: the borrowed glyphs that make up most of the map sit on a uniform cell, as a terminal expects, but the hand-drawn Latin letters do not, so a line of Systada text will not align in columns the way a monospaced face does. The comparison in the terminal section below makes that visible.
+
+
+\section{Stored text and displayed text}
+
+The same sentence can reach the page by three routes, and the faces show the differences directly. In the first the stored characters are Latin and the font changes their appearance. In the second the stored characters are private-use code points from the registry block for Standard Galactic, so that the identity of the script is part of the stored text. In the third a font such as NovaMono draws its Latin positions as Latin and reserves the private-use positions for the Galactic letters, so that a single file can display both a plain string and a Galactic string without any change of font.
+
+\specimenlabel{Stored as Latin: ``Arrival is not acquisition. in SGA Regular}
+{\noindent\fsga\fontsize{22}{27}\selectfont Arrival is not acquisition.\par}
+\specimenrule
+
+\specimenlabel{Stored as Latin: the same string in NovaMono, drawn as Latin}
+{\noindent\fnovamono\fontsize{22}{27}\selectfont Arrival is not acquisition.\par}
+\specimenrule
+
+\specimenlabel{Stored as private-use code points: SGA Regular}
+{\noindent\fsga\fontsize{22}{27}\selectfont    \par}
+\specimenrule
+
+\specimenlabel{Stored as private-use code points: Cursive Galactic}
+{\noindent\fcursive\fontsize{22}{27}\selectfont    \par}
+\specimenrule
+
+\specimenlabel{Stored as private-use code points: NovaMono, the same file that drew the Latin string above as Latin}
+{\noindent\fnovamono\fontsize{22}{27}\selectfont    \par}
+\specimenrule
+
+
+The private-use string is what a registry-aware document would store. Its letters are the code points \codepoint{EB40} through \codepoint{EB59} in alphabetical order, so that the letter a is \codepoint{EB40}, the letter i is \codepoint{EB48}, the letter l is \codepoint{EB4B}, the letter r is \codepoint{EB51}, and the letter v is \codepoint{EB55}, and the full stop is \codepoint{EB5F}. Spaces are ordinary spaces. The three faces draw the string in three manners. SGA Regular and Cursive Galactic both build the private-use letters from pixel-like blocks, and although the outlines of all twenty-six letters differ between the two files, the rows look alike at this size, the Cursive row being slanted slightly. That is worth noting because Cursive Galactic's Latin-position forms are the flowing ones, so the face keeps its cursive manner for the stored-Latin route and a blocky manner for the registry route. NovaMono draws the same letters with thinner strokes in its wider monospaced cells. The three agree on which letter each code point means, and that agreement is the practical content of a shared registry, since text stored this way keeps its script identity when it moves from one of these fonts to another. The Latin-position string, by contrast, would look like English to any font that did not know the convention, and it would have lost nothing in storage.
+
+The NovaMono pair is the cleanest demonstration, because one file draws the two stored strings in two different ways. The comparison also bears on the earlier remark that a screenshot cannot say what was typed, what was stored, and what was drawn. These specimens answer all three questions only because the stored strings are given alongside them.
+
+The block also contains its own boundary markers. In SGA Regular and Cursive Galactic the three positions \codepoint{EB5A} to \codepoint{EB5C}, which the registry proposal leaves unassigned, are filled with labelled boxes that show the hexadecimal address, followed by the two quotation marks at \codepoint{EB5D} and \codepoint{EB5E} and the full stop at \codepoint{EB5F}. NovaMono fills the same six positions with much smaller marks in place of the labelled boxes.
+
+\specimenlabel{SGA Regular, private-use positions EB5A to EB5F}
+{\noindent\fsga\fontsize{40}{50}\selectfont \par}
+\specimenrule
+
+\specimenlabel{Cursive Galactic, the same six positions}
+{\noindent\fcursive\fontsize{40}{50}\selectfont \par}
+\specimenrule
+
+\specimenlabel{NovaMono Standard Galactic, the same six positions}
+{\noindent\fnovamono\fontsize{40}{50}\selectfont \par}
+\specimenrule
+
+
+\section{Composition in the Cistercian block}
+
+The Cistercian numeral block shows composition rather than substitution. Under the registry proposal the units digits occupy \codepoint{EBA0} to \codepoint{EBA9} and are ordinary spacing characters, while the tens, hundreds, and thousands digits occupy \codepoint{EBB1} to \codepoint{EBB9}, \codepoint{EBC1} to \codepoint{EBC9}, and \codepoint{EBD1} to \codepoint{EBD9}, are marked as combining, and have no zero. In SGA Regular every units digit advances the cursor by 1,024 units, and every higher-place digit has an advance of zero, so that its outline overlays the character before it. A numeral is therefore stored as a short sequence and displayed as one sign.
+
+\specimenlabel{2026 as three characters: units 6 (EBA6), tens 2 (EBB2), thousands 2 (EBD2); no hundreds digit because the hundreds place is zero}
+{\noindent\fsga\fontsize{54}{60}\selectfont \hspace{1.5em}}{\fcursive\fontsize{54}{60}\selectfont \hspace{1.5em}}{\fnovamono\fontsize{54}{60}\selectfont \par}
+\specimenrule
+
+\specimenlabel{1234 as four characters: units 4 (EBA4), tens 3 (EBB3), hundreds 2 (EBC2), thousands 1 (EBD1)}
+{\noindent\fsga\fontsize{54}{60}\selectfont \hspace{1.5em}}{\fcursive\fontsize{54}{60}\selectfont \hspace{1.5em}}{\fnovamono\fontsize{54}{60}\selectfont \par}
+\specimenrule
+
+
+The three faces draw the same assembled sign in three hands, which confirms that the overlay works across files and is a property of the convention and of the font metrics, not of one design. It also shows why placeholders must be read locally. The unused positions in this block, among them the zero positions of the combining ranges and \codepoint{EBAA} to \codepoint{EBAF}, are not missing numerals, because the proposal assigns nothing there.
+
+
+\section{The terminal comparison}
+
+Three faces are set below with the same short shell lines taken from the repository's own instructions, followed by a test string that exposes whether a face keeps its letters on a grid. A monospaced face sets every character on the same advance, so a row of narrow letters and a row of wide letters end in the same place.
+
+\specimenlabel{NovaMono Standard Galactic (monospaced Latin)}
+{\noindent\fnovamono\fontsize{19}{27}\selectfont \$ python make\_experiments.py\\\$ python make-experiment-index.py\\\$ python -m http.server\\ iiiiiiiiiiii\\ mmmmmmmmmmmm\\ WWWWWWWWWWWW\par}
+\specimenrule
+
+\specimenlabel{Systada}
+{\noindent\fsystada\fontsize{19}{27}\selectfont \$ python make\_experiments.py\\\$ python make-experiment-index.py\\\$ python -m http.server\\ iiiiiiiiiiii\\ mmmmmmmmmmmm\\ WWWWWWWWWWWW\par}
+\specimenrule
+
+\specimenlabel{Dactyl}
+{\noindent\fdactyl\fontsize{19}{27}\selectfont \$ python make\_experiments.py\\\$ python make-experiment-index.py\\\$ python -m http.server\\ iiiiiiiiiiii\\ mmmmmmmmmmmm\\ WWWWWWWWWWWW\par}
+\specimenrule
+
+
+In NovaMono the three test rows have the same length, as the advance widths require, since all ninety-four printable ASCII characters in the file have one advance of 1,150 units in a 2,048-unit em. In Systada and Dactyl the rows differ in length, because the Latin letters carry their own widths. The terminal-friendly face in this collection is therefore NovaMono for Latin reading and, for Galactic reading, a face whose uniform cell covers its borrowed glyphs and not its letters. A reader who wanted Galactic text on a strict character grid would need the private-use letters or a modified face, and the repository does not yet say which of its files is meant for that.
+
+
+\section{Two sweeps from one source}
+
+The sequence fonts in the repository were produced by a function that takes the original font, applies the transformation at one parameter value, and saves the result, for each value in turn. Each state is therefore a function of its own parameter and of the source, and no state is built from another. The wave sweep for Cursive Galactic runs from amplitude 0 to amplitude 120 in eight steps at a fixed frequency of 2.0, so that the integer amplitudes are 0, 17, 34, 51, 68, 85, 102, and 120. The full-decay sequence stacks three operators, jitter, baseline droop, and stroke collapse, whose strengths all rise together, reaching at the last step a jitter of 40, a droop of 0.6, and a collapse of 0.5. The lines below set one sentence through each state.
+
+\specimenlabel{wave sweep, state 000 (amplitude 0)}
+{\noindent\fwaveA\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{wave sweep, state 001 (amplitude 17)}
+{\noindent\fwaveB\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{wave sweep, state 002 (amplitude 34)}
+{\noindent\fwaveC\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{wave sweep, state 003 (amplitude 51)}
+{\noindent\fwaveD\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{wave sweep, state 004 (amplitude 68)}
+{\noindent\fwaveE\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{wave sweep, state 005 (amplitude 85)}
+{\noindent\fwaveF\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{wave sweep, state 006 (amplitude 102)}
+{\noindent\fwaveG\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{wave sweep, state 007 (amplitude 120)}
+{\noindent\fwaveH\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenrule
+
+\specimenlabel{full decay, state 000 (jitter 0, droop 0.00, collapse 0.00)}
+{\noindent\fdecayA\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{full decay, state 001 (jitter 5, droop 0.09, collapse 0.07)}
+{\noindent\fdecayB\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{full decay, state 002 (jitter 11, droop 0.17, collapse 0.14)}
+{\noindent\fdecayC\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{full decay, state 003 (jitter 17, droop 0.26, collapse 0.21)}
+{\noindent\fdecayD\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{full decay, state 004 (jitter 22, droop 0.34, collapse 0.29)}
+{\noindent\fdecayE\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{full decay, state 005 (jitter 28, droop 0.43, collapse 0.36)}
+{\noindent\fdecayF\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{full decay, state 006 (jitter 34, droop 0.51, collapse 0.43)}
+{\noindent\fdecayG\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenlabel{full decay, state 007 (jitter 40, droop 0.60, collapse 0.50)}
+{\noindent\fdecayH\fontsize{24}{30}\selectfont Increments are not contributions.\par}
+
+\specimenrule
+
+
+Reading down either block gives an impression of progressive damage, although the change between neighbouring states is slight at reading size and the difference across the whole range is clearer than any single step. That impression is the point of the next observation. The progression is real as an ordering of parameters, but it lives in the way the states are arranged and in the reader's passage down the page. It is not stored in any one font, since state 005 contains no trace of state 004. The sweep is a good instrument for asking how recognition depends on the strength of a distortion at a given moment, and it is a poor instrument for asking whether the order of earlier exposures alters later ones, because the files cannot carry that order.
+
+
+\section{One document under two schedules}
+
+The repository separates the schedule by which a document moves through the states from the states themselves. A small module maps a position in the document, from zero at the first sentence to one at the last, to an intensity, with linear, quadratic, cubic, smoothstep, and cliff shapes, and the document generator uses such an intensity to choose a font. The two paragraphs below contain the same eight sentences and the same eight wave-sweep fonts. The first reads them under the linear schedule and the second under the cliff schedule with the module's default parameters, a cliff at 0.7 and a floor of 0.15. Each intensity is mapped to the nearest of the eight states, which is a convention adopted for this specimen. The states used by the linear paragraph are 000, 001, 002, 003, 004, 005, 006, 007, and those used by the cliff paragraph are 000, 000, 000, 001, 001, 001, 004, 007.
+
+\specimenlabel{linear schedule}
+{\noindent\fontsize{17}{25}\selectfont {\fwaveA Familiarity with a script is cumulative.} {\fwaveB A reader arrives at a skill by a path.} {\fwaveC Two readers at one level need not share that path.} {\fwaveD A degraded font is also the product of a path.} {\fwaveE A sweep builds every state from the source.} {\fwaveF A cumulative sequence builds each state from the last.} {\fwaveG The order of operations can change the outline.} {\fwaveH The intensity alone does not say which.}\par}
+\specimenrule
+
+\specimenlabel{cliff schedule}
+{\noindent\fontsize{17}{25}\selectfont {\fwaveA Familiarity with a script is cumulative.} {\fwaveA A reader arrives at a skill by a path.} {\fwaveA Two readers at one level need not share that path.} {\fwaveB A degraded font is also the product of a path.} {\fwaveB A sweep builds every state from the source.} {\fwaveB A cumulative sequence builds each state from the last.} {\fwaveE The order of operations can change the outline.} {\fwaveH The intensity alone does not say which.}\par}
+\specimenrule
+
+
+Both paragraphs begin in the clean source and end in the heaviest state, so a comparison of endpoints would find them identical. What differs is the amount of the document spent near each level of distortion. The linear paragraph passes steadily through every state, while the cliff paragraph spends its first six sentences in the two states closest to the source and then falls quickly through a middle state to the last. A reader following the second paragraph meets a different experience of the same sentences even though the same eight fonts have been used, which is the sense in which the nominal endpoints of a degradation do not fix what a reader encounters on the way.
+
+
+\section{An order effect in matched fonts}
+
+The v02 experiments include a pair of sequences made from shapeform, one that applies a wave and then a grid quantization at each of five intensities and one that applies the grid first and the wave second. The pair is the repository's direct demonstration that the order of two operations can matter. The lines below set one phrase in the two orders at three of the five states, and shapeform's silhouettes should be read as shapes, since the face encodes its letters as dark forms that are not meant to be decoded by eye.
+
+\specimenlabel{state 000, wave then grid}
+{\noindent\fwtgA\fontsize{18}{24}\selectfont Retraction\hspace{0.7em}Is\hspace{0.7em}An\hspace{0.7em}Operation\par}
+
+\specimenlabel{state 000, grid then wave}
+{\noindent\fgtwA\fontsize{18}{24}\selectfont Retraction\hspace{0.7em}Is\hspace{0.7em}An\hspace{0.7em}Operation\par}
+\specimenrule
+
+\specimenlabel{state 002, wave then grid}
+{\noindent\fwtgC\fontsize{18}{24}\selectfont Retraction\hspace{0.7em}Is\hspace{0.7em}An\hspace{0.7em}Operation\par}
+
+\specimenlabel{state 002, grid then wave}
+{\noindent\fgtwC\fontsize{18}{24}\selectfont Retraction\hspace{0.7em}Is\hspace{0.7em}An\hspace{0.7em}Operation\par}
+\specimenrule
+
+\specimenlabel{state 004, wave then grid}
+{\noindent\fwtgE\fontsize{18}{24}\selectfont Retraction\hspace{0.7em}Is\hspace{0.7em}An\hspace{0.7em}Operation\par}
+
+\specimenlabel{state 004, grid then wave}
+{\noindent\fgtwE\fontsize{18}{24}\selectfont Retraction\hspace{0.7em}Is\hspace{0.7em}An\hspace{0.7em}Operation\par}
+\specimenrule
+
+
+The recorded measurements for the fourth state show how little the repository's own summary statistics can say about the difference. Both outputs have the same 682 points in the same 58 contours, and their total contour lengths are 88,329.059 units for wave then grid and 88,105.381 units for grid then wave, a gap of about a quarter of one percent, against a source length of 82,475.39. Their bounding boxes differ by only a few units at the top, at 828 against 844, and at the bottom, at $-36$ against $-50$. The two fonts nonetheless differ point by point. Comparing corresponding points across the 682 in the two fourth-state fonts gives a mean displacement of 14.8 units, with a largest displacement of 44.0, while each differs from the source by a mean of about 60 units, with a largest displacement of about 107. At state 002 the mean displacement between the two orders is 6.8 units with a maximum of 21.0, and at state 000 the two are identical, with a displacement of 0.0, although each is about 0.9 units from the source on average. The order effect is therefore small beside the effect of the operations themselves and invisible to the recorded summary statistics, yet it is measurable in the outlines. This is the repository's own caution made concrete, that its geometric records do not settle perceptual questions, and it supplies a matched pair on which a reader experiment could test whether a difference of this size matters to recognition.
+
+
+\section{Faces with narrow inputs}
+
+Three faces ask for a specific kind of input and show their behaviour only when they receive it. Cheiro and Clypto contain letters and a few punctuation marks, and neither contains digits, the hyphen, or parentheses, so the sentence below has been set without its hyphen.
+
+\specimenlabel{Cheiro, with the hyphen omitted because the face has none}
+{\noindent\fcheiro\fontsize{24}{30}\selectfont Task sufficient preservation.\par}
+\specimenrule
+
+\specimenlabel{Clypto, with the hyphen omitted because the face has none}
+{\noindent\fclypto\fontsize{24}{30}\selectfont Task sufficient preservation.\par}
+\specimenrule
+
+
+Logico\_philosophicus lacks only the underscore among the printable ASCII characters, so it accepts the full sentence together with digits and punctuation, and the result shows prose acquiring the look of formal notation while remaining ordinary text at the level of the stored characters.
+
+\specimenlabel{Logico\_philosophicus, with digits and punctuation}
+{\noindent\flogico\fontsize{22}{27}\selectfont Task-sufficient preservation. 0123456789 (a, b; c: d).\par}
+\specimenrule
+
+
+The Lingojam cipher face contains no Latin letters at all. Its thirty-three mapped characters are the controls and spaces, a few Latin-position characters, and symbols borrowed from other Unicode blocks, among them Canadian syllabics, mathematical operators, a katakana character, and a character from the mathematical monospace block. It is meant to receive a sequence already converted by the cipher tool, so a specimen of the face is best given as its inventory. Each glyph below is shown with its code point.
+
+\par\medskip\noindent \begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"21}\\[-1pt]{\scriptsize 0021}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"2F}\\[-1pt]{\scriptsize 002F}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"7C}\\[-1pt]{\scriptsize 007C}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"A1}\\[-1pt]{\scriptsize 00A1}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"296}\\[-1pt]{\scriptsize 0296}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"307}\\[-1pt]{\scriptsize 0307}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"323}\\[-1pt]{\scriptsize 0323}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"1451}\\[-1pt]{\scriptsize 1451}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"14B2}\\[-1pt]{\scriptsize 14B2}\end{tabular}\par\medskip \noindent \begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"14B7}\\[-1pt]{\scriptsize 14B7}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"14ED}\\[-1pt]{\scriptsize 14ED}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"14F5}\\[-1pt]{\scriptsize 14F5}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"1511}\\[-1pt]{\scriptsize 1511}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"2138}\\[-1pt]{\scriptsize 2138}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"21B8}\\[-1pt]{\scriptsize 21B8}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"2234}\\[-1pt]{\scriptsize 2234}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"2237}\\[-1pt]{\scriptsize 2237}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"22A3}\\[-1pt]{\scriptsize 22A3}\end{tabular}\par\medskip \noindent \begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"22EE}\\[-1pt]{\scriptsize 22EE}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"234A}\\[-1pt]{\scriptsize 234A}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"2351}\\[-1pt]{\scriptsize 2351}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"2393}\\[-1pt]{\scriptsize 2393}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"254E}\\[-1pt]{\scriptsize 254E}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"268D}\\[-1pt]{\scriptsize 268D}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"2A05}\\[-1pt]{\scriptsize 2A05}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"30EA}\\[-1pt]{\scriptsize 30EA}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"A58C}\\[-1pt]{\scriptsize A58C}\end{tabular}\par\medskip \noindent \begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"A58E}\\[-1pt]{\scriptsize A58E}\end{tabular}\hspace{0.5em}\begin{tabular}[t]{@{}c@{}}{\flingojam\fontsize{26}{28}\selectfont\char"1D679}\\[-1pt]{\scriptsize 1D679}\end{tabular}\par\medskip
+
+Shown this way the face is a set of twenty-nine carriers whose conventional identities, a mathematical sign or a syllabic character, are unrelated to the letters they stand for in the cipher. Software that does not know the convention treats them as what they are, which is why a screenshot of this face establishes neither the original text nor the stored characters.
+
+
+\section{What the specimens add}
+
+The specimens turn several statements that were made abstractly in the companion essay into things that can be looked at. The difference between a glyph count and a character count appears as the difference between a Latin string and a private-use string drawn in one face. The claim that a numeral can be stored as several characters and displayed as one appears as a composite sign in three hands. The distinction between an independent sweep and a cumulative sequence appears as a block of states that look like progress and contain no history, and the effect of a schedule appears as two paragraphs with the same endpoints and different journeys. The order effect appears as a pair of fonts whose recorded summaries nearly coincide and whose outlines do not.
+
+They also mark what remains untested. None of the specimens measures how well anyone reads any of them. The sweeps and schedules are arranged for a reader, but no reader has been timed, and the order-effect pair is ready for a recognition test that has not been run. The terminal-friendly claim has been narrowed by measurement to the borrowed glyphs of Systada, with NovaMono the only face here that keeps Latin letters on a grid. The set of faces has been shown to share a registry convention for Standard Galactic letters across three files, and not across all ten.
+
+To reproduce the specimens, place \texttt{specimens.tex} in the root of the repository, with the font files and the experiment directories named in the preamble in their usual places, and compile it twice with XeLaTeX. The preamble loads Amiri from the repository for the running text, so no font outside the repository is needed.
+
+\end{document}

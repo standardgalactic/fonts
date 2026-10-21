@@ -1,10 +1,14 @@
 # Procedural Typography Laboratory
 
+[Specimens for a Procedural Typography](https://standardgalactic.github.io/fonts/specimens.pdf)
+
+[Galactic Lettering as a Reading Environment](https://standardgalactic.github.io/fonts/galactic-lettering.pdf)
+
 A collection of custom fonts, experimental font transformations, degradation sequences, visualization tools, and document-generation utilities built on FontTools.
 
 The project explores the idea that typography can be treated as a dynamic process rather than a fixed object. Fonts become trajectories. Glyphs become evolving structures. Documents become experiments in legibility, decay, distortion, erosion, collapse, and transformation.
 
-![](memory_trace.png)
+![](preview.webp)
 
 ## Repository Overview
 
@@ -123,7 +127,7 @@ discontinuities or faults. `memory` moves whole contours coherently rather than
 perturbing unrelated points, while `gravity` models nonlinear vertical
 compression.
 
----
+![](memory_trace.png)
 
 ## Transformation Sequences
 
