@@ -1,5 +1,5 @@
 # Fdb version 4
-["lualatex"] 1792543857.48225 "galactic-lettering.tex" "galactic-lettering.pdf" "galactic-lettering" 1792543858.85219 0
+["lualatex"] 1792544072.98974 "galactic-lettering.tex" "galactic-lettering.pdf" "galactic-lettering" 1792544074.7953 0
   "/home/bonobo/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc" 1784942650.43967 81819 c1a1831503f38fe92f18da76596f7b9d ""
   "/home/bonobo/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1784942648.97355 128392 cc9893d1631ce94f31c1896bb041be89 ""
   "/home/bonobo/.texlive2023/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc" 1786150024.52279 136294 b20655adeff86618736b3a30e93973df ""
@@ -136,9 +136,9 @@
   "/usr/share/texmf/fonts/opentype/public/lm/lmroman17-regular.otf" 1255129361 110248 1d75fdc9dbe45e70de83ff6cc79a81c9 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1784932458.54121 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1784932563 12239737 818422bb6d6c01bad0bd3277b631fd0c ""
-  "galactic-lettering.aux" 1792543858.6488 1915 3043c15f92f312f20d4e20dd87dd4260 "lualatex"
-  "galactic-lettering.out" 1792543858.6488 1653 9fed658d3e63619cf7056049f9684231 "lualatex"
-  "galactic-lettering.tex" 1792543850.43914 43320 5d9edbde22a906ddb4e41d9fcb014869 ""
+  "galactic-lettering.aux" 1792544074.55627 1915 3043c15f92f312f20d4e20dd87dd4260 "lualatex"
+  "galactic-lettering.out" 1792544074.55627 1653 9fed658d3e63619cf7056049f9684231 "lualatex"
+  "galactic-lettering.tex" 1792544067.35999 43834 0c99fc48c83a26ecf9615a38dcae7d9a ""
   (generated)
   "galactic-lettering.aux"
   "galactic-lettering.log"
