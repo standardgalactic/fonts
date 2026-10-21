@@ -1,0 +1,103 @@
+
+TABLE SIZES
+FFTM           28 bytes
+GDEF           30 bytes
+OS/2           96 bytes
+cmap        2,334 bytes
+cvt             4 bytes
+gasp            8 bytes
+glyf    1,768,920 bytes
+head           54 bytes
+hhea           36 bytes
+hmtx       56,832 bytes
+loca       56,836 bytes
+maxp           32 bytes
+name          618 bytes
+post      140,086 bytes
+prep            7 bytes
+
+GLYPHS OUTSIDE PREFERRED UNICODE MAP
+.notdef
+.null
+nonmarkingreturn
+
+UNICODE GENERAL CATEGORIES
+Lo     3,630
+Co     2,307
+So     1,726
+Ll     1,223
+Lu     1,076
+Cn       969
+Sm       922
+Mn       816
+Po       311
+Nd       290
+No       232
+Mc       209
+Lm       146
+Ps        50
+Sc        49
+Pe        47
+Nl        42
+Cf        39
+Lt        27
+Sk        23
+Pd        17
+Zs        16
+Pi        12
+Pf        10
+Me        10
+Pc         3
+Cc         1
+Zl         1
+Zp         1
+
+UNICODE PLANES
+Plane  0: 13,821 code points
+Plane  1: 384 code points
+
+Private-use code points: 2,307
+
+MAPPINGS U+EB40–U+EB5F
+U+EB40 -> uniEB40
+U+EB41 -> uniEB41
+U+EB42 -> uniEB42
+U+EB43 -> uniEB43
+U+EB44 -> uniEB44
+U+EB45 -> uniEB45
+U+EB46 -> uniEB46
+U+EB47 -> uniEB47
+U+EB48 -> uniEB48
+U+EB49 -> uniEB49
+U+EB4A -> uniEB4A
+U+EB4B -> uniEB4B
+U+EB4C -> uniEB4C
+U+EB4D -> uniEB4D
+U+EB4E -> uniEB4E
+U+EB4F -> uniEB4F
+U+EB50 -> uniEB50
+U+EB51 -> uniEB51
+U+EB52 -> uniEB52
+U+EB53 -> uniEB53
+U+EB54 -> uniEB54
+U+EB55 -> uniEB55
+U+EB56 -> uniEB56
+U+EB57 -> uniEB57
+U+EB58 -> uniEB58
+U+EB59 -> uniEB59
+U+EB5A -> uniEB5A
+U+EB5B -> uniEB5B
+U+EB5C -> uniEB5C
+U+EB5D -> uniEB5D
+U+EB5E -> uniEB5E
+U+EB5F -> uniEB5F
+
+OUTLINE STRUCTURE
+Simple outline glyphs: 14,175
+Empty glyphs: 33
+Points in simple outlines: 638,671
+
+LAYOUT FEATURES
+GSUB: absent
+GPOS: absent
+
